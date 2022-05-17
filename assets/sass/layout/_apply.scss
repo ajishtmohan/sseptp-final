@@ -1,0 +1,56 @@
+.apply {
+  @include fullSiteWidth;
+  height: auto;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+
+.apply-block {
+  @include containerWidth-L;
+  @include flexRow;
+  height: 45rem;
+  background-color: $color-grey-light-2;
+  text-align: center;
+  box-shadow: 0 0.5rem 2rem rgba($color-black, 0.3);
+
+  & > div {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      flex-shrink: 0;
+    }
+  }
+
+  &__text {
+    padding: 8rem;
+    box-sizing: border-box;
+
+    h1 {
+      @include blue-gradient;
+      @include zeroAround;
+    }
+    h3 {
+      color: $color-quaternary-dark;
+      padding-bottom: $margin-tiny;
+    }
+    p {
+      width: 100%;
+      padding-bottom: $margin-tiny;
+    }
+
+    a {
+      @include primary-btn;
+    }
+  }
+}

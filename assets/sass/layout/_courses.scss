@@ -1,0 +1,64 @@
+.courses {
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+  transition: all 0.5s;
+}
+
+.course-container {
+  @include containerWidth-L;
+  text-align: center;
+  transition: all 0.3s;
+
+  &__h1 {
+    color: $color-tertiary-dark;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  &__p {
+    @include containerWidth-S;
+    padding-bottom: 5rem;
+    color: $color-white;
+    position: relative;
+    transition: all 0.3s;
+  }
+}
+
+.course-block {
+  width: 100%;
+  @include flexRow;
+  gap: 3rem;
+
+  &__item {
+    width: calc((100% - 6rem) / 3);
+    height: 17rem;
+    border: 1px solid $color-secondary-light;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 1px solid $color-tertiary-dark;
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+    }
+
+    &--text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      h3 {
+        @include roboto;
+        color: $color-white;
+        margin-bottom: $margin-tiny;
+      }
+
+      a {
+        @include primary-btn;
+      }
+    }
+  }
+}

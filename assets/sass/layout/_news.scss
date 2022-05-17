@@ -1,0 +1,75 @@
+.section-news {
+  @include fullSiteWidth;
+  text-align: center;
+
+  h1 {
+    @include containerWidth-L;
+    @include blue-gradient;
+    margin-bottom: $margin-small;
+  }
+
+  a {
+    @include primary-btn;
+  }
+
+  .blogs-link {
+    @include primary-btn;
+    margin: 5rem;
+  }
+}
+
+.news-block {
+  @include containerWidth-L;
+  @include flexRow;
+  gap: 3rem;
+  margin-bottom: $margin-small;
+
+  .news-item {
+    @include flexRow;
+    width: calc((100% - 3rem) / 2);
+    height: 25rem;
+    background-color: $color-grey-light-2;
+
+    &__img {
+      width: 50%;
+      height: 25rem;
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        flex-shrink: 0;
+      }
+    }
+
+    &__text {
+      width: 50%;
+      height: 25rem;
+      padding: 3rem;
+      box-sizing: border-box;
+      text-align: left;
+
+      h3 {
+        color: $color-primary-dark;
+        transition: all 0.3s;
+      }
+
+      p {
+        width: 100%;
+        text-align: left;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        @include primary-btn;
+      }
+    }
+
+    &:hover h3 {
+      color: $color-quaternary-dark;
+    }
+  }
+}

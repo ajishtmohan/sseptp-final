@@ -1,0 +1,47 @@
+.section-rise {
+  height: auto;
+  transition: all 0.5s;
+
+  .rise {
+    @include containerWidth-L;
+    @include flexRow;
+    height: 50rem;
+    background-color: $color-grey-light-2;
+    transition: all 0.5s;
+    position: relative;
+
+    &__img {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      transition: all 0.5s;
+      position: relative;
+    }
+
+    &__text {
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      padding: 4rem;
+      box-sizing: border-box;
+      transition: all 0.5s;
+      position: relative;
+
+      h2 {
+        @include blue-gradient;
+        font-weight: 400;
+        transition: all 0.5s;
+        position: relative;
+      }
+
+      p {
+        width: 100%;
+        transition: all 0.5s;
+        position: relative;
+      }
+    }
+  }
+}

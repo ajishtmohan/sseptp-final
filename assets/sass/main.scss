@@ -1,0 +1,48 @@
+// abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Basics
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+
+// Components
+
+// Layout
+@import 'Layout/academics';
+@import 'Layout/apply';
+@import 'Layout/certification';
+@import 'Layout/clubs';
+@import 'Layout/copyright';
+@import 'Layout/courses';
+@import 'Layout/footer';
+@import 'Layout/header';
+@import 'layout/navigation';
+@import 'layout/news';
+@import 'layout/quicklinks';
+@import 'layout/recognition';
+@import 'layout/rise';
+@import 'layout/secondarylinks';
+@import 'layout/specialities';
+@import 'layout/subscribe';
+@import 'layout/whysse';
+
+// Pages
+@import 'Pages/home';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}

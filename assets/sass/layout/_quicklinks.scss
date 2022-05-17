@@ -1,0 +1,46 @@
+.menu {
+  @include fullSiteWidth;
+  background-color: $color-primary-light;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all 0.5s;
+}
+.q-links {
+  @include containerWidth-L;
+  @include flexRow;
+  height: 4rem;
+
+  a {
+    padding: 1.6rem 1rem;
+  }
+
+  ul {
+    @include zeroAround;
+    align-self: center;
+
+    li {
+      text-transform: uppercase;
+      list-style-type: none;
+      display: inline-block;
+
+      a {
+        @include navlinks;
+      }
+    }
+  }
+  &__left {
+    a:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &__right {
+    a:last-child {
+      padding-right: 0;
+    }
+  }
+}

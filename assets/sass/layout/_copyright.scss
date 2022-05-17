@@ -1,0 +1,19 @@
+.section-copyright {
+  width: 100%;
+  height: auto;
+  padding: $margin-tiny;
+  background-color: darken($color-primary-dark, 10%);
+  font-size: $default-font-size;
+
+  .copyright {
+    @include flexRow;
+    @include containerWidth-L;
+
+    p {
+      color: $color-secondary-light;
+      display: inline-block;
+      @include zeroAround;
+      width: auto;
+    }
+  }
+}

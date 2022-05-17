@@ -1,0 +1,17 @@
+h1 {
+  font-size: $h1-font-size;
+  font-weight: 400;
+}
+
+p {
+  text-align: center;
+  @include containerWidth-XS;
+}
+
+section {
+  display: block;
+  position: relative;
+  width: $full-width;
+  height: auto;
+  padding: 8rem 0;
+}

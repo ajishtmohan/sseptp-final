@@ -1,0 +1,48 @@
+.certification {
+  background-color: $color-grey-light-2;
+  text-align: center;
+  transition: all 0.3s;
+
+  h1 {
+    @include blue-gradient;
+    padding-bottom: 4rem;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .certification-block {
+    @include flexRow;
+    justify-content: center;
+    @include containerWidth-M;
+    gap: 3rem;
+    position: relative;
+    transition: all 0.3s;
+
+    &__item {
+      width: 20rem;
+      height: 12rem;
+      background-color: $color-white;
+      position: relative;
+      display: block;
+      box-shadow: 0 0 0.5rem rgba($color-black, 0.1);
+      transition: all 0.3s;
+
+      &--img {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        box-shadow: 0 0 1rem rgba($color-black, 0.2);
+      }
+
+      &:hover img {
+        width: 85%;
+      }
+    }
+  }
+}

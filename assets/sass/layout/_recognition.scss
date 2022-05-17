@@ -1,0 +1,24 @@
+.section-recognition {
+  @include fullSiteWidth;
+  height: auto;
+  background-color: $color-grey-light-2;
+  text-align: center;
+
+  h1 {
+    @include blue-gradient;
+  }
+
+  p {
+    margin-bottom: $margin-tiny;
+  }
+
+  .recognition-block {
+    @include flexRow;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  img {
+    width: 12rem;
+  }
+}

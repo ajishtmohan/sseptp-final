@@ -1,0 +1,20 @@
+.whysse {
+  @include containerWidth-L;
+  display: block;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s;
+
+  &__h1 {
+    @include blue-gradient;
+    transition: all 0.5s;
+    position: relative;
+  }
+
+  &__p {
+    @include containerWidth-S;
+    font-size: $default-font-size;
+    transition: all 0.5s;
+    position: relative;
+  }
+}
