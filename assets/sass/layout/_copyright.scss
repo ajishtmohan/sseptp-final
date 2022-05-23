@@ -3,7 +3,6 @@
   height: auto;
   padding: $margin-tiny;
   background-color: darken($color-primary-dark, 10%);
-  font-size: $default-font-size;
 
   .copyright {
     @include flexRow;
@@ -14,6 +13,7 @@
       display: inline-block;
       @include zeroAround;
       width: auto;
+      font-size: 1.2rem;
     }
   }
 }
