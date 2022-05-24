@@ -1,15 +1,15 @@
 .message-page {
   position: relative;
   display: block;
-  @include zeroAround;
+  width: $full-width;
 
   &__topband {
     position: relative;
     display: block;
-    background-color: $color-secondary-light;
     width: $full-width;
-    height: 40rem;
     margin: 0 auto;
+    height: 40rem;
+    background-color: $color-secondary-light;
     border-bottom: 4px solid $color-secondary-dark;
 
     .message-page-top-band__header {
@@ -26,13 +26,7 @@
         float: left;
         height: 100%;
         h1 {
-          display: block;
-          position: absolute;
-          bottom: 2rem;
-          color: $color-white;
-          font-weight: 300;
-          font-size: $pages-h1;
-          line-height: 6rem;
+          @include page-title-white;
         }
       }
 
@@ -130,8 +124,7 @@
     position: relative;
 
     p {
-      width: 100%;
-      margin: 0 0 1rem 0;
+      @include page-paragraph;
 
       .bold-name {
         font-weight: 600;

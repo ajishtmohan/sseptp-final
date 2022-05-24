@@ -26,13 +26,7 @@
         float: left;
         height: 100%;
         h1 {
-          display: block;
-          position: absolute;
-          bottom: 2rem;
-          color: $color-primary-dark;
-          font-weight: 300;
-          font-size: $pages-h1;
-          line-height: 6rem;
+          @include page-title-primary;
         }
       }
 
@@ -73,10 +67,7 @@
     position: relative;
 
     &--h2 {
-      color: $color-primary-dark;
-      font-weight: 300;
-      font-size: 4rem;
-      line-height: 5rem;
+      @include page-heading-primary;
     }
 
     &--h3 {
@@ -87,31 +78,19 @@
     }
 
     &--description {
-      font-family: 'Roboto Slab', serif;
-      font-size: 2rem;
-      margin-bottom: 3rem;
+      @include page-description;
     }
 
     &--ul {
-      @include zeroAround;
       padding-left: 1.5rem;
 
       li {
-        font-size: $default-font-size;
-        font-weight: 400;
-        padding-left: 1rem;
-        line-height: 3rem;
-
-        &:last-child {
-          padding-bottom: 2rem;
-        }
+        @include page-bullet;
       }
     }
 
     p {
-      width: 100%;
-      text-align: left;
-      margin: 0 0 2rem 0;
+      @include page-paragraph;
     }
   }
 
@@ -138,9 +117,7 @@
       @include zeroAround;
 
       li {
-        list-style-type: none;
-        font-size: 1.6rem;
-        font-weight: 400;
+        @include page-sidebar-list;
 
         a {
           text-decoration: none;

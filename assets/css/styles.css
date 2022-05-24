@@ -1025,10 +1025,11 @@ p {
           display: block;
           position: absolute;
           bottom: 2rem;
-          color: #fff;
           font-weight: 300;
           font-size: 6rem;
-          line-height: 6rem; }
+          line-height: 6rem;
+          color: #fff;
+          color: #fff; }
       .inside-page__topband .inside-page-top-band__header--image {
         display: block;
         position: relative;
@@ -1058,13 +1059,54 @@ p {
     display: inline-block;
     position: relative; }
     .inside-page-content__main h2 {
-      color: #1389a3;
       font-weight: 300;
-      font-size: 4rem; }
+      font-size: 4rem;
+      line-height: 5rem;
+      color: #1389a3; }
     .inside-page-content__main p {
       width: 100%;
-      text-align: left;
-      margin: 0 0 2rem 0; }
+      margin: 0 0 1rem 0; }
+    .inside-page-content__main--ul {
+      padding-left: 1.5rem; }
+      .inside-page-content__main--ul li {
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-left: 1rem;
+        line-height: 3rem; }
+        .inside-page-content__main--ul li:last-child {
+          padding-bottom: 2rem; }
+    .inside-page-content__main .mentors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 2rem;
+      margin-top: 1rem; }
+      .inside-page-content__main .mentors__card {
+        width: calc((100% - 6rem) / 4);
+        height: 24rem;
+        text-align: center;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: rgba(51, 176, 204, 0.1); }
+        .inside-page-content__main .mentors__card--image {
+          height: 18.5rem; }
+          .inside-page-content__main .mentors__card--image img {
+            width: 100%; }
+        .inside-page-content__main .mentors__card--name {
+          margin: 0;
+          padding: 0;
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.5rem; }
+        .inside-page-content__main .mentors__card--description {
+          margin: 0;
+          padding: 0;
+          font-size: 1.1rem;
+          font-weight: 400;
+          line-height: 1.5rem; }
   .inside-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -1076,17 +1118,16 @@ p {
     .inside-page-content__sidebar h3 {
       display: block;
       padding: 0.75rem 1.5rem;
-      color: #fff;
       border-bottom: 1px solid #fff;
-      font-weight: 200;
-      background-color: #30a5c0; }
+      font-weight: 400;
+      color: #fff;
+      background-color: #2e9eb8; }
     .inside-page-content__sidebar ul {
-      width: 100%;
-      margin: 0;
-      padding: 0; }
+      width: 100%; }
       .inside-page-content__sidebar ul li {
         list-style-type: none;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        font-weight: 400; }
         .inside-page-content__sidebar ul li a {
           text-decoration: none;
           color: #fff;
@@ -1094,7 +1135,7 @@ p {
           display: block;
           transition: all 0.3s; }
           .inside-page-content__sidebar ul li a:hover {
-            background-color: #112c7e; }
+            background-color: #2e9eb8; }
 
 .course-page {
   position: relative;
@@ -1124,10 +1165,10 @@ p {
           display: block;
           position: absolute;
           bottom: 2rem;
-          color: #112c7e;
           font-weight: 300;
           font-size: 6rem;
-          line-height: 6rem; }
+          line-height: 6rem;
+          color: #112c7e; }
       .course-page__topband .course-page-top-band__header--image {
         display: block;
         position: relative;
@@ -1157,10 +1198,10 @@ p {
     display: inline-block;
     position: relative; }
     .course-page-content__main--h2 {
-      color: #112c7e;
       font-weight: 300;
       font-size: 4rem;
-      line-height: 5rem; }
+      line-height: 5rem;
+      color: #112c7e; }
     .course-page-content__main--h3 {
       color: #112c7e;
       font-weight: 300;
@@ -1169,10 +1210,9 @@ p {
     .course-page-content__main--description {
       font-family: 'Roboto Slab', serif;
       font-size: 2rem;
+      font-weight: 300;
       margin-bottom: 3rem; }
     .course-page-content__main--ul {
-      margin: 0;
-      padding: 0;
       padding-left: 1.5rem; }
       .course-page-content__main--ul li {
         font-size: 1.6rem;
@@ -1183,8 +1223,7 @@ p {
           padding-bottom: 2rem; }
     .course-page-content__main p {
       width: 100%;
-      text-align: left;
-      margin: 0 0 2rem 0; }
+      margin: 0 0 1rem 0; }
   .course-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -1337,15 +1376,14 @@ section {
 .message-page {
   position: relative;
   display: block;
-  margin: 0;
-  padding: 0; }
+  width: 100%; }
   .message-page__topband {
     position: relative;
     display: block;
-    background-color: #33b0cc;
     width: 100%;
-    height: 40rem;
     margin: 0 auto;
+    height: 40rem;
+    background-color: #33b0cc;
     border-bottom: 4px solid #1389a3; }
     .message-page__topband .message-page-top-band__header {
       width: 120rem;
@@ -1362,10 +1400,10 @@ section {
           display: block;
           position: absolute;
           bottom: 2rem;
-          color: #fff;
           font-weight: 300;
           font-size: 6rem;
-          line-height: 6rem; }
+          line-height: 6rem;
+          color: #fff; }
       .message-page__topband .message-page-top-band__header--image {
         display: block;
         position: relative;
