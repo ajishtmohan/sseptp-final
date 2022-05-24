@@ -140,3 +140,9 @@
   visibility: visible;
   opacity: 1;
 }
+
+.linked {
+  > a {
+    color: $color-tertiary-light;
+  }
+}

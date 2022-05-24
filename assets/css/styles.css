@@ -555,6 +555,9 @@ p {
   visibility: visible;
   opacity: 1; }
 
+.linked > a {
+  color: #ffcc56; }
+
 .section-news {
   width: 100%;
   text-align: center; }
