@@ -54,11 +54,7 @@
 }
 
 .course-page-content {
-  width: $site-width;
-  height: auto;
-  margin: 15rem auto 5rem;
-  display: block;
-  position: relative;
+  @include page-content-specification;
 
   &__main {
     width: 80rem;
@@ -99,37 +95,51 @@
     height: auto;
     display: inline-block;
     position: relative;
-    background-color: $color-tertiary-light;
     float: right;
     box-sizing: border-box;
 
-    h3 {
-      display: block;
-      padding: 0.75rem 1.5rem;
-      color: $color-black;
-      border-bottom: 1px solid $color-white;
-      font-weight: 400;
-      background-color: darken($color-tertiary-light, 10%);
-    }
+    &--links {
+      background-color: $color-tertiary-light;
+      margin-bottom: 4rem;
 
-    ul {
-      width: 100%;
-      @include zeroAround;
+      h3 {
+        @include course-page-sidebar-title;
+      }
 
-      li {
-        @include page-sidebar-list;
+      ul {
+        width: 100%;
+        @include zeroAround;
 
-        a {
-          text-decoration: none;
-          color: $color-black;
-          padding: 0.6rem 1.5rem;
-          display: block;
-          transition: all 0.3s;
+        li {
+          @include page-sidebar-list;
 
-          &:hover {
-            background-color: $color-tertiary-dark;
+          a {
+            @include page-sidebar-list-link-black;
+
+            &:hover {
+              background-color: $color-tertiary-dark;
+            }
           }
         }
+      }
+    }
+
+    &--contact {
+      background-color: $color-tertiary-light;
+      margin-bottom: 2rem;
+
+      h3 {
+        @include course-page-sidebar-title;
+      }
+
+      p {
+        padding: 0.75rem 2.5rem;
+        color: $color-black;
+        width: 100%;
+      }
+      .contact-timing {
+        font-weight: 600;
+        padding-bottom: 1rem;
       }
     }
   }

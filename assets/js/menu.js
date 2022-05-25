@@ -79,13 +79,13 @@ siteLinks.innerHTML = `<div class="navbar">
         <li class="submenu__item linked">
           <a href="industry-interface.html">Industry&nbsp;Interface</a>
         </li>
-        <li class="submenu__item">
-          <a href="#">Affiliation&nbsp;&&nbsp;Recognition </a>
+        <li class="submenu__item linked">
+          <a href="recognition-affiliation.html">Affiliation&nbsp;&&nbsp;Recognition </a>
         </li>
-        <li class="submenu__item">
-          <a href="#">Governing&nbsp;Body</a>
+        <li class="submenu__item linked">
+          <a href="governing-body.html">Governing&nbsp;Body</a>
         </li>
-        <li class="submenu__item"><a href="#">RISE</a></li>
+        <li class="submenu__item linked"><a href="rise.html">RISE</a></li>
       </ul>
     </li>
 
@@ -96,26 +96,26 @@ siteLinks.innerHTML = `<div class="navbar">
           <a href="courses.html">Courses »</a>
           <ul class="submenu-2">
             <li class="linked">
-              <a href="cse.html"
+              <a href="computer-science.html"
                 >Computer Science & Engineering (SOSO)</a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="linked">
+              <a href="electronics-communication.html"
                 >Electronics & Communication Engineering (SLICE)</a
               >
             </li>
-            <li>
-              <a href="#">Electrical & Electronics Engineering (PPP)</a>
+            <li class="linked">
+              <a href="electrical-electronics.html">Electrical & Electronics Engineering (PPP)</a>
             </li>
-            <li>
-              <a href="#">Mechanical Engineering (SMILE)</a>
+            <li class="linked">
+              <a href="mechanical-engineering.html">Mechanical Engineering (SMILE)</a>
             </li>
-            <li>
+            <li class="linked">
               <a href="#">Civil Engineering (FORCE)</a>
             </li>
             <li>
-              <a href="#">Humanities and Science</a>
+              <a href="civil-engineering.html">Humanities and Science</a>
             </li>
           </ul>
         </li>
@@ -182,7 +182,7 @@ siteLinks.innerHTML = `<div class="navbar">
       <a class="navigation__item--link" href="#">SSE Media</a>
     </li>
     <li class="navigation__item">
-      <a class="navigation__item--link" href="#">Mandatories</a>
+      <a class="navigation__item--link" href="#">Mandataries</a>
     </li>
     <li class="navigation__item">
       <a class="navigation__item--link" href="#">Alumni</a>

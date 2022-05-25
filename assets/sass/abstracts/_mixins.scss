@@ -108,6 +108,15 @@
   color: $color-primary-dark;
 }
 
+@mixin page-content-specification {
+  width: $site-width;
+  height: auto;
+  min-height: 45rem;
+  margin: 15rem auto 5rem;
+  display: block;
+  position: relative;
+}
+
 @mixin page-heading-primary {
   font-weight: 300;
   font-size: 4rem;
@@ -129,6 +138,20 @@
   margin-bottom: 3rem;
 }
 
+@mixin page-h3-primary {
+  color: $color-primary-dark;
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+@mixin page-h3-secondary {
+  color: $color-secondary-light;
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
 @mixin page-paragraph {
   width: 100%;
   margin: 0 0 1rem 0;
@@ -145,15 +168,40 @@
   }
 }
 
-@mixin page-sidebar-title {
+@mixin inside-page-sidebar-title {
   display: block;
-  padding: 0.75rem 1.5rem;
-  border-bottom: 1px solid $color-white;
+  padding: 1.5rem 2.5rem;
+  color: $color-white;
   font-weight: 400;
+  background-color: darken($color-secondary-light, 5%);
+}
+
+@mixin course-page-sidebar-title {
+  display: block;
+  padding: 1.5rem 2.5rem;
+  color: $color-black;
+  font-weight: 400;
+  background-color: darken($color-tertiary-light, 10%);
 }
 
 @mixin page-sidebar-list {
   list-style-type: none;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+@mixin page-sidebar-list-link-black {
+  text-decoration: none;
+  color: $color-black;
+  padding: 0.75rem 2.5rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+@mixin page-sidebar-list-link-white {
+  text-decoration: none;
+  color: $color-white;
+  padding: 0.75rem 2.5rem;
+  display: block;
+  transition: all 0.3s;
 }

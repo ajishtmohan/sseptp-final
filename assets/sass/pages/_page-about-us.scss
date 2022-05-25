@@ -56,11 +56,7 @@
 }
 
 .inside-page-content {
-  width: $site-width;
-  height: auto;
-  margin: 15rem auto 5rem;
-  display: block;
-  position: relative;
+  @include page-content-specification;
 
   &__main {
     width: 80rem;
@@ -70,6 +66,10 @@
 
     h2 {
       @include page-heading-secondary;
+    }
+
+    h3 {
+      @include page-h3-secondary;
     }
 
     p {
@@ -82,6 +82,10 @@
       li {
         @include page-bullet;
       }
+    }
+
+    &--description {
+      @include page-description;
     }
 
     .mentors {
@@ -135,8 +139,8 @@
     box-sizing: border-box;
 
     h3 {
-      @include page-sidebar-title;
-      color: $color-white;
+      @include inside-page-sidebar-title;
+      // color: $color-white;
       background-color: darken($color-secondary-light, 5%);
     }
 
@@ -147,11 +151,7 @@
         @include page-sidebar-list;
 
         a {
-          text-decoration: none;
-          color: $color-white;
-          padding: 0.6rem 1.5rem;
-          display: block;
-          transition: all 0.3s;
+          @include page-sidebar-list-link-white;
 
           &:hover {
             background-color: darken($color-secondary-light, 5%);

@@ -54,11 +54,7 @@
 }
 
 .message-page-content {
-  width: $site-width;
-  height: auto;
-  margin: 10rem auto 5rem;
-  display: block;
-  position: relative;
+  @include page-content-specification;
 
   &__person {
     width: 100%;
@@ -143,12 +139,7 @@
     box-sizing: border-box;
 
     h3 {
-      display: block;
-      padding: 0.75rem 1.5rem;
-      color: $color-white;
-      border-bottom: 1px solid $color-white;
-      font-weight: 200;
-      background-color: darken($color-secondary-light, 3%);
+      @include inside-page-sidebar-title;
     }
 
     ul {
@@ -156,15 +147,10 @@
       @include zeroAround;
 
       li {
-        list-style-type: none;
-        font-size: 1.6rem;
+        @include page-sidebar-list;
 
         a {
-          text-decoration: none;
-          color: $color-white;
-          padding: 0.6rem 1.5rem;
-          display: block;
-          transition: all 0.3s;
+          @include page-sidebar-list-link-white;
 
           &:hover {
             background-color: $color-primary-dark;
