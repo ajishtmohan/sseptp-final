@@ -67,7 +67,7 @@ siteLinks.innerHTML = `<div class="navbar">
           <a href="our-heritage.html">Our&nbsp;Heritage </a>
         </li>
         <li class="submenu__item linked">
-          <a href="#">Vision&nbsp;&&nbsp;Mission</a>
+          <a href="our-vision-mission.html">Vision&nbsp;&&nbsp;Mission</a>
         </li>
         <li class="submenu__item linked">
           <a href="chairman-message.html">Chairman&nbsp;Message</a>
