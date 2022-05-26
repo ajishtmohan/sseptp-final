@@ -112,10 +112,10 @@ siteLinks.innerHTML = `<div class="navbar">
               <a href="mechanical-engineering.html">Mechanical Engineering (SMILE)</a>
             </li>
             <li class="linked">
-              <a href="#">Civil Engineering (FORCE)</a>
+              <a href="civil-engineering.html">Civil Engineering (FORCE)</a>
             </li>
             <li>
-              <a href="civil-engineering.html">Humanities and Science</a>
+              <a href="#">Humanities and Science</a>
             </li>
           </ul>
         </li>
