@@ -1,3 +1,17 @@
+/*
+
+0 - 600:  Phone
+600 - 900:    Tablet Portrait
+900 - 1200:   Table Landscape
+1200 - 1800:  Desktop
+1800+         Big Desktop
+-------------------------------
+Breakpoint Argument Choices
+- phone
+- tab-port
+- tab-land
+- big-desk
+*/
 body::-webkit-scrollbar {
   display: none; }
 
@@ -1622,6 +1636,15 @@ section {
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
