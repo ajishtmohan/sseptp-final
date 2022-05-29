@@ -54,7 +54,7 @@
 }
 
 .message-page-content {
-  @include page-content-specification;
+  @include message-content-specification;
 
   &__person {
     width: 100%;

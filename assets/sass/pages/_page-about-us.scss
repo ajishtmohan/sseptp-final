@@ -1,6 +1,7 @@
 .inside-page {
   position: relative;
   display: block;
+  width: $full-width;
   @include zeroAround;
 
   &__topband {

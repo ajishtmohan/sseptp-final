@@ -54,7 +54,7 @@
 }
 
 .course-page-content {
-  @include page-content-specification;
+  @include course-content-specification;
 
   &__main {
     width: 80rem;
@@ -69,8 +69,14 @@
     &--h3 {
       color: $color-primary-dark;
       font-weight: 300;
-      font-size: $h4-font-size;
+      font-size: $h3-font-size;
       font-weight: 400;
+    }
+    &--h4 {
+      color: $color-primary-light;
+      font-weight: 300;
+      font-size: $h4-font-size;
+      font-weight: 500;
     }
 
     &--description {
@@ -85,8 +91,175 @@
       }
     }
 
+    &--module-ul {
+      // padding-left: 1.5rem;
+
+      li {
+        @include module-bullet;
+      }
+    }
+
     p {
       @include page-paragraph;
+    }
+
+    .page-p-bold {
+      font-weight: 600;
+    }
+    .page-p-module {
+      @include zeroAround;
+      font-weight: 600;
+    }
+  }
+
+  .faculty-cards-container {
+    @include flexRow;
+    padding-top: $margin-tiny;
+    margin-bottom: $margin-tiny;
+    gap: 3rem;
+
+    .faculty-card {
+      display: block;
+      position: relative;
+      width: calc((80rem - 6rem) / 3);
+      height: 12rem;
+      background-image: linear-gradient(
+        45deg,
+        $color-primary-light,
+        $color-secondary-light
+      );
+      border-radius: 3px;
+      transition: all 0.3s;
+
+      &:hover .faculty-card__overlay {
+        opacity: 1;
+      }
+
+      &:hover .faculty-card__text--h3 {
+        color: $color-black;
+      }
+
+      &__overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-tertiary-light;
+        opacity: 0;
+        transition: all 0.3s;
+        border-radius: 3px;
+      }
+
+      &__text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+        z-index: 10;
+
+        &--h3 {
+          text-align: center;
+          font-size: $h2-font-size;
+          color: $color-white;
+          @include zeroAround;
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          font-weight: 200;
+          transition: all 0.3s;
+        }
+
+        &--p {
+          line-height: 2.5rem;
+        }
+
+        &--link {
+          line-height: 2.5rem;
+          @include zeroAround;
+          display: block;
+          position: relative;
+          bottom: 0;
+
+          a {
+            @include primary-btn;
+            // @include zeroAround;
+          }
+        }
+      }
+    }
+  }
+
+  .humanities-science-cards-container {
+    @include flexRow;
+    padding-top: $margin-tiny;
+    margin-bottom: $margin-tiny;
+    gap: 3rem;
+
+    .humanities-science-card {
+      display: block;
+      position: relative;
+      width: calc((80rem - 3rem) / 2);
+      height: 15rem;
+      background-image: linear-gradient(
+        45deg,
+        $color-primary-light,
+        $color-secondary-light
+      );
+      border-radius: 3px;
+      transition: all 0.3s;
+      padding: 2rem;
+      box-sizing: border-box;
+
+      &:hover .humanities-science__overlay {
+        opacity: 1;
+      }
+
+      &:hover .humanities-science__text--h3 {
+        color: $color-black;
+      }
+
+      &__text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        text-align: left;
+        z-index: 10;
+
+        &--h3 {
+          font-size: $h2-font-size;
+          color: $color-white;
+          @include zeroAround;
+          font-weight: 200;
+          transition: all 0.3s;
+          line-height: 3.5rem;
+          padding-bottom: 1.2rem;
+        }
+
+        &--p {
+          line-height: 2.5rem;
+        }
+
+        &--link {
+          line-height: 2.5rem;
+          @include zeroAround;
+          display: block;
+          position: relative;
+          bottom: 0;
+
+          a {
+            @include primary-btn;
+            // @include zeroAround;
+          }
+        }
+      }
     }
   }
 

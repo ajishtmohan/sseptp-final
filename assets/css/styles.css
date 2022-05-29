@@ -99,7 +99,8 @@ p {
       position: relative;
       display: block;
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      border-radius: 3px; }
       .academics .academic-block__item--img {
         width: 80%;
         position: absolute;
@@ -202,7 +203,8 @@ p {
       position: relative;
       display: block;
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      border-radius: 3px; }
       .certification .certification-block__item--img {
         width: 80%;
         position: absolute;
@@ -269,7 +271,7 @@ p {
 .section-copyright {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #0b1c51; }
   .section-copyright .copyright {
     display: flex;
@@ -470,7 +472,7 @@ p {
   align-self: center;
   line-height: 0; }
   .logo__img {
-    width: 16rem;
+    width: 15rem;
     transition: all 0.5s; }
 
 .navigation {
@@ -571,6 +573,9 @@ p {
 
 .linked > a {
   color: #ffcc56; }
+
+.alert {
+  border-left: 3px solid red; }
 
 .section-news {
   width: 100%;
@@ -1014,6 +1019,7 @@ p {
 .inside-page {
   position: relative;
   display: block;
+  width: 100%;
   margin: 0;
   padding: 0; }
   .inside-page__topband {
@@ -1214,7 +1220,7 @@ p {
 .course-page-content {
   width: 120rem;
   height: auto;
-  min-height: 45rem;
+  min-height: 75rem;
   margin: 15rem auto 5rem;
   display: block;
   position: relative; }
@@ -1233,6 +1239,11 @@ p {
       font-weight: 300;
       font-size: 2.5rem;
       font-weight: 400; }
+    .course-page-content__main--h4 {
+      color: #3052b9;
+      font-weight: 300;
+      font-size: 2rem;
+      font-weight: 500; }
     .course-page-content__main--description {
       font-family: 'Roboto Slab', serif;
       font-size: 2rem;
@@ -1247,9 +1258,165 @@ p {
         line-height: 3rem; }
         .course-page-content__main--ul li:last-child {
           padding-bottom: 2rem; }
+    .course-page-content__main--module-ul li {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3rem;
+      list-style-type: none; }
+      .course-page-content__main--module-ul li:last-child {
+        padding-bottom: 1rem; }
     .course-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
+    .course-page-content__main .page-p-bold {
+      font-weight: 600; }
+    .course-page-content__main .page-p-module {
+      margin: 0;
+      padding: 0;
+      font-weight: 600; }
+  .course-page-content .faculty-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 3rem; }
+    .course-page-content .faculty-cards-container .faculty-card {
+      display: block;
+      position: relative;
+      width: calc((80rem - 6rem) / 3);
+      height: 12rem;
+      background-image: linear-gradient(45deg, #3052b9, #33b0cc);
+      border-radius: 3px;
+      transition: all 0.3s; }
+      .course-page-content .faculty-cards-container .faculty-card:hover .faculty-card__overlay {
+        opacity: 1; }
+      .course-page-content .faculty-cards-container .faculty-card:hover .faculty-card__text--h3 {
+        color: #000000; }
+      .course-page-content .faculty-cards-container .faculty-card__overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffcc56;
+        opacity: 0;
+        transition: all 0.3s;
+        border-radius: 3px; }
+      .course-page-content .faculty-cards-container .faculty-card__text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+        z-index: 10; }
+        .course-page-content .faculty-cards-container .faculty-card__text--h3 {
+          text-align: center;
+          font-size: 3rem;
+          color: #fff;
+          margin: 0;
+          padding: 0;
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          font-weight: 200;
+          transition: all 0.3s; }
+        .course-page-content .faculty-cards-container .faculty-card__text--p {
+          line-height: 2.5rem; }
+        .course-page-content .faculty-cards-container .faculty-card__text--link {
+          line-height: 2.5rem;
+          margin: 0;
+          padding: 0;
+          display: block;
+          position: relative;
+          bottom: 0; }
+          .course-page-content .faculty-cards-container .faculty-card__text--link a {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ef7c00;
+            padding: 0.4rem 0.8rem;
+            box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+            transition: all 0.1s; }
+            .course-page-content .faculty-cards-container .faculty-card__text--link a:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+            .course-page-content .faculty-cards-container .faculty-card__text--link a:active {
+              transform: translateY(-2px);
+              box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+  .course-page-content .humanities-science-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 3rem; }
+    .course-page-content .humanities-science-cards-container .humanities-science-card {
+      display: block;
+      position: relative;
+      width: calc((80rem - 3rem) / 2);
+      height: 15rem;
+      background-image: linear-gradient(45deg, #3052b9, #33b0cc);
+      border-radius: 3px;
+      transition: all 0.3s;
+      padding: 2rem;
+      box-sizing: border-box; }
+      .course-page-content .humanities-science-cards-container .humanities-science-card:hover .humanities-science__overlay {
+        opacity: 1; }
+      .course-page-content .humanities-science-cards-container .humanities-science-card:hover .humanities-science__text--h3 {
+        color: #000000; }
+      .course-page-content .humanities-science-cards-container .humanities-science-card__text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        text-align: left;
+        z-index: 10; }
+        .course-page-content .humanities-science-cards-container .humanities-science-card__text--h3 {
+          font-size: 3rem;
+          color: #fff;
+          margin: 0;
+          padding: 0;
+          font-weight: 200;
+          transition: all 0.3s;
+          line-height: 3.5rem;
+          padding-bottom: 1.2rem; }
+        .course-page-content .humanities-science-cards-container .humanities-science-card__text--p {
+          line-height: 2.5rem; }
+        .course-page-content .humanities-science-cards-container .humanities-science-card__text--link {
+          line-height: 2.5rem;
+          margin: 0;
+          padding: 0;
+          display: block;
+          position: relative;
+          bottom: 0; }
+          .course-page-content .humanities-science-cards-container .humanities-science-card__text--link a {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ef7c00;
+            padding: 0.4rem 0.8rem;
+            box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+            transition: all 0.1s; }
+            .course-page-content .humanities-science-cards-container .humanities-science-card__text--link a:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+            .course-page-content .humanities-science-cards-container .humanities-science-card__text--link a:active {
+              transform: translateY(-2px);
+              box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
   .course-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -1467,8 +1634,8 @@ section {
 .message-page-content {
   width: 120rem;
   height: auto;
-  min-height: 45rem;
-  margin: 15rem auto 5rem;
+  min-height: 75rem;
+  margin: 10rem auto 5rem;
   display: block;
   position: relative; }
   .message-page-content__person {
@@ -1600,6 +1767,11 @@ section {
   box-sizing: border-box;
   background-color: rgba(19, 137, 163, 0.9);
   color: #fff; }
+  .text-box h2 {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #fff; }
   .text-box p {
     text-align: left;
     width: 100%;
@@ -1607,25 +1779,36 @@ section {
     margin-bottom: 2rem;
     font-size: 1.5rem; }
 
-.academic-partners {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 120rem;
-  margin: 0 auto;
-  transition: all 0.3s;
+.placement-partners {
+  display: block;
   position: relative;
-  gap: 3rem; }
-  .academic-partners__item {
-    width: 20rem;
-    height: 12rem;
-    background-color: #fff;
-    position: relative;
-    display: block;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-    transition: all 0.3s; }
+  width: 120rem;
+  margin: 0 auto; }
+  .placement-partners h2 {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #1389a3;
+    text-align: center; }
+  .placement-partners .placement-partners-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem; }
+    .placement-partners .placement-partners-block__item {
+      width: calc((100% - 8rem) / 9); }
+      .placement-partners .placement-partners-block__item img {
+        width: 100%; }
+
+.recruitments-details {
+  background-color: rgba(19, 137, 163, 0.1); }
+  .recruitments-details__h2 {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #1389a3;
+    text-align: center; }
 
 *,
 *::after,
@@ -1642,9 +1825,6 @@ html {
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }

@@ -55,9 +55,9 @@ html {
     font-size: 56.25%;
   }
 
-  @include respond(big-desk) {
-    font-size: 75%;
-  }
+  // @include respond(big-desk) {
+  //   font-size: 60%;
+  // }
 }
 
 body {

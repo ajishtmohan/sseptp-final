@@ -24,7 +24,7 @@
   line-height: 0;
 
   &__img {
-    width: 16rem;
+    width: 15rem;
     transition: all 0.5s;
   }
 }
@@ -145,4 +145,8 @@
   > a {
     color: $color-tertiary-light;
   }
+}
+
+.alert {
+  border-left: 3px solid red;
 }

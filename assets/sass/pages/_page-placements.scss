@@ -49,6 +49,10 @@
   background-color: rgba($color-secondary-dark, 0.9);
   color: $color-white;
 
+  h2 {
+    @include page-heading-white;
+  }
+
   p {
     text-align: left;
     width: 100%;
@@ -58,21 +62,36 @@
   }
 }
 
-.academic-partners {
-  @include flexRow;
-  justify-content: center;
-  @include containerWidth-L;
-  transition: all 0.3s;
+.placement-partners {
+  display: block;
   position: relative;
-  gap: 3rem;
+  width: $site-width;
+  margin: 0 auto;
 
-  &__item {
-    width: 20rem;
-    height: 12rem;
-    background-color: $color-white;
-    position: relative;
-    display: block;
-    box-shadow: 0 0 0.5rem rgba($color-black, 0.1);
-    transition: all 0.3s;
+  h2 {
+    @include page-heading-secondary;
+    text-align: center;
+  }
+
+  .placement-partners-block {
+    @include flexRow;
+    margin-top: 4rem;
+
+    &__item {
+      width: calc((100% - 8rem) / 9);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.recruitments-details {
+  background-color: rgba($color-secondary-dark, 0.1);
+
+  &__h2 {
+    @include page-heading-secondary;
+    text-align: center;
   }
 }
