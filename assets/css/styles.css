@@ -1046,8 +1046,8 @@ p {
           position: absolute;
           bottom: 2rem;
           font-weight: 300;
-          font-size: 6rem;
-          line-height: 6rem;
+          font-size: 4.5rem;
+          line-height: 5rem;
           color: #fff;
           color: #fff; }
       .inside-page__topband .inside-page-top-band__header--image {
@@ -1081,9 +1081,9 @@ p {
     position: relative; }
     .inside-page-content__main h2 {
       font-weight: 300;
-      font-size: 4rem;
-      line-height: 5rem;
-      color: #1389a3; }
+      font-size: 3rem;
+      line-height: 4rem;
+      color: #33b0cc; }
     .inside-page-content__main h3 {
       color: #33b0cc;
       font-weight: 300;
@@ -1197,8 +1197,8 @@ p {
           position: absolute;
           bottom: 2rem;
           font-weight: 300;
-          font-size: 6rem;
-          line-height: 6rem;
+          font-size: 4.5rem;
+          line-height: 5rem;
           color: #112c7e; }
       .course-page__topband .course-page-top-band__header--image {
         display: block;
@@ -1231,8 +1231,8 @@ p {
     position: relative; }
     .course-page-content__main--h2 {
       font-weight: 300;
-      font-size: 4rem;
-      line-height: 5rem;
+      font-size: 3rem;
+      line-height: 4rem;
       color: #112c7e; }
     .course-page-content__main--h3 {
       color: #112c7e;
@@ -1363,7 +1363,7 @@ p {
       display: block;
       position: relative;
       width: calc((80rem - 3rem) / 2);
-      height: 15rem;
+      height: 16rem;
       background-image: linear-gradient(45deg, #3052b9, #33b0cc);
       border-radius: 3px;
       transition: all 0.3s;
@@ -1611,8 +1611,8 @@ section {
           position: absolute;
           bottom: 2rem;
           font-weight: 300;
-          font-size: 6rem;
-          line-height: 6rem;
+          font-size: 4.5rem;
+          line-height: 5rem;
           color: #fff; }
       .message-page__topband .message-page-top-band__header--image {
         display: block;
@@ -1634,7 +1634,7 @@ section {
 .message-page-content {
   width: 120rem;
   height: auto;
-  min-height: 75rem;
+  min-height: 95rem;
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
@@ -1769,8 +1769,8 @@ section {
   color: #fff; }
   .text-box h2 {
     font-weight: 300;
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 4rem;
     color: #fff; }
   .text-box p {
     text-align: left;
@@ -1786,9 +1786,9 @@ section {
   margin: 0 auto; }
   .placement-partners h2 {
     font-weight: 300;
-    font-size: 4rem;
-    line-height: 5rem;
-    color: #1389a3;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #33b0cc;
     text-align: center; }
   .placement-partners .placement-partners-block {
     display: flex;
@@ -1805,9 +1805,9 @@ section {
   background-color: rgba(19, 137, 163, 0.1); }
   .recruitments-details__h2 {
     font-weight: 300;
-    font-size: 4rem;
-    line-height: 5rem;
-    color: #1389a3;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #33b0cc;
     text-align: center; }
 
 *,

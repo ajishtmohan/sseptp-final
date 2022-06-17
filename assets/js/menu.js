@@ -90,6 +90,9 @@ siteLinks.innerHTML = `<div class="q-links">
             <a href="principal-message.html">Principal&nbsp;Message</a>
           </li>
           <li class="submenu__item linked">
+            <a href="secretary-message.html">Secretary&nbsp;Message</a>
+          </li>
+          <li class="submenu__item linked">
             <a href="industry-interface.html">Industry&nbsp;Interface</a>
           </li>
           <li class="submenu__item linked alert">
@@ -136,14 +139,14 @@ siteLinks.innerHTML = `<div class="q-links">
             <a href="sse-faculty.html">Faculty</a>
           </li>
           <li class="submenu__item linked">
-            <a href="value-added-courses.html">Value&nbsp;Added&nbsp;Courses</a>
+            <a href="value-added-courses.html">Certification&nbsp;Courses</a>
           </li>
           <li class="submenu__item linked alert"><a href="examinations.html">Examinations</a></li>
           <li class="submenu__item linked alert">
             <a href="syllabus.html">Syllabus</a>
           </li>
           <li class="submenu__item linked alert">
-            <a href="e-resources.html">E-Resources</a>
+            <a href="e-resources.html">Fee Structure</a>
           </li>
         </ul>
       </li>
