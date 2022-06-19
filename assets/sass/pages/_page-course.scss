@@ -70,7 +70,6 @@
       color: $color-primary-dark;
       font-weight: 300;
       font-size: $h3-font-size;
-      font-weight: 400;
     }
     &--h4 {
       color: $color-primary-light;
@@ -101,6 +100,15 @@
 
     p {
       @include page-paragraph;
+    }
+
+    a {
+      color: $color-grey-dark;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-primary-light;
+      }
     }
 
     .page-p-bold {
@@ -305,8 +313,12 @@
         @include course-page-sidebar-title;
       }
 
+      h4 {
+        @include course-page-sidebar-hod;
+      }
+
       p {
-        padding: 0.75rem 2.5rem;
+        padding: 0 2.5rem;
         color: $color-black;
         width: 100%;
       }
