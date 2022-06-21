@@ -1,0 +1,210 @@
+.committee-page {
+  position: relative;
+  display: block;
+  width: $full-width;
+
+  &__topband {
+    position: relative;
+    display: block;
+    width: $full-width;
+    margin: 0 auto;
+    height: 40rem;
+    background-color: $color-secondary-light;
+    border-bottom: 4px solid $color-secondary-dark;
+
+    .committee-page-top-band__header {
+      width: $site-width;
+      height: 100%;
+      margin: 0 auto;
+      > div {
+        width: 50%;
+        display: block;
+        position: relative;
+      }
+
+      &--title {
+        float: left;
+        height: 100%;
+        h1 {
+          @include page-title-white;
+        }
+      }
+
+      &--image {
+        display: block;
+        position: relative;
+        top: 40%;
+        width: 100%;
+        height: 40rem;
+        background-color: black;
+        overflow: hidden;
+        float: right;
+        border-bottom: 4px solid $color-secondary-dark;
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.committee-page-content {
+  @include message-content-specification;
+
+  &__main {
+    width: 80rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+
+    &--h3 {
+      color: $color-secondary-light;
+      font-weight: 300;
+      font-size: $h3-font-size;
+    }
+
+    p {
+      @include page-paragraph;
+
+      .bold-name {
+        font-weight: 600;
+        font-size: 1.8rem;
+      }
+
+      a {
+        color: $color-grey-dark;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $color-secondary-light;
+        }
+      }
+    }
+
+    &--ul {
+      padding-left: 1.5rem;
+
+      li {
+        @include page-bullet;
+      }
+    }
+
+    .committies-cards-container {
+      @include flexRow;
+      margin: $margin-tiny 0;
+      gap: 2rem;
+      justify-content: flex-start;
+
+      .committies-card {
+        display: block;
+        position: relative;
+        width: calc((80rem - 4rem) / 3);
+        height: 16.5rem;
+        background-image: linear-gradient(
+          45deg,
+          $color-primary-light,
+          $color-secondary-light
+        );
+        border-radius: 3px;
+        transition: all 0.3s;
+        padding: 2rem;
+        box-sizing: border-box;
+        color: $color-white;
+
+        &__title {
+          font-size: $h4-font-size;
+          font-weight: 400;
+        }
+
+        p {
+          @include zeroAround;
+          color: $color-white;
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+
+        &:hover .committies__overlay {
+          opacity: 1;
+        }
+
+        &:hover .committies__text--h3 {
+          color: $color-black;
+        }
+
+        &__text {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: space-between;
+          text-align: left;
+          z-index: 10;
+
+          &--h3 {
+            font-size: $h3-font-size;
+            color: $color-white;
+            @include zeroAround;
+            font-weight: 200;
+            transition: all 0.3s;
+            line-height: 3.5rem;
+            padding-bottom: 1.2rem;
+          }
+
+          &--p {
+            line-height: 2.5rem;
+          }
+
+          &--link {
+            line-height: 2.5rem;
+            @include zeroAround;
+            display: block;
+            position: relative;
+            bottom: 0;
+
+            a {
+              @include primary-btn;
+              // @include zeroAround;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__sidebar {
+    width: 35rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    background-color: $color-secondary-light;
+    float: right;
+    box-sizing: border-box;
+
+    h3 {
+      @include inside-page-sidebar-title;
+    }
+
+    ul {
+      width: 100%;
+      @include zeroAround;
+
+      li {
+        @include page-sidebar-list;
+
+        a {
+          @include page-sidebar-list-link-white;
+
+          &:hover {
+            background-color: $color-primary-dark;
+          }
+        }
+      }
+    }
+  }
+}

@@ -189,7 +189,7 @@ siteLinks.innerHTML = `<div class="q-links">
   
       </li>
       <li class="navigation__item">
-        <a class="navigation__item--link" href="#">Committies</a>
+        <a class="navigation__item--link" href="committees.html">Committies</a>
       </li>
       <li class="navigation__item">
         <a class="navigation__item--link" href="#">Facilities</a>
