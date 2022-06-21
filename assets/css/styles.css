@@ -1278,7 +1278,8 @@ p {
           padding: 0;
           color: #fff;
           font-size: 1.4rem;
-          line-height: 2rem; }
+          line-height: 2rem;
+          hyphens: manual; }
         .committee-page-content__main .committies-cards-container .committies-card:hover .committies__overlay {
           opacity: 1; }
         .committee-page-content__main .committies-cards-container .committies-card:hover .committies__text--h3 {
@@ -1460,9 +1461,9 @@ p {
       margin: 0 0 1rem 0; }
     .course-page-content__main a {
       color: #525252;
-      transition: all 0.3s; }
+      transition: all 0.2s; }
       .course-page-content__main a:hover {
-        color: #3052b9; }
+        color: #fab513; }
     .course-page-content__main .page-p-bold {
       font-weight: 600; }
     .course-page-content__main .page-p-module {
