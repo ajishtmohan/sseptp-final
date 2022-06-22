@@ -57,7 +57,7 @@
   @include message-content-specification;
 
   &__main {
-    width: 80rem;
+    width: 120rem;
     height: auto;
     display: inline-block;
     position: relative;
@@ -103,7 +103,7 @@
       .committies-card {
         display: block;
         position: relative;
-        width: calc((80rem - 4rem) / 3);
+        width: calc((120rem - 6rem) / 4);
         height: 16.5rem;
         background-image: linear-gradient(
           45deg,
