@@ -20,7 +20,6 @@
 @import 'Layout/header';
 @import 'layout/navigation';
 @import 'layout/news';
-@import 'layout/quicklinks';
 @import 'layout/recognition';
 @import 'layout/rise';
 @import 'layout/secondarylinks';
@@ -67,16 +66,4 @@ body {
   width: 100%;
   // position: absolute;
   overflow-x: hidden;
-
-  @include respond(tab-land) {
-    width: 100vw;
-  }
-
-  @include respond(tab-port) {
-    width: 100vw;
-  }
-
-  @include respond(big-desk) {
-    width: 100vw;
-  }
 }

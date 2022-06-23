@@ -1,3 +1,114 @@
+.menu {
+  @include fullSiteWidth;
+  background-color: $color-primary-light;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all 0.5s;
+
+  @include respond(tab-land) {
+    width: 100%;
+    height: 100vh;
+    padding: 25rem 6rem 0;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    font-weight: 400;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+    height: 100vh;
+    padding: 25rem 6rem 0;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    font-weight: 300;
+  }
+}
+.q-links {
+  @include containerWidth-L;
+  @include flexRow;
+  height: 4rem;
+
+  @include respond(tab-land) {
+    width: 20rem;
+    display: block;
+    margin: 0;
+  }
+
+  @include respond(tab-port) {
+    @include fullSiteWidth;
+    display: block;
+  }
+
+  a {
+    padding: 1.6rem 1rem;
+  }
+
+  ul {
+    @include zeroAround;
+    align-self: center;
+
+    li {
+      text-transform: uppercase;
+      list-style-type: none;
+      display: inline-block;
+
+      @include respond(tab-land) {
+        display: block;
+        margin: 2rem 0;
+      }
+
+      @include respond(tab-port) {
+        display: block;
+      }
+
+      a {
+        @include navlinks;
+
+        @include respond(tab-land) {
+          @include zeroAround;
+        }
+
+        @include respond(tab-port) {
+          @include zeroAround;
+        }
+      }
+    }
+  }
+  &__left {
+    a:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &__right {
+    a:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+#menubtn {
+  position: absolute;
+  top: 6.4rem;
+  right: 5rem;
+  z-index: 10000;
+  width: 3rem;
+  height: 3rem;
+  display: none;
+
+  @include respond(tab-land) {
+    display: block;
+  }
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
 .site-links {
   @include fullSiteWidth;
   font-size: 1.1rem;
@@ -10,6 +121,10 @@
   z-index: 110;
   box-shadow: 0 0.5rem 2rem rgba($color-black, 0.3);
   transition: all 0.5s;
+
+  @include respond(tab-land) {
+    width: 40rem;
+  }
 }
 
 .navbar {
@@ -17,11 +132,35 @@
   @include flexRow;
   height: 8rem;
   transition: all 0.5s;
+
+  @include respond(tab-land) {
+    @include fullSiteWidth;
+    display: block;
+    position: relative;
+  }
+
+  @include respond(tab-port) {
+    @include fullSiteWidth;
+    display: block;
+    position: relative;
+  }
 }
 
 .logo {
   align-self: center;
   line-height: 0;
+
+  @include respond(tab-land) {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+  }
+
+  @include respond(tab-port) {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+  }
 
   &__img {
     width: 15rem;
