@@ -114,7 +114,7 @@ p {
         width: 85%; }
 
 .apply {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-image: linear-gradient(to bottom, #112c7e, #3052b9); }
 
@@ -421,7 +421,7 @@ p {
             margin-left: 0.5rem; }
 
 .header {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   display: block;
@@ -433,8 +433,17 @@ p {
     display: block;
     background-color: rgba(0, 0, 0, 0.6);
     mix-blend-mode: multiply; }
+    @media (max-width: 56.25em) {
+      .header__background {
+        width: 100%; } }
+    @media (max-width: 75em) {
+      .header__background {
+        width: 100%; } }
+    @media (min-width: 112.5em) {
+      .header__background {
+        width: 100%; } }
   .header__video {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     z-index: -1; }
   .header__eventblogs {
@@ -446,7 +455,7 @@ p {
     z-index: 2; }
 
 .site-links {
-  width: 100%;
+  width: 100vw;
   font-size: 1.1rem;
   letter-spacing: 1px;
   font-weight: 500;
@@ -578,7 +587,7 @@ p {
   border-left: 3px solid red; }
 
 .section-news {
-  width: 100%;
+  width: 100vw;
   text-align: center; }
   .section-news h1 {
     width: 120rem;
@@ -686,7 +695,7 @@ p {
       color: #ef7c00; }
 
 .menu {
-  width: 100%;
+  width: 100vw;
   background-color: #3052b9;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -727,7 +736,7 @@ p {
     padding-right: 0; }
 
 .section-recognition {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: #eee;
   text-align: center; }
@@ -2020,13 +2029,28 @@ section {
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 65%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; }
+  @media (max-width: 75em) {
+    body {
+      width: 100vw; } }
+  @media (max-width: 56.25em) {
+    body {
+      width: 100vw; } }
+  @media (min-width: 112.5em) {
+    body {
+      width: 100vw; } }
