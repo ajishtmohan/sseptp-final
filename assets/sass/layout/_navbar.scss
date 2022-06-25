@@ -17,10 +17,11 @@
     width: $full-width;
     height: 100%;
     background-color: $color-primary-light;
-    padding: 30rem 7rem;
+    padding: 20rem 7rem;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 400;
+    text-transform: capitalize;
   }
 
   .quick-menu {
@@ -140,7 +141,7 @@
           display: block;
           position: absolute;
           width: 20rem;
-          top: 5rem;
+          top: 3rem;
           left: 8rem;
         }
 
@@ -216,6 +217,7 @@
               border-top: 2px solid $color-tertiary-dark;
               opacity: 0;
               visibility: hidden;
+              font-weight: 600;
               transition: all 0.4s;
               box-shadow: 0 1rem 1rem rgba($color-black, 0.3);
               @include zeroAround;
@@ -235,13 +237,15 @@
                 list-style-type: none;
                 display: block;
                 text-transform: uppercase;
-                font-weight: 300;
+                font-weight: 500;
                 border-bottom: 1px solid $color-secondary-dark;
                 position: relative;
 
                 @include respond(tab-land) {
                   border-bottom: none;
                   background-color: $color-primary-dark;
+                  font-weight: 400;
+                  text-transform: capitalize;
                 }
 
                 a {
@@ -290,7 +294,7 @@
                     border-top: none;
                     top: 0;
                     // text-transform: capitalize;
-                    left: 17rem;
+                    left: 21rem;
                   }
 
                   &__item {
@@ -331,12 +335,22 @@
   #nav-toggle {
     position: absolute;
     margin-top: -100px;
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 
   .icon-burger {
     position: absolute;
     right: 10rem;
-    top: 5rem;
+    top: 3rem;
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;
+    }
 
     &__line {
       width: 3rem;
