@@ -1,0 +1,349 @@
+.nav {
+  width: $full-width;
+  height: auto;
+  position: relative;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: $color-white;
+  transition: all 0.3s;
+
+  @include respond(tab-land) {
+    width: $full-width;
+    height: 100%;
+    background-color: $color-primary-light;
+    padding: 30rem 7rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .quick-menu {
+    width: $full-width;
+    background-color: $color-primary-light;
+    height: 4rem;
+    display: block;
+
+    @include respond(tab-land) {
+      width: auto;
+      height: auto;
+      background-color: transparent;
+    }
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+
+      @include respond(tab-land) {
+        display: block;
+      }
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+        padding: 1.25rem 0;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $color-secondary-light;
+          text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
+        }
+
+        @include respond(tab-land) {
+          padding: 1.25rem 0 1.25rem 1.5rem;
+          width: 100%;
+          display: block;
+
+          &:hover {
+            background-color: $color-primary-dark;
+
+            @include respond(tab-land) {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+
+    .quicklinks {
+      @include containerWidth-L;
+      @include flexRow;
+      height: 4rem;
+      align-items: center;
+
+      @include respond(tab-land) {
+        width: 20rem;
+        height: auto;
+        display: inline-block;
+        @include zeroAround;
+        float: left;
+      }
+
+      &__left {
+        &--item {
+          margin-right: 1rem;
+
+          @include respond(tab-land) {
+            @include zeroAround;
+            // padding: 1.2rem 0;
+          }
+        }
+      }
+      &__right {
+        &--item {
+          margin-left: 1rem;
+
+          @include respond(tab-land) {
+            @include zeroAround;
+            // padding: 1.2rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .site-menu {
+    width: $full-width;
+    background-color: $color-primary-dark;
+    height: 8rem;
+    display: block;
+
+    @include respond(tab-land) {
+      width: auto;
+      background-color: transparent;
+      margin-left: 20rem;
+    }
+
+    .sitelinks {
+      @include containerWidth-L;
+      @include flexRow;
+      height: 8rem;
+
+      @include respond(tab-land) {
+        display: inline-block;
+        width: 30rem;
+      }
+
+      &__logo {
+        width: 14rem;
+        height: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond(tab-land) {
+          display: block;
+          position: absolute;
+          width: 20rem;
+          top: 5rem;
+          left: 8rem;
+        }
+
+        img {
+          display: block;
+        }
+      }
+
+      &__links {
+        width: auto;
+        height: 8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include respond(tab-land) {
+          display: block;
+          width: 15.5rem;
+        }
+
+        .site-link-main {
+          @include zeroAround;
+
+          &__item {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 1.5rem;
+            position: relative;
+
+            @include respond(tab-land) {
+              display: block;
+              @include zeroAround;
+            }
+
+            a {
+              color: $color-white;
+              text-decoration: none;
+              padding: 3.3rem 0;
+              transition: all 0.3s;
+
+              @include respond(tab-land) {
+                padding: 1.25rem 0 1.25rem 1.5rem;
+                width: 100%;
+                display: block;
+
+                &:hover {
+                  background-color: $color-primary-dark;
+                }
+              }
+
+              &:hover {
+                color: $color-secondary-light;
+
+                @include respond(tab-land) {
+                  color: $color-white;
+                }
+              }
+            }
+
+            &:hover .site-link-sub {
+              opacity: 1;
+              visibility: visible;
+              top: 4.8rem;
+            }
+
+            .site-link-sub {
+              width: auto;
+              height: auto;
+              display: block;
+              position: absolute;
+              top: 6rem;
+              background-color: $color-primary-dark;
+              border-top: 2px solid $color-tertiary-dark;
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.4s;
+              box-shadow: 0 1rem 1rem rgba($color-black, 0.3);
+              @include zeroAround;
+
+              @include respond(tab-land) {
+                width: auto;
+                position: absolute;
+                left: 15.5rem;
+                background-color: transparent;
+                margin-top: -4.8rem;
+                border-top: none;
+                box-shadow: none;
+              }
+
+              &__item {
+                width: 100%;
+                list-style-type: none;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 300;
+                border-bottom: 1px solid $color-secondary-dark;
+                position: relative;
+
+                @include respond(tab-land) {
+                  border-bottom: none;
+                  background-color: $color-primary-dark;
+                }
+
+                a {
+                  padding: 1rem 1rem;
+                  display: block;
+                  @include navlinks;
+                  text-decoration: none;
+
+                  @include respond(tab-land) {
+                    padding: 1.25rem 1.5rem;
+                  }
+
+                  -webkit-transition: opacity 0.1s ease-in;
+                  -moz-transition: opacity 0.1s ease-in;
+                  -o-transition: opacity 0.1s ease-in;
+                  transition: opacity 0.1s ease-in;
+
+                  &:hover {
+                    background-color: darken($color-primary-dark, 5%);
+                    color: $color-tertiary-light;
+                  }
+
+                  .right-arrow {
+                    display: inline-block;
+                    position: absolute;
+                    right: 1rem;
+                  }
+                }
+
+                .site-link-sub-sec {
+                  width: 20rem;
+                  background-color: $color-primary-dark;
+                  position: absolute;
+                  top: -2px;
+                  left: 18rem;
+                  border-top: 2px solid $color-tertiary-dark;
+                  box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+                  padding: 0;
+                  box-sizing: border-box;
+                  visibility: hidden;
+                  opacity: 0;
+                  transition: all 0.2s;
+
+                  @include respond(tab-land) {
+                    width: 40rem;
+                    border-top: none;
+                    top: 0;
+                    // text-transform: capitalize;
+                    left: 17rem;
+                  }
+
+                  &__item {
+                    width: 100%;
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    border-bottom: 1px solid $color-secondary-dark;
+
+                    @include respond(tab-land) {
+                      border-bottom: none;
+                    }
+
+                    &:hover {
+                      background-color: darken($color-primary-dark, 5%);
+                    }
+
+                    a:link {
+                      display: block;
+                      margin: 0;
+                      padding: 0.9rem 1.5rem;
+                    }
+                  }
+                }
+
+                &:hover .site-link-sub-sec {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #nav-toggle {
+    position: absolute;
+    margin-top: -100px;
+  }
+
+  .icon-burger {
+    position: absolute;
+    right: 10rem;
+    top: 5rem;
+
+    &__line {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-white;
+      margin: 0.8rem;
+      border-radius: 10px;
+    }
+  }
+}
