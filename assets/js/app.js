@@ -1,5 +1,86 @@
 'use strict';
 
+window.addEventListener('resize', resizeHandler);
+
+function resizeHandler() {
+  let screenSize = window.innerWidth;
+  console.log(screenSize);
+  if (screenSize > 1250) {
+    window1250px();
+  } else if (screenSize < 1250 && screenSize >= 900) {
+    window900to1250();
+  }
+}
+
+// For 1200px and above
+const window1250px = function () {
+  let screenSize = window.innerWidth;
+  if (screenSize >= 1250) {
+    // MENU MANIPULATION
+
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+
+      if (prevScrollpos > currentScrollPos) {
+        // Show standard menu
+        setTimeout(function () {
+          document.querySelector('.nav').style.top = '0';
+          document.querySelector('.site-menu').style.top = '4rem';
+          document.querySelector('.site-menu').style.height = '8rem';
+          document.querySelector('.sitelinks').style.height = '8rem';
+          document.querySelector('.site-link-main').style.height = '8rem';
+          document.querySelector('.sitelinks__logo').style.height = '8rem';
+          document.querySelector('.sitelinks__logo').style.width = '14rem';
+
+          // Main menu items settings
+          const navbarLinks = document.querySelectorAll(
+            '.site-link-main__item'
+          );
+          for (let i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].style.padding = '3.3rem 0';
+          }
+
+          const submenu = document.querySelectorAll('.site-link-sub');
+          for (let i = 0; i < submenu.length; i++) {
+            submenu[i].style.top = '8rem';
+          }
+        }, 300);
+      } else {
+        // Show minimal menu
+        setTimeout(function () {
+          document.querySelector('.nav').style.top = '-4rem';
+          document.querySelector('.site-menu').style.top = '0';
+          document.querySelector('.site-menu').style.height = '5rem';
+          document.querySelector('.sitelinks').style.height = '5rem';
+          document.querySelector('.site-link-main').style.height = '5rem';
+          document.querySelector('.sitelinks__logo').style.height = '5rem';
+          document.querySelector('.sitelinks__logo').style.width = '9rem';
+
+          // Main menu items settings
+          const navbarLinks = document.querySelectorAll(
+            '.site-link-main__item'
+          );
+          for (let i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].style.padding = '0.3rem 0';
+          }
+
+          const submenu = document.querySelectorAll('.site-link-sub');
+          for (let i = 0; i < submenu.length; i++) {
+            submenu[i].style.top = '3.4rem';
+          }
+        }, 300);
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  }
+};
+
+const window900to1250 = function () {
+  console.log('window900to1250 working');
+};
+
+/*
 // MENU MANIPULATION
 
 let prevScrollpos = window.pageYOffset;
@@ -53,6 +134,7 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+*/
 
 /////////// PAGE ELEMENT ANIMATIONS /////////
 
