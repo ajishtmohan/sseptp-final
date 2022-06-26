@@ -9,37 +9,43 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     // Show standard menu
     setTimeout(function () {
-      document.querySelector('.menu').style.top = '0';
-      document.querySelector('.site-links').style.top = '4rem';
-      document.querySelector('.navbar').style.height = '8rem';
-      document.querySelector('.logo__img').style.width = '15rem';
+      document.querySelector('.nav').style.top = '0';
+      document.querySelector('.site-menu').style.top = '4rem';
+      document.querySelector('.site-menu').style.height = '8rem';
+      document.querySelector('.sitelinks').style.height = '8rem';
+      document.querySelector('.site-link-main').style.height = '8rem';
+      document.querySelector('.sitelinks__logo').style.height = '8rem';
+      document.querySelector('.sitelinks__logo').style.width = '14rem';
 
       // Main menu items settings
-      const navbarLinks = document.querySelectorAll('.navigation__item--link');
+      const navbarLinks = document.querySelectorAll('.site-link-main__item');
       for (let i = 0; i < navbarLinks.length; i++) {
-        navbarLinks[i].style.padding = '3.2rem 0 3.2rem 1.6rem';
+        navbarLinks[i].style.padding = '3.3rem 0';
       }
 
-      const submenu = document.querySelectorAll('.submenu');
+      const submenu = document.querySelectorAll('.site-link-sub');
       for (let i = 0; i < submenu.length; i++) {
-        submenu[i].style.top = '4.9rem';
+        submenu[i].style.top = '8rem';
       }
     }, 300);
   } else {
     // Show minimal menu
     setTimeout(function () {
-      document.querySelector('.menu').style.top = '-4rem';
-      document.querySelector('.site-links').style.top = '0';
-      document.querySelector('.navbar').style.height = '5rem';
-      document.querySelector('.logo__img').style.width = '10rem';
+      document.querySelector('.nav').style.top = '-4rem';
+      document.querySelector('.site-menu').style.top = '0';
+      document.querySelector('.site-menu').style.height = '5rem';
+      document.querySelector('.sitelinks').style.height = '5rem';
+      document.querySelector('.site-link-main').style.height = '5rem';
+      document.querySelector('.sitelinks__logo').style.height = '5rem';
+      document.querySelector('.sitelinks__logo').style.width = '9rem';
 
       // Main menu items settings
-      const navbarLinks = document.querySelectorAll('.navigation__item--link');
+      const navbarLinks = document.querySelectorAll('.site-link-main__item');
       for (let i = 0; i < navbarLinks.length; i++) {
-        navbarLinks[i].style.padding = '1.8rem 0 1.8rem 1.6rem';
+        navbarLinks[i].style.padding = '0.3rem 0';
       }
 
-      const submenu = document.querySelectorAll('.submenu');
+      const submenu = document.querySelectorAll('.site-link-sub');
       for (let i = 0; i < submenu.length; i++) {
         submenu[i].style.top = '3.4rem';
       }
@@ -49,192 +55,209 @@ window.onscroll = function () {
 };
 
 let siteLinks = document.querySelector('.menu');
-console.log(siteLinks);
-siteLinks.innerHTML = `<div class="q-links">
-<ul class="q-links__left">
-  <li><a href="#">Contact</a></li>
-  <li><a href="#">Apply Now</a></li>
-</ul>
-<ul class="q-links__right">
-  <li><a href="#">Calendar</a></li>
-  <li><a href="#">Portal</a></li>
-  <li><a href="#">Moodle Login</a></li>
-  <li><a href="#">Degree Verification</a></li>
-</ul>
-</div>
-<div class="site-links">
-<div class="navbar">
-  <div class="logo">
-  <a href="index.html">
-      <img class="logo__img" src="assets/img/sse-logo.svg" alt="" />
-    </a>
+// console.log(siteLinks);
+siteLinks.innerHTML = `<input type="checkbox" name="menu-button" id="menubtn" />
+<div class="nav">
+  <input type="checkbox" name="" id="nav-toggle" />
+  <div class="menu-container">
+    <div class="menu-background"></div>
+    <div class="quick-menu">
+      <!-- <p class="quick-title">Quick Links</p> -->
+      <div class="quicklinks">
+        <ul class="quicklinks__left">
+          <li class="quicklinks__left--item"><a href="#">contact</a></li>
+          <li class="quicklinks__left--item"><a href="#">apply now</a></li>
+        </ul>
+        <ul class="quicklinks__right">
+          <li class="quicklinks__right--item"><a href="#">calendar</a></li>
+          <li class="quicklinks__right--item"><a href="#">portal</a></li>
+          <li class="quicklinks__right--item">
+            <a href="#">moodle login</a>
+          </li>
+          <li class="quicklinks__right--item">
+            <a href="#">degree verification</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-menu">
+      <div class="sitelinks">
+        <div class="sitelinks__logo">
+          <img src="/assets/img/sse-logo.svg" alt="" />
+        </div>
+        <div class="sitelinks__links">
+          <ul class="site-link-main">
+            <li class="site-link-main__item"><a href="#">Home</a></li>
+            <li class="site-link-main__item">
+              <a href="#">About Us ↓</a>
+              <ul class="site-link-sub">
+                <li class="site-link-sub__item">
+                  <a href="our-heritage.html">Our&nbsp;Heritage </a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="our-vision-mission.html"
+                    >Vision&nbsp;&&nbsp;Mission</a
+                  >
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="chairman-message.html">Chairman&nbsp;Message</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="dean-message.html">Dean&nbsp;Message</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="principal-message.html"
+                    >Principal&nbsp;Message</a
+                  >
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="secretary-message.html"
+                    >Secretary&nbsp;Message</a
+                  >
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="industry-interface.html"
+                    >Industry&nbsp;Interface</a
+                  >
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="recognition-affiliation.html"
+                    >Affiliation&nbsp;&&nbsp;Recognition
+                  </a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="governing-body.html">Governing&nbsp;Body</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-link-main__item">
+              <a href="#">Academics ↓</a>
+              <ul class="site-link-sub">
+                <li class="site-link-sub__item">
+                  <a href="courses.html"
+                    >Courses <span class="right-arrow">&#8594;</span></a
+                  >
+                  <ul class="site-link-sub-sec">
+                    <li class="site-link-sub-sec__item">
+                      <a href="computer-science.html"
+                        >Computer Science & Engineering (SOSO)
+                      </a>
+                    </li>
+                    <li class="site-link-sub-sec__item">
+                      <a href="electronics-communication.html"
+                        >Electronics & Communication Engineering (SLICE)
+                      </a>
+                    </li>
+                    <li class="site-link-sub-sec__item">
+                      <a href="electrical-electronics.html"
+                        >Electrical & Electronics Engineering (PPP)
+                      </a>
+                    </li>
+                    <li class="site-link-sub-sec__item">
+                      <a href="mechanical-engineering.html"
+                        >Mechanical Engineering (SMILE)
+                      </a>
+                    </li>
+                    <li class="site-link-sub-sec__item">
+                      <a href="civil-engineering.html"
+                        >Civil Engineering (FORCE)
+                      </a>
+                    </li>
+                    <li class="site-link-sub-sec__item">
+                      <a href="humanities-science.html"
+                        >Humanities and Science
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="sse-faculty.html">Faculty</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="value-added-courses.html"
+                    >Value&nbsp;added&nbsp;Courses
+                  </a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="examinations.html">Examinations </a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="syllabus.html">Syllabus </a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="e-resources.html">Fee&nbsp;Structure </a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-link-main__item">
+              <a href="placements.html">Placements</a>
+            </li>
+            <li class="site-link-main__item">
+              <a href="#">IQAC ↓</a>
+              <ul class="site-link-sub">
+                <li class="site-link-sub__item">
+                  <a href="#">Members</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">sse&nbsp;best&nbsp;practices</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">Annual&nbsp;Reports</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-link-main__item">
+              <a href="committees.html">Committies</a>
+            </li>
+            <li class="site-link-main__item">
+              <a href="#">Facilities ↓</a>
+              <ul class="site-link-sub">
+                <li class="site-link-sub__item">
+                  <a href="#">Campus</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">library</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">IT&nbsp;Infrastructure</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">Sports&nbsp;Ground</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">Residential&nbsp;Facilities</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">Transport</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-link-main__item">
+              <a href="#">SSE Media ↓</a>
+              <ul class="site-link-sub">
+                <li class="site-link-sub__item">
+                  <a href="#">newsletters</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">brochures</a>
+                </li>
+                <li class="site-link-sub__item">
+                  <a href="#">sse&nbsp;newspaper articles</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-link-main__item">
+              <a href="#">Mandataries</a>
+            </li>
+            <li class="site-link-main__item"><a href="#">Alumni</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="icon-burger__line"></div>
+      <div class="icon-burger__line"></div>
+      <div class="icon-burger__line"></div>
+    </label>
   </div>
-  <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item"><a class="navigation__item--link" href="index.html">Home</a></li>
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">About Us ↓</a>
-  
-        <ul class="submenu">
-          <li class="submenu__item linked">
-            <a href="our-heritage.html">Our&nbsp;Heritage </a>
-          </li>
-          <li class="submenu__item linked">
-            <a href="our-vision-mission.html">Vision&nbsp;&&nbsp;Mission</a>
-          </li>
-          <li class="submenu__item linked">
-            <a href="chairman-message.html">Chairman&nbsp;Message</a>
-          </li>
-          <li class="submenu__item linked"><a href="dean-message.html">Dean&nbsp;Message</a></li>
-          <li class="submenu__item linked">
-            <a href="principal-message.html">Principal&nbsp;Message</a>
-          </li>
-          <li class="submenu__item linked">
-            <a href="secretary-message.html">Secretary&nbsp;Message</a>
-          </li>
-          <li class="submenu__item linked">
-            <a href="industry-interface.html">Industry&nbsp;Interface</a>
-          </li>
-          <li class="submenu__item linked alert">
-            <a href="recognition-affiliation.html">Affiliation&nbsp;&&nbsp;Recognition </a>
-          </li>
-          <li class="submenu__item linked alert">
-            <a href="governing-body.html">Governing&nbsp;Body</a>
-          </li>
-          <li class="submenu__item linked alert"><a href="rise.html">RISE</a></li>
-        </ul>
-      </li>
-  
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">Academics ↓</a>
-        <ul class="submenu">
-          <li class="submenu__item linked">
-            <a href="courses.html">Courses »</a>
-            <ul class="submenu-2">
-              <li class="linked">
-                <a href="computer-science.html"
-                  >Computer Science & Engineering (SOSO)</a
-                >
-              </li>
-              <li class="linked">
-                <a href="electronics-communication.html"
-                  >Electronics & Communication Engineering (SLICE)</a
-                >
-              </li>
-              <li class="linked">
-                <a href="electrical-electronics.html">Electrical & Electronics Engineering (PPP)</a>
-              </li>
-              <li class="linked">
-                <a href="mechanical-engineering.html">Mechanical Engineering (SMILE)</a>
-              </li>
-              <li class="linked">
-                <a href="civil-engineering.html">Civil Engineering (FORCE)</a>
-              </li>
-              <li class="linked">
-                <a href="humanities-science.html">Humanities and Science</a>
-              </li>
-            </ul>
-          </li>
-          <li class="submenu__item linked">
-            <a href="sse-faculty.html">Faculty</a>
-          </li>
-          <li class="submenu__item linked">
-            <a href="value-added-courses.html">Certification&nbsp;Courses</a>
-          </li>
-          <li class="submenu__item linked alert"><a href="examinations.html">Examinations</a></li>
-          <li class="submenu__item linked alert">
-            <a href="syllabus.html">Syllabus</a>
-          </li>
-          <li class="submenu__item linked alert">
-            <a href="e-resources.html">Fee Structure</a>
-          </li>
-        </ul>
-      </li>
-  
-      <li class="navigation__item linked">
-        <a class="navigation__item--link" href="placements.html">Placements</a>
-        <!-- <ul class="submenu">
-          <li class="submenu__item">
-            <a href="#">Vision&nbsp;&&nbsp;Mission</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Modus&nbsp;Operandi</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Placements&nbsp;Team</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Our&nbsp;Recruiters</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Recruitment&nbsp;details</a>
-          </li>
-        </ul> -->
-      </li>
-  
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">IQAC ↓</a>
-        <ul class="submenu">
-          <li class="submenu__item">
-            <a href="#">Members</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">SSE&nbsp;Best&nbsp;Practices</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Annual&nbsp;Reports</a>
-          </li>
-        </ul>
-      </li>
-  
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="committees.html">Committies</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">Facilities</a>
-        <ul class="submenu">
-          <li class="submenu__item">
-            <a href="#">Campus</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Library</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">IT&nbsp;Infrastructure</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Sports&nbsp;Ground</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Residential&nbsp;Faclities</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Transport</a>
-          </li>
-        </ul>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">SSE Media</a>
-        <ul class="submenu">
-          <li class="submenu__item">
-            <a href="#">Newsletters</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">Brochures</a>
-          </li>
-          <li class="submenu__item">
-            <a href="#">SSE&nbsp;Newspaper Articles</a>
-          </li>
-        </ul>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">Mandataries</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__item--link" href="#">Alumni</a>
-      </li>
-    </ul>
-  </nav>
-</div>
 </div>`;

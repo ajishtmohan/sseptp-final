@@ -9,37 +9,43 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     // Show standard menu
     setTimeout(function () {
-      document.querySelector('.menu').style.top = '0';
-      document.querySelector('.site-links').style.top = '4rem';
-      document.querySelector('.navbar').style.height = '8rem';
-      document.querySelector('.logo__img').style.width = '16rem';
+      document.querySelector('.nav').style.top = '0';
+      document.querySelector('.site-menu').style.top = '4rem';
+      document.querySelector('.site-menu').style.height = '8rem';
+      document.querySelector('.sitelinks').style.height = '8rem';
+      document.querySelector('.site-link-main').style.height = '8rem';
+      document.querySelector('.sitelinks__logo').style.height = '8rem';
+      document.querySelector('.sitelinks__logo').style.width = '14rem';
 
       // Main menu items settings
-      const navbarLinks = document.querySelectorAll('.navigation__item--link');
+      const navbarLinks = document.querySelectorAll('.site-link-main__item');
       for (let i = 0; i < navbarLinks.length; i++) {
-        navbarLinks[i].style.padding = '3.2rem 0 3.2rem 1.6rem';
+        navbarLinks[i].style.padding = '3.3rem 0';
       }
 
-      const submenu = document.querySelectorAll('.submenu');
+      const submenu = document.querySelectorAll('.site-link-sub');
       for (let i = 0; i < submenu.length; i++) {
-        submenu[i].style.top = '4.9rem';
+        submenu[i].style.top = '8rem';
       }
     }, 300);
   } else {
     // Show minimal menu
     setTimeout(function () {
-      document.querySelector('.menu').style.top = '-4rem';
-      document.querySelector('.site-links').style.top = '0';
-      document.querySelector('.navbar').style.height = '5rem';
-      document.querySelector('.logo__img').style.width = '10rem';
+      document.querySelector('.nav').style.top = '-4rem';
+      document.querySelector('.site-menu').style.top = '0';
+      document.querySelector('.site-menu').style.height = '5rem';
+      document.querySelector('.sitelinks').style.height = '5rem';
+      document.querySelector('.site-link-main').style.height = '5rem';
+      document.querySelector('.sitelinks__logo').style.height = '5rem';
+      document.querySelector('.sitelinks__logo').style.width = '9rem';
 
       // Main menu items settings
-      const navbarLinks = document.querySelectorAll('.navigation__item--link');
+      const navbarLinks = document.querySelectorAll('.site-link-main__item');
       for (let i = 0; i < navbarLinks.length; i++) {
-        navbarLinks[i].style.padding = '1.8rem 0 1.8rem 1.6rem';
+        navbarLinks[i].style.padding = '0.3rem 0';
       }
 
-      const submenu = document.querySelectorAll('.submenu');
+      const submenu = document.querySelectorAll('.site-link-sub');
       for (let i = 0; i < submenu.length; i++) {
         submenu[i].style.top = '3.4rem';
       }
@@ -68,7 +74,7 @@ function isInFullView(element) {
 }
 
 function isTopInView(element, pos = 0.8) {
-  console.log(pos);
+  // console.log(pos);
   let bounding = element.getBoundingClientRect();
 
   if (bounding.top <= window.innerHeight * pos) {
