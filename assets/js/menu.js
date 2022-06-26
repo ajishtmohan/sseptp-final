@@ -82,9 +82,10 @@ siteLinks.innerHTML = `<input type="checkbox" name="menu-button" id="menubtn" />
     </div>
     <div class="site-menu">
       <div class="sitelinks">
-        <div class="sitelinks__logo">
-          <img src="/assets/img/sse-logo.svg" alt="" />
-        </div>
+        <a href="index.html">
+          <div class="sitelinks__logo">
+            <img src="/assets/img/sse-logo.svg" alt="" /></div
+        ></a>
         <div class="sitelinks__links">
           <ul class="site-link-main">
             <li class="site-link-main__item"><a href="#">Home</a></li>
