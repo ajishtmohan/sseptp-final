@@ -580,7 +580,7 @@ p {
             top: 1.8rem;
             left: 8rem; } }
         .nav .site-menu .sitelinks__logo img {
-          height: 70%;
+          height: 85%;
           display: block;
           transition: all 0.3s;
           text-align: left; }
@@ -736,7 +736,7 @@ p {
     display: none; }
     @media (max-width: 78.12em) {
       .nav #nav-toggle {
-        display: block; } }
+        display: none; } }
   .nav .icon-burger {
     position: absolute;
     right: 10rem;

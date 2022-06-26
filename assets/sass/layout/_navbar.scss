@@ -147,7 +147,7 @@
         }
 
         img {
-          height: 70%;
+          height: 85%;
           display: block;
           transition: all 0.3s;
           text-align: left;
@@ -346,8 +346,7 @@
     display: none;
 
     @include respond(tab-land) {
-      display: block;
-      // top: -20rem;
+      display: none;
     }
   }
 
