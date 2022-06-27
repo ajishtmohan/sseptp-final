@@ -2,7 +2,8 @@
 
 let siteLinks = document.querySelector('.nav');
 // console.log(siteLinks);
-siteLinks.innerHTML = `<input type="checkbox" name="" id="nav-toggle" />
+siteLinks.innerHTML = `
+<input type="checkbox" name="" id="nav-toggle" />
 
 <div class="quick-menu">
   <!-- <p class="quick-title">Quick Links</p> -->

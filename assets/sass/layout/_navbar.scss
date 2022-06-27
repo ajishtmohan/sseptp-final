@@ -400,14 +400,16 @@
   }
 
   #nav-toggle {
-    position: absolute;
-    margin-top: -100px;
+    position: fixed;
+    // margin-top: -100px;
     display: none;
 
     @include respond(tab-land) {
       display: block;
+      position: absolute;
       z-index: 10000;
-      display: none;
+      margin-top: -1000px;
+      display: block;
     }
   }
 
