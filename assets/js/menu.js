@@ -2,8 +2,7 @@
 
 let siteLinks = document.querySelector('.nav');
 // console.log(siteLinks);
-siteLinks.innerHTML = `
-<input type="checkbox" name="" id="nav-toggle" />
+siteLinks.innerHTML = `<input type="checkbox" name="" id="nav-toggle" />
 
 <div class="quick-menu">
   <!-- <p class="quick-title">Quick Links</p> -->
@@ -32,7 +31,9 @@ siteLinks.innerHTML = `
     ></a>
     <div class="sitelinks__links">
       <ul class="site-link-main">
-        <li class="site-link-main__item"><a href="#">Home</a></li>
+        <li class="site-link-main__item">
+          <a href="index.html">Home</a>
+        </li>
         <li class="site-link-main__item">
           <a href="#">About Us ↓</a>
           <ul class="site-link-sub">
@@ -198,7 +199,9 @@ siteLinks.innerHTML = `
 <div class="mobile-nav">
   <div class="mobile-nav__header">
     <div class="mobile-nav__logo">
-      <img src="/assets/img/sse-logo.svg" alt="" />
+      <a href="index.html">
+        <img src="/assets/img/sse-logo.svg" alt=""
+      /></a>
     </div>
     <label for="nav-toggle" class="icon-burger">
       <div class="icon-burger__line"></div>
