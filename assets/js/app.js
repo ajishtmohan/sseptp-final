@@ -60,13 +60,23 @@ const window1250px = function () {
 const window900to1250 = function () {
   const menuCheck = document.getElementById('nav-toggle');
   const menuPanel = document.querySelector('.menu-panel');
+  const quickMenu = document.querySelector('.quick-menu');
+  const quicklinks = document.querySelector('.quicklinks');
+  const siteMenu = document.querySelector('.site-menu');
+
   menuCheck.addEventListener('change', function () {
     if (menuCheck.checked) {
       console.log('checked');
       menuPanel.style.cssText = 'visibility: visible; opacity: 1';
+      quicklinks.style.display = 'block';
+      quickMenu.style.display = 'inline-block';
+      siteMenu.style.display = 'inline-block';
     } else {
       console.log('unchecked');
       menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+      quicklinks.style.display = 'none';
+      quickMenu.style.display = 'none';
+      siteMenu.style.display = 'none';
     }
   });
 };

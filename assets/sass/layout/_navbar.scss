@@ -15,13 +15,13 @@
 
   @include respond(tab-land) {
     width: $full-width;
-    height: auto;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: capitalize;
     display: block;
-    background-color: $color-primary-light;
+    background-color: transparent;
+    padding: 20rem 6rem;
   }
 
   .quick-menu {
@@ -32,8 +32,10 @@
 
     @include respond(tab-land) {
       width: auto;
-      height: auto;
+      height: 100%;
       background-color: transparent;
+      display: block;
+      float: left;
     }
 
     li {
@@ -118,7 +120,6 @@
     @include respond(tab-land) {
       width: auto;
       background-color: transparent;
-      margin-left: 20rem;
       display: none;
     }
 
@@ -141,7 +142,7 @@
         transition: all 0.3s;
 
         @include respond(tab-land) {
-          display: block;
+          display: none;
           position: absolute;
           width: 18rem;
           top: 1.8rem;
@@ -351,7 +352,7 @@
     top: 0;
     left: 0;
     transition: all 0.3s;
-    z-index: 1000;
+    z-index: 20000;
 
     @include respond(tab-land) {
       position: absolute;
@@ -396,22 +397,6 @@
         }
       }
     }
-
-    .menu-panel {
-      position: absolute;
-      display: block;
-      transition: all 0.3s;
-
-      @include respond(tab-land) {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        display: block;
-        visibility: hidden;
-        background-color: $color-primary-light;
-        opacity: 0;
-      }
-    }
   }
 
   #nav-toggle {
@@ -422,6 +407,7 @@
     @include respond(tab-land) {
       display: block;
       z-index: 10000;
+      display: none;
     }
   }
 
@@ -433,6 +419,7 @@
 
     @include respond(tab-land) {
       display: block;
+      cursor: pointer;
     }
 
     &__line {
@@ -443,25 +430,22 @@
       border-radius: 10px;
     }
   }
-
-  .menu-background {
-    width: 100%;
-    height: 10rem;
-    background-color: $color-primary-dark;
-    opacity: 0.9;
-    display: none;
+  .menu-panel {
     position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
     transition: all 0.3s;
 
     @include respond(tab-land) {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
       display: block;
-      background-color: $color-primary-dark;
+      visibility: hidden;
+      background-color: $color-primary-light;
+      opacity: 0;
+      z-index: -100;
     }
   }
-}
-
-#nav-toggle:checked + .menu-background {
-  display: none;
 }
