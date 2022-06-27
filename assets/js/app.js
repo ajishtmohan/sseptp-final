@@ -58,30 +58,35 @@ const window1250px = function () {
 };
 
 const window900to1250 = function () {
-  // set site main link sizes
-  const navbarLinks = document.querySelectorAll('.site-link-main__item');
-  for (let i = 0; i < navbarLinks.length; i++) {
-    // (navbarLinks[i] > link).style.padding = '1.25rem 0 1.25rem 1.5rem';
-  }
+  const menuCheck = document.getElementById('nav-toggle');
+  const menuPanel = document.querySelector('.menu-panel');
+  menuCheck.addEventListener('change', function () {
+    if (menuCheck.checked) {
+      console.log('checked');
+      menuPanel.style.cssText = 'visibility: visible; opacity: 1';
+    } else {
+      console.log('unchecked');
+      menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+    }
+  });
 };
 
+// SCREENSIZE HANDLING
 window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
 
 function resizeHandler() {
+  window.onresize = function () {
+    location.reload();
+  };
+
   if (screenSize > 1250) {
     window1250px();
     console.log(screenSize);
-    window.onresize = function () {
-      location.reload();
-    };
     console.log('window1250');
   } else if (screenSize < 1250 && screenSize >= 900) {
     window900to1250();
     console.log(screenSize);
-    window.onresize = function () {
-      location.reload();
-    };
   }
 }
 

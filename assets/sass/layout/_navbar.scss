@@ -15,13 +15,13 @@
 
   @include respond(tab-land) {
     width: $full-width;
-    height: 100%;
-    background-color: $color-primary-light;
-    padding: 20rem 7rem;
+    height: auto;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: capitalize;
+    display: block;
+    background-color: $color-primary-light;
   }
 
   .quick-menu {
@@ -83,6 +83,7 @@
         display: inline-block;
         @include zeroAround;
         float: left;
+        display: none;
       }
 
       &__left {
@@ -118,6 +119,7 @@
       width: auto;
       background-color: transparent;
       margin-left: 20rem;
+      display: none;
     }
 
     .sitelinks {
@@ -340,20 +342,93 @@
     }
   }
 
+  .mobile-nav {
+    width: 100%;
+    background-color: $color-primary-dark;
+    opacity: 0.9;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    z-index: 1000;
+
+    @include respond(tab-land) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8rem;
+      display: block;
+      opacity: 1;
+      z-index: 1000;
+    }
+
+    &__header {
+      width: 100%;
+      height: 8rem;
+
+      .mobile-nav__logo {
+        width: 14rem;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.3s;
+
+        @include respond(tab-land) {
+          display: block;
+          position: absolute;
+          width: 18rem;
+          top: 1.2rem;
+          left: 8rem;
+        }
+
+        img {
+          height: 85%;
+          display: block;
+          transition: all 0.3s;
+          text-align: left;
+
+          @include respond(tab-land) {
+            align-self: center;
+          }
+        }
+      }
+    }
+
+    .menu-panel {
+      position: absolute;
+      display: block;
+      transition: all 0.3s;
+
+      @include respond(tab-land) {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: block;
+        visibility: hidden;
+        background-color: $color-primary-light;
+        opacity: 0;
+      }
+    }
+  }
+
   #nav-toggle {
     position: absolute;
     margin-top: -100px;
     display: none;
 
     @include respond(tab-land) {
-      display: none;
+      display: block;
+      z-index: 10000;
     }
   }
 
   .icon-burger {
     position: absolute;
     right: 10rem;
-    top: 3rem;
+    top: 2rem;
     display: none;
 
     @include respond(tab-land) {
