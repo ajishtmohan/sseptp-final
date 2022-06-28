@@ -29,6 +29,9 @@
       box-sizing: border-box;
       transition: all 0.5s;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       h2 {
         @include blue-gradient;

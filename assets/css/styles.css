@@ -479,7 +479,7 @@ p {
       text-transform: capitalize;
       display: block;
       background-color: transparent;
-      padding: 20rem 6rem; } }
+      padding: 0 6rem; } }
   .nav .quick-menu {
     width: 100%;
     background-color: #3052b9;
@@ -1162,7 +1162,10 @@ p {
       padding: 4rem;
       box-sizing: border-box;
       transition: all 0.5s;
-      position: relative; }
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       .section-rise .rise__text h2 {
         display: inline-block;
         background-image: linear-gradient(to right, #112c7e, #33b0cc);

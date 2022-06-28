@@ -72,14 +72,14 @@ const window900to1250 = function () {
       quicklinks.style.display = 'block';
       quickMenu.style.display = 'inline-block';
       siteMenu.style.display = 'inline-block';
-      // nav.style.padding = '20rem 6rem';
+      nav.style.padding = '20rem 6rem';
     } else {
       console.log('unchecked');
       menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
       quicklinks.style.display = 'none';
       quickMenu.style.display = 'none';
       siteMenu.style.display = 'none';
-      // nav.style.padding = '0';
+      nav.style.padding = '0 6rem';
     }
   });
 };
@@ -193,7 +193,7 @@ specialities.style.transform = 'translateY(5rem)';
 window.addEventListener(
   'scroll',
   function (event) {
-    if (isTopInView(specialities)) {
+    if (isTopInView(specialities, 0.9)) {
       setInterval(() => {
         specialities.style.transform = 'translateY(0)';
         specialities.style.opacity = '1';
@@ -216,7 +216,7 @@ for (let i = 0; i < courseEl.length; i++) {
 }
 
 window.addEventListener('scroll', function (event) {
-  if (isTopInView(courses, 0.6)) {
+  if (isTopInView(courses, 0.8)) {
     for (let i = 0; i < courseEl.length; i++) {
       setInterval(() => {
         courseEl[i].style.opacity = '1';
@@ -244,7 +244,7 @@ for (let i = 0; i < sectionRiseEl.length; i++) {
 }
 
 window.addEventListener('scroll', function (event) {
-  if (isInFullView(sectionRise)) {
+  if (isTopInView(sectionRise, 0.8)) {
     for (let i = 0; i < sectionRiseEl.length; i++) {
       setInterval(() => {
         if (i < 2) {
@@ -275,7 +275,7 @@ for (let i = 0; i < academicsEl.length; i++) {
 }
 
 window.addEventListener('scroll', function (event) {
-  if (isInFullView(academics)) {
+  if (isTopInView(academics, 0.8)) {
     for (let i = 0; i < academicsEl.length; i++) {
       setInterval(function () {
         if (i == 0) {
@@ -306,7 +306,7 @@ for (let i = 0; i < certificationEl.length; i++) {
 }
 
 window.addEventListener('scroll', function (event) {
-  if (isInFullView(certification)) {
+  if (isTopInView(certification, 0.8)) {
     for (let i = 0; i < certificationEl.length; i++) {
       setInterval(function () {
         if (i == 0) {
