@@ -82,6 +82,21 @@ const window900to1250 = function () {
       nav.style.padding = '0 6rem';
     }
   });
+
+  // ACTIVE LINK IN MENU
+  /*
+  const siteMainLinks = document.querySelectorAll('.site-link-main__item');
+  for (let i = 0; i < siteMainLinks.length; i++) {
+    siteMainLinks[i].addEventListener('mouseover', function () {
+      let current = document.getElementsByClassName('site-link-main__item');
+      current[0].className = current[0].className.replace(
+        ' site-link-main__item',
+        ''
+      );
+      this.className += ' site-link-main__item--active';
+    });
+  }
+  */
 };
 
 // SCREENSIZE HANDLING
@@ -337,7 +352,7 @@ window.addEventListener('scroll', function (event) {
       setInterval(function () {
         clubsItem[i].style.top = '0';
         clubsItem[i].style.opacity = '1';
-      }, 300 * i + 300);
+      }, 100 * i + 100);
     }
   }
 });

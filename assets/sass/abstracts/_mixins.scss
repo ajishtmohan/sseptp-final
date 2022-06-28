@@ -208,7 +208,7 @@
   padding: 1.5rem 2.5rem;
   color: $color-white;
   font-weight: 400;
-  background-color: darken($color-secondary-light, 5%);
+  background-color: $color-secondary-dark;
 }
 
 @mixin course-page-sidebar-title {
