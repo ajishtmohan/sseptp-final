@@ -13,6 +13,10 @@
   height: auto;
   @include flexRow;
 
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
   .footer-item {
     width: 25%;
     color: $color-secondary-light;

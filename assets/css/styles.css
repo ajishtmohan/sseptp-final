@@ -95,7 +95,8 @@ p {
     gap: 3rem; }
     @media (max-width: 78.12em) {
       .academics .academic-block {
-        width: 90%; } }
+        width: 90%;
+        max-width: 100rem; } }
     .academics .academic-block__item {
       width: 20rem;
       height: 12rem;
@@ -137,6 +138,9 @@ p {
   background-color: #eee;
   text-align: center;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 78.12em) {
+    .apply-block {
+      width: 90%; } }
   .apply-block > div {
     width: 50%;
     height: 100%;
@@ -157,6 +161,9 @@ p {
       color: transparent;
       margin: 0;
       padding: 0; }
+      @media (max-width: 78.12em) {
+        .apply-block__text h1 {
+          font-size: 3rem; } }
     .apply-block__text h3 {
       color: #ef7c00;
       padding-bottom: 2rem; }
@@ -239,6 +246,9 @@ p {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media (max-width: 78.12em) {
+    .clubs {
+      width: 90%; } }
   .clubs .clubs-item {
     width: calc(100% / 3);
     height: 16rem;
@@ -247,7 +257,8 @@ p {
     box-sizing: border-box;
     position: relative;
     text-align: center;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    word-wrap: break-word; }
     .clubs .clubs-item__frame {
       width: 100%;
       height: 100%;
@@ -277,6 +288,9 @@ p {
       font-size: 2.4rem;
       font-weight: 300;
       transform: translate(-50%, -50%); }
+      @media (max-width: 78.12em) {
+        .clubs .clubs-item__h2 {
+          font-size: 2rem; } }
     .clubs .clubs-item:hover .clubs-item__frame {
       opacity: 1; }
     .clubs .clubs-item:hover .clubs-item__overlay {
@@ -295,6 +309,10 @@ p {
     flex-wrap: wrap;
     width: 120rem;
     margin: 0 auto; }
+    @media (max-width: 78.12em) {
+      .section-copyright .copyright {
+        width: 100%;
+        padding: 0 1rem; } }
     .section-copyright .copyright p {
       color: #33b0cc;
       display: inline-block;
@@ -302,6 +320,9 @@ p {
       padding: 0;
       width: auto;
       font-size: 1.2rem; }
+      @media (max-width: 78.12em) {
+        .section-copyright .copyright p {
+          font-size: 1.4rem; } }
 
 .courses {
   background-image: linear-gradient(to bottom, #112c7e, #3052b9);
@@ -388,6 +409,9 @@ p {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media (max-width: 78.12em) {
+    .container-content {
+      width: 100%; } }
   .container-content .footer-item {
     width: 25%;
     color: #33b0cc;
@@ -1077,6 +1101,9 @@ p {
   flex-wrap: wrap;
   gap: 3rem;
   margin-bottom: 4rem; }
+  @media (max-width: 78.12em) {
+    .news-block {
+      width: 90%; } }
   .news-block .news-item {
     display: flex;
     flex-direction: row;
@@ -1100,15 +1127,17 @@ p {
       height: 25rem;
       padding: 3rem;
       box-sizing: border-box;
-      text-align: left; }
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
       .news-block .news-item__text h3 {
         color: #112c7e;
         transition: all 0.3s; }
       .news-block .news-item__text p {
         width: 100%;
         text-align: left;
-        line-height: 2rem;
-        margin-bottom: 2rem; }
+        line-height: 2rem; }
       .news-block .news-item__text a {
         display: inline-block;
         text-transform: uppercase;
@@ -1119,7 +1148,8 @@ p {
         background-color: #ef7c00;
         padding: 0.4rem 0.8rem;
         box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
-        transition: all 0.1s; }
+        transition: all 0.1s;
+        display: inline-block; }
         .news-block .news-item__text a:hover {
           transform: translateY(-3px);
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
@@ -1140,7 +1170,13 @@ p {
     -webkit-background-clip: text;
     color: transparent; }
   .section-recognition p {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    width: 100rem;
+    margin: 0 auto; }
+    @media (max-width: 78.12em) {
+      .section-recognition p {
+        width: 80rem;
+        margin: 0 auto; } }
   .section-recognition .recognition-block {
     display: flex;
     flex-direction: row;
@@ -1201,6 +1237,9 @@ p {
         font-weight: 400;
         transition: all 0.5s;
         position: relative; }
+        @media (max-width: 78.12em) {
+          .section-rise .rise__text h2 {
+            font-size: 3rem; } }
       .section-rise .rise__text p {
         width: 100%;
         transition: all 0.5s;

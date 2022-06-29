@@ -24,6 +24,10 @@
   gap: 3rem;
   margin-bottom: $margin-small;
 
+  @include respond(tab-land) {
+    width: 90%;
+  }
+
   .news-item {
     @include flexRow;
     width: calc((100% - 3rem) / 2);
@@ -50,6 +54,9 @@
       padding: 3rem;
       box-sizing: border-box;
       text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       h3 {
         color: $color-primary-dark;
@@ -60,11 +67,11 @@
         width: 100%;
         text-align: left;
         line-height: 2rem;
-        margin-bottom: 2rem;
       }
 
       a {
         @include primary-btn;
+        display: inline-block;
       }
     }
 

@@ -2,6 +2,10 @@
   @include containerWidth-L;
   @include flexRow;
 
+  @include respond(tab-land) {
+    width: 90%;
+  }
+
   .clubs-item {
     width: calc(100% / 3);
     height: 16rem;
@@ -15,6 +19,7 @@
     position: relative;
     text-align: center;
     transition: all 0.3s;
+    word-wrap: break-word;
 
     &__frame {
       width: 100%;
@@ -52,6 +57,10 @@
       font-size: 2.4rem;
       font-weight: 300;
       transform: translate(-50%, -50%);
+
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
     }
 
     &:hover .clubs-item__frame {
