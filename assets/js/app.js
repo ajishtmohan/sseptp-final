@@ -67,19 +67,21 @@ const window900to1250 = function () {
 
   menuCheck.addEventListener('change', function () {
     if (menuCheck.checked) {
-      console.log('checked');
       menuPanel.style.cssText = 'visibility: visible; opacity: 1';
-      quicklinks.style.display = 'block';
-      quickMenu.style.display = 'inline-block';
-      siteMenu.style.display = 'inline-block';
-      nav.style.padding = '20rem 6rem';
+      setTimeout(function () {
+        quicklinks.style.display = 'block';
+        quickMenu.style.display = 'inline-block';
+        siteMenu.style.display = 'inline-block';
+        nav.style.padding = '20rem 6rem';
+      }, 300);
     } else {
-      console.log('unchecked');
-      menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
       quicklinks.style.display = 'none';
       quickMenu.style.display = 'none';
       siteMenu.style.display = 'none';
       nav.style.padding = '0 6rem';
+      setTimeout(function () {
+        menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+      }, 300);
     }
   });
 
