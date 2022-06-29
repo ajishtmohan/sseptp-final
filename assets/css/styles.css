@@ -213,7 +213,8 @@ p {
     transition: all 0.3s; }
     @media (max-width: 78.12em) {
       .certification .certification-block {
-        width: 70%; } }
+        width: 70%;
+        max-width: 75rem; } }
     .certification .certification-block__item {
       width: 20rem;
       height: 12rem;
