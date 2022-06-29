@@ -72,7 +72,8 @@ p {
 .academics {
   background-color: #e4e2e2;
   text-align: center;
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  width: 100%; }
   .academics--h1 {
     display: inline-block;
     background-image: linear-gradient(to right, #112c7e, #33b0cc);
@@ -92,6 +93,9 @@ p {
     transition: all 0.3s;
     position: relative;
     gap: 3rem; }
+    @media (max-width: 78.12em) {
+      .academics .academic-block {
+        width: 90%; } }
     .academics .academic-block__item {
       width: 20rem;
       height: 12rem;
@@ -101,6 +105,10 @@ p {
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
       transition: all 0.3s;
       border-radius: 3px; }
+      @media (max-width: 78.12em) {
+        .academics .academic-block__item {
+          width: 16rem;
+          height: 9rem; } }
       .academics .academic-block__item--img {
         width: 80%;
         position: absolute;
@@ -196,6 +204,9 @@ p {
     gap: 3rem;
     position: relative;
     transition: all 0.3s; }
+    @media (max-width: 78.12em) {
+      .certification .certification-block {
+        width: 70%; } }
     .certification .certification-block__item {
       width: 20rem;
       height: 12rem;
@@ -205,6 +216,10 @@ p {
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
       transition: all 0.3s;
       border-radius: 3px; }
+      @media (max-width: 78.12em) {
+        .certification .certification-block__item {
+          width: 16rem;
+          height: 9rem; } }
       .certification .certification-block__item--img {
         width: 80%;
         position: absolute;
@@ -297,6 +312,9 @@ p {
   margin: 0 auto;
   text-align: center;
   transition: all 0.3s; }
+  @media (max-width: 78.12em) {
+    .course-container {
+      width: 90%; } }
   .course-container__h1 {
     color: #fab513;
     position: relative;
@@ -1147,14 +1165,23 @@ p {
     background-color: #eee;
     transition: all 0.5s;
     position: relative; }
+    @media (max-width: 78.12em) {
+      .section-rise .rise {
+        width: 90%; } }
     .section-rise .rise__img {
       width: 50%;
       height: 100%;
       overflow: hidden;
-      transition: all 0.5s;
+      transition: all 0.3s;
       position: relative; }
       .section-rise .rise__img img {
         width: 100%; }
+        @media (max-width: 78.12em) {
+          .section-rise .rise__img img {
+            width: auto;
+            height: 100%;
+            position: absolute;
+            right: 0; } }
     .section-rise .rise__text {
       width: 50%;
       height: 100%;
@@ -1191,6 +1218,13 @@ p {
   width: 120rem;
   margin: 0 auto;
   height: auto; }
+  @media (max-width: 78.12em) {
+    .secondary-links-container {
+      width: 100rem;
+      margin: 0 auto; } }
+  @media (max-width: 56.25em) {
+    .secondary-links-container {
+      width: 100%; } }
 
 .secondary-card {
   width: 25%;
@@ -1274,15 +1308,19 @@ p {
   gap: 3rem;
   transition: all 0.5s;
   padding-top: 0; }
+  @media (max-width: 78.12em) {
+    .specialities {
+      width: 90%; } }
   .specialities__item {
     width: calc((100% - 3rem) / 2);
-    min-width: 55rem;
+    min-width: 40rem;
     height: 30rem;
     background-color: #eee;
     overflow: hidden;
     text-align: center;
     display: block;
-    position: relative; }
+    position: relative;
+    border-radius: 3px; }
     .specialities__item--overlay {
       width: 100%;
       height: 100%;
@@ -1390,6 +1428,10 @@ p {
   position: relative;
   text-align: center;
   transition: all 0.5s; }
+  @media (max-width: 78.12em) {
+    .whysse {
+      width: 100rem;
+      margin: 0 auto; } }
   .whysse__h1 {
     display: inline-block;
     background-image: linear-gradient(to right, #112c7e, #33b0cc);

@@ -10,14 +10,24 @@
     transition: all 0.5s;
     position: relative;
 
+    @include respond(tab-land) {
+      width: 90%;
+    }
+
     &__img {
       width: 50%;
       height: 100%;
       overflow: hidden;
       img {
         width: 100%;
+        @include respond(tab-land) {
+          width: auto;
+          height: 100%;
+          position: absolute;
+          right: 0;
+        }
       }
-      transition: all 0.5s;
+      transition: all 0.3s;
       position: relative;
     }
 

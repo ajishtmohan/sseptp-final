@@ -10,6 +10,14 @@
 .secondary-links-container {
   @include containerWidth-L;
   height: auto;
+
+  @include respond(tab-land) {
+    @include containerWidth-M;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 
 .secondary-card {

@@ -181,18 +181,18 @@ let whysseP = document.querySelector('.whysse__p');
 let whySseEl = [whysseH1, whysseP];
 for (let i = 0; i < whySseEl.length; i++) {
   whySseEl[i].style.opacity = '0';
-  whySseEl[i].style.top = '8rem';
+  whySseEl[i].style.top = '4rem';
 }
 
 window.addEventListener(
   'scroll',
   function (event) {
-    if (isInFullView(whysse)) {
+    if (isTopInView(whysse, 0.8)) {
       for (let i = 0; i < whySseEl.length; i++) {
         setInterval(() => {
           whySseEl[i].style.opacity = '1';
           whySseEl[i].style.top = '0';
-        }, 300 * i + 300);
+        }, 200 * i + 200);
       }
     }
   },

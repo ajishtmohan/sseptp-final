@@ -18,6 +18,11 @@
     position: relative;
     transition: all 0.3s;
 
+    @include respond(tab-land) {
+      width: 70%;
+      // max-width: 48rem;
+    }
+
     &__item {
       width: 20rem;
       height: 12rem;
@@ -27,6 +32,11 @@
       box-shadow: 0 0 0.5rem rgba($color-black, 0.1);
       transition: all 0.3s;
       border-radius: 3px;
+
+      @include respond(tab-land) {
+        width: 16rem;
+        height: 9rem;
+      }
 
       &--img {
         width: 80%;
