@@ -13,6 +13,10 @@
   width: $site-width;
   margin: 0 auto;
   height: auto;
+
+  @include respond(tab-land) {
+    width: 90%;
+  }
 }
 
 .section-placement {
@@ -68,6 +72,10 @@
   width: $site-width;
   margin: 0 auto;
 
+  @include respond(tab-land) {
+    width: 90%;
+  }
+
   h2 {
     @include page-heading-secondary;
     text-align: center;
@@ -76,6 +84,8 @@
   .placement-partners-block {
     @include flexRow;
     margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
 
     &__item {
       width: calc((100% - 8rem) / 9);

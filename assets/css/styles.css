@@ -551,7 +551,7 @@ p {
           text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4); }
         @media (max-width: 78.12em) {
           .nav .quick-menu li a {
-            padding: 1.25rem 0 1.25rem 1.5rem;
+            padding: 0.8rem 0 0.8rem 1.5rem;
             width: 100%;
             display: block; }
             .nav .quick-menu li a:hover {
@@ -663,7 +663,7 @@ p {
               transition: all 0.3s; }
               @media (max-width: 78.12em) {
                 .nav .site-menu .sitelinks__links .site-link-main__item a {
-                  padding: 1.25rem 0 1.25rem 1.5rem;
+                  padding: 0.8rem 0 0.8rem 1.5rem;
                   width: 100%;
                   display: block; }
                   .nav .site-menu .sitelinks__links .site-link-main__item a:hover {
@@ -1504,14 +1504,14 @@ p {
       width: 120rem;
       height: 100%;
       margin: 0 auto; }
-      .inside-page__topband .inside-page-top-band__header > div {
-        width: 50%;
-        display: block;
-        position: relative; }
       @media (max-width: 78.12em) {
         .inside-page__topband .inside-page-top-band__header {
           width: 90%;
           min-width: 90rem; } }
+      .inside-page__topband .inside-page-top-band__header > div {
+        width: 50%;
+        display: block;
+        position: relative; }
       .inside-page__topband .inside-page-top-band__header--title {
         float: left;
         height: 100%; }
@@ -1608,8 +1608,16 @@ p {
         padding: 1rem;
         box-sizing: border-box;
         background-color: rgba(51, 176, 204, 0.1); }
+        @media (max-width: 78.12em) {
+          .inside-page-content__main .mentors__card {
+            width: calc((100% - 4rem) / 3);
+            height: auto; } }
         .inside-page-content__main .mentors__card--image {
-          height: 18.5rem; }
+          height: 18.5rem;
+          overflow: hidden; }
+          @media (max-width: 78.12em) {
+            .inside-page-content__main .mentors__card--image {
+              margin-bottom: 1rem; } }
           .inside-page-content__main .mentors__card--image img {
             width: 100%; }
         .inside-page-content__main .mentors__card--name {
@@ -1669,10 +1677,17 @@ p {
     height: 40rem;
     background-color: #33b0cc;
     border-bottom: 4px solid #1389a3; }
+    @media (max-width: 78.12em) {
+      .committee-page__topband {
+        height: 30rem; } }
     .committee-page__topband .committee-page-top-band__header {
       width: 120rem;
       height: 100%;
       margin: 0 auto; }
+      @media (max-width: 78.12em) {
+        .committee-page__topband .committee-page-top-band__header {
+          width: 90%;
+          min-width: 90rem; } }
       .committee-page__topband .committee-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -1712,11 +1727,17 @@ p {
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 78.12em) {
+    .committee-page-content {
+      width: 90%; } }
   .committee-page-content__main {
     width: 80rem;
     height: auto;
     display: inline-block;
     position: relative; }
+    @media (max-width: 78.12em) {
+      .committee-page-content__main {
+        width: 65%; } }
     .committee-page-content__main--h3 {
       color: #33b0cc;
       font-weight: 300;
@@ -1749,6 +1770,9 @@ p {
       margin: 2rem 0;
       gap: 2rem;
       justify-content: flex-start; }
+      @media (max-width: 78.12em) {
+        .committee-page-content__main .committies-cards-container {
+          width: 100%; } }
       .committee-page-content__main .committies-cards-container .committies-card {
         display: block;
         position: relative;
@@ -1764,6 +1788,9 @@ p {
         .committee-page-content__main .committies-cards-container .committies-card__title {
           font-size: 2rem;
           font-weight: 400; }
+        @media (max-width: 78.12em) {
+          .committee-page-content__main .committies-cards-container .committies-card {
+            width: calc((100% - 2rem) / 2); } }
         .committee-page-content__main .committies-cards-container .committies-card p {
           margin: 0;
           padding: 0;
@@ -1827,6 +1854,9 @@ p {
     background-color: #33b0cc;
     float: right;
     box-sizing: border-box; }
+    @media (max-width: 78.12em) {
+      .committee-page-content__sidebar {
+        width: 30%; } }
     .committee-page-content__sidebar h3 {
       display: block;
       padding: 1.5rem 2.5rem;
@@ -1857,11 +1887,17 @@ p {
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 78.12em) {
+    .committees-page-content {
+      width: 100%; } }
   .committees-page-content__main {
     width: 120rem;
     height: auto;
     display: inline-block;
     position: relative; }
+    @media (max-width: 78.12em) {
+      .committees-page-content__main {
+        width: 100%; } }
     .committees-page-content__main--h3 {
       color: #33b0cc;
       font-weight: 300;
@@ -1893,7 +1929,12 @@ p {
       flex-wrap: wrap;
       margin: 2rem 0;
       gap: 2rem;
-      justify-content: flex-start; }
+      justify-content: center; }
+      @media (max-width: 78.12em) {
+        .committees-page-content__main .committies-cards-container {
+          width: 90%;
+          max-width: 90rem;
+          margin: 0 auto; } }
       .committees-page-content__main .committies-cards-container .committies-card {
         display: block;
         position: relative;
@@ -1905,6 +1946,9 @@ p {
         padding: 2rem;
         box-sizing: border-box;
         color: #fff; }
+        @media (max-width: 78.12em) {
+          .committees-page-content__main .committies-cards-container .committies-card {
+            width: calc((100% - 4rem) / 3); } }
         .committees-page-content__main .committies-cards-container .committies-card__title {
           font-size: 2rem;
           font-weight: 400; }
@@ -2011,6 +2055,10 @@ p {
       width: 120rem;
       height: 100%;
       margin: 0 auto; }
+      @media (max-width: 78.12em) {
+        .course-page__topband .course-page-top-band__header {
+          width: 90%;
+          min-width: 90rem; } }
       .course-page__topband .course-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -2037,11 +2085,19 @@ p {
         float: right;
         border-bottom: 4px solid #fab513;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+        @media (max-width: 78.12em) {
+          .course-page__topband .course-page-top-band__header--image {
+            height: 35rem; } }
         .course-page__topband .course-page-top-band__header--image img {
           width: 100%;
           position: absolute;
+          left: 50%;
           top: 50%;
-          transform: translateY(-50%); }
+          transform: translate(-50%, -50%); }
+          @media (max-width: 78.12em) {
+            .course-page__topband .course-page-top-band__header--image img {
+              object-fit: cover;
+              height: 100%; } }
 
 .course-page-content {
   width: 120rem;
@@ -2050,11 +2106,17 @@ p {
   margin: 15rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 78.12em) {
+    .course-page-content {
+      width: 90%; } }
   .course-page-content__main {
     width: 80rem;
     height: auto;
     display: inline-block;
     position: relative; }
+    @media (max-width: 78.12em) {
+      .course-page-content__main {
+        width: 65%; } }
     .course-page-content__main--h2 {
       font-weight: 300;
       font-size: 3rem;
@@ -2255,6 +2317,9 @@ p {
     position: relative;
     float: right;
     box-sizing: border-box; }
+    @media (max-width: 78.12em) {
+      .course-page-content__sidebar {
+        width: 30%; } }
     .course-page-content__sidebar--links {
       background-color: #ffcc56;
       margin-bottom: 4rem; }
@@ -2320,6 +2385,10 @@ p {
       width: 120rem;
       height: 100%;
       margin: 0 auto; }
+      @media (max-width: 78.12em) {
+        .courses-page__topband .courses-page-top-band__header {
+          width: 90%;
+          min-width: 90rem; } }
       .courses-page__topband .courses-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -2342,6 +2411,9 @@ p {
   margin: 5rem auto;
   display: block;
   position: relative; }
+  @media (max-width: 78.12em) {
+    .courses-page-content {
+      width: 90%; } }
   .courses-page-content__main {
     width: 100%;
     height: auto;
@@ -2423,7 +2495,9 @@ section {
 .message-page {
   position: relative;
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin: 0;
+  padding: 0; }
   .message-page__topband {
     position: relative;
     display: block;
@@ -2436,6 +2510,10 @@ section {
       width: 120rem;
       height: 100%;
       margin: 0 auto; }
+      @media (max-width: 78.12em) {
+        .message-page__topband .message-page-top-band__header {
+          width: 90%;
+          min-width: 90rem; } }
       .message-page__topband .message-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -2475,6 +2553,9 @@ section {
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 78.12em) {
+    .message-page-content {
+      width: 90%; } }
   .message-page-content__person {
     width: 100%;
     height: 40rem;
@@ -2493,8 +2574,17 @@ section {
       background-color: black;
       float: left;
       border-bottom: 4px solid #fab513; }
+      @media (max-width: 78.12em) {
+        .message-page-content__person--image {
+          width: 35%; } }
       .message-page-content__person--image img {
-        width: 100%; }
+        width: 100%;
+        position: absolute;
+        top: 0; }
+        @media (max-width: 78.12em) {
+          .message-page-content__person--image img {
+            object-fit: cover;
+            height: 100%; } }
     .message-page-content__person--designation {
       width: 70rem;
       display: inline-block;
@@ -2502,7 +2592,11 @@ section {
       bottom: 4rem;
       padding-left: 5rem;
       text-align: left;
-      color: #000000; }
+      color: #000000;
+      word-wrap: break-word; }
+      @media (max-width: 78.12em) {
+        .message-page-content__person--designation {
+          width: 65%; } }
       .message-page-content__person--designation .person-name {
         font-weight: 400;
         padding-bottom: 0; }
@@ -2519,12 +2613,16 @@ section {
         padding: 0;
         font-size: 1.6rem;
         color: #000000;
-        line-height: 2rem; }
+        line-height: 2rem;
+        display: block; }
   .message-page-content__main {
     width: 80rem;
     height: auto;
     display: inline-block;
     position: relative; }
+    @media (max-width: 78.12em) {
+      .message-page-content__main {
+        width: 65%; } }
     .message-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
@@ -2539,6 +2637,9 @@ section {
     background-color: #33b0cc;
     float: right;
     box-sizing: border-box; }
+    @media (max-width: 78.12em) {
+      .message-page-content__sidebar {
+        width: 30%; } }
     .message-page-content__sidebar h3 {
       display: block;
       padding: 1.5rem 2.5rem;
@@ -2576,6 +2677,9 @@ section {
   width: 120rem;
   margin: 0 auto;
   height: auto; }
+  @media (max-width: 78.12em) {
+    .section-content {
+      width: 90%; } }
 
 .section-placement {
   background-image: url("../img/students.jpg"); }
@@ -2621,6 +2725,9 @@ section {
   position: relative;
   width: 120rem;
   margin: 0 auto; }
+  @media (max-width: 78.12em) {
+    .placement-partners {
+      width: 90%; } }
   .placement-partners h2 {
     font-weight: 300;
     font-size: 3rem;
@@ -2632,7 +2739,9 @@ section {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: center; }
     .placement-partners .placement-partners-block__item {
       width: calc((100% - 8rem) / 9); }
       .placement-partners .placement-partners-block__item img {

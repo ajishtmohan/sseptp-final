@@ -18,15 +18,15 @@
       height: 100%;
       margin: 0 auto;
 
+      @include respond(tab-land) {
+        width: 90%;
+        min-width: 90rem;
+      }
+
       > div {
         width: 50%;
         display: block;
         position: relative;
-      }
-
-      @include respond(tab-land) {
-        width: 90%;
-        min-width: 90rem;
       }
 
       &--title {
@@ -126,10 +126,19 @@
         padding: 1rem;
         box-sizing: border-box;
         background-color: rgba($color-secondary-light, 0.1);
-        // border: 1px solid $color-grey-light-1;
+
+        @include respond(tab-land) {
+          width: calc((100% - 4rem) / 3);
+          height: auto;
+        }
 
         &--image {
           height: 18.5rem;
+          overflow: hidden;
+
+          @include respond(tab-land) {
+            margin-bottom: 1rem;
+          }
 
           img {
             width: 100%;

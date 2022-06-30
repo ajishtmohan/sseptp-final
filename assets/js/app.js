@@ -72,7 +72,7 @@ const window900to1250 = function () {
         quicklinks.style.display = 'block';
         quickMenu.style.display = 'inline-block';
         siteMenu.style.display = 'inline-block';
-        nav.style.padding = '20rem 6rem';
+        nav.style.padding = '15rem 6rem';
       }, 300);
     } else {
       quicklinks.style.display = 'none';
