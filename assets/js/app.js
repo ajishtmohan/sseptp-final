@@ -142,6 +142,37 @@ const window600to900 = function () {
   });
 };
 
+const window375to600 = function () {
+  const menuCheck = document.getElementById('nav-toggle');
+  const menuPanel = document.querySelector('.menu-panel');
+  const quickMenu = document.querySelector('.quick-menu');
+  const quicklinks = document.querySelector('.quicklinks');
+  const siteMenu = document.querySelector('.site-menu');
+  const nav = document.querySelector('.nav');
+  const mobileMenu = document.querySelector('.mobile-naav');
+
+  menuCheck.addEventListener('change', function () {
+    if (menuCheck.checked) {
+      menuPanel.style.cssText = 'visibility: visible; opacity: 1';
+      setTimeout(function () {
+        quicklinks.style.display = 'block';
+        quickMenu.style.display = 'none';
+        siteMenu.style.display = 'inline-block';
+        nav.style.padding = '15rem 5%';
+        mobileMenu.style.display = 'none';
+      }, 300);
+    } else {
+      quicklinks.style.display = 'none';
+      quickMenu.style.display = 'none';
+      siteMenu.style.display = 'none';
+      nav.style.padding = '0 5%';
+      setTimeout(function () {
+        menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+      }, 300);
+    }
+  });
+};
+
 // SCREENSIZE HANDLING
 window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
@@ -154,13 +185,14 @@ function resizeHandler() {
   if (screenSize > 1250) {
     window1250px();
     console.log(screenSize);
-    console.log('window1250');
   } else if (screenSize < 1250 && screenSize >= 900) {
     window900to1250();
     console.log(screenSize);
   } else if (screenSize < 900 && screenSize >= 600) {
     window600to900();
     console.log(screenSize);
+  } else if (screenSize < 600 && screenSize >= 375) {
+    window375to600();
   }
 }
 

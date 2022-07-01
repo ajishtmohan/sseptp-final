@@ -10,6 +10,7 @@
     @include containerWidth-L;
     @include blue-gradient;
     margin-bottom: $margin-small;
+    width: 100%;
 
     @include respond(tab-port) {
       width: 100%;

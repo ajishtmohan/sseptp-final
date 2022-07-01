@@ -96,6 +96,11 @@
   font-size: 4.5rem;
   line-height: 5rem;
   color: $color-white;
+
+  @include respond(tab-port) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
 }
 
 @mixin page-title-primary {
@@ -106,6 +111,11 @@
   font-size: 4.5rem;
   line-height: 5rem;
   color: $color-primary-dark;
+
+  @include respond(tab-port) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
 }
 
 @mixin page-content-specification {
@@ -115,6 +125,10 @@
   margin: 15rem auto 5rem;
   display: block;
   position: relative;
+
+  @include respond(tab-port) {
+    margin: 10rem auto 5rem;
+  }
 }
 
 @mixin course-content-specification {
@@ -124,6 +138,10 @@
   margin: 15rem auto 5rem;
   display: block;
   position: relative;
+
+  @include respond(tab-port) {
+    margin: 10rem auto 5rem;
+  }
 }
 
 @mixin message-content-specification {
@@ -133,6 +151,11 @@
   margin: 10rem auto 5rem;
   display: block;
   position: relative;
+
+  @include respond(tab-port) {
+    margin: 4rem auto 5rem;
+    min-height: auto;
+  }
 }
 
 @mixin page-heading-primary {

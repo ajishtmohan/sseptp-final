@@ -13,6 +13,10 @@
     background-color: $color-secondary-light;
     border-bottom: 4px solid $color-secondary-dark;
 
+    @include respond(tab-port) {
+      height: 25rem;
+    }
+
     .message-page-top-band__header {
       width: $site-width;
       height: 100%;
@@ -21,6 +25,11 @@
       @include respond(tab-land) {
         width: 90%;
         min-width: 90rem;
+      }
+
+      @include respond(tab-port) {
+        width: 90%;
+        min-width: 50rem;
       }
 
       > div {
@@ -77,6 +86,11 @@
     padding: 5rem;
     box-sizing: border-box;
 
+    @include respond(tab-port) {
+      height: 20rem;
+      padding: 2rem;
+    }
+
     &--image {
       width: 40rem;
       height: 40rem;
@@ -89,6 +103,11 @@
 
       @include respond(tab-land) {
         width: 35%;
+      }
+
+      @include respond(tab-land) {
+        width: 35%;
+        height: 25rem;
       }
 
       img {
@@ -117,9 +136,18 @@
         width: 65%;
       }
 
+      @include respond(tab-port) {
+        padding-left: 2rem;
+        bottom: 2rem;
+      }
+
       .person-name {
         font-weight: 400;
         padding-bottom: 0;
+
+        @include respond(tab-port) {
+          font-size: $h3-font-size;
+        }
       }
 
       .person-designation {
@@ -128,6 +156,10 @@
         @include zeroAround;
         font-size: 2rem;
         color: $color-black;
+
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+        }
       }
 
       .person-qualification {
@@ -137,6 +169,11 @@
         color: $color-black;
         line-height: 2rem;
         display: block;
+
+        @include respond(tab-port) {
+          width: 100%;
+          word-wrap: break-word;
+        }
       }
     }
   }
@@ -149,6 +186,10 @@
 
     @include respond(tab-land) {
       width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
 
     p {
@@ -172,6 +213,10 @@
 
     @include respond(tab-land) {
       width: 30%;
+    }
+
+    @include respond(tab-port) {
+      display: none;
     }
 
     h3 {

@@ -673,6 +673,9 @@ p {
         .nav .site-menu .sitelinks {
           display: inline-block;
           width: 30rem; } }
+      @media (max-width: 37.5em) {
+        .nav .site-menu .sitelinks {
+          width: 100%; } }
       .nav .site-menu .sitelinks__logo {
         width: 14rem;
         height: 8rem;
@@ -705,6 +708,12 @@ p {
           .nav .site-menu .sitelinks__links {
             display: block;
             width: 15.5rem; } }
+        @media (max-width: 56.25em) {
+          .nav .site-menu .sitelinks__links {
+            width: 100%; } }
+        @media (max-width: 37.5em) {
+          .nav .site-menu .sitelinks__links {
+            width: 100%; } }
         .nav .site-menu .sitelinks__links .site-link-main {
           margin: 0;
           padding: 0; }
@@ -718,6 +727,17 @@ p {
                 display: block;
                 margin: 0;
                 padding: 0; } }
+            @media (max-width: 56.25em) {
+              .nav .site-menu .sitelinks__links .site-link-main__item {
+                display: block;
+                text-align: center;
+                margin: 0;
+                padding: 0; } }
+            @media (max-width: 37.5em) {
+              .nav .site-menu .sitelinks__links .site-link-main__item {
+                display: inline-block;
+                width: 100%;
+                text-transform: uppercase; } }
             .nav .site-menu .sitelinks__links .site-link-main__item a {
               color: #fff;
               text-decoration: none;
@@ -730,6 +750,9 @@ p {
                   display: block; }
                   .nav .site-menu .sitelinks__links .site-link-main__item a:hover {
                     background-color: #112c7e; } }
+              @media (max-width: 37.5em) {
+                .nav .site-menu .sitelinks__links .site-link-main__item a {
+                  padding: 1.5rem; } }
               .nav .site-menu .sitelinks__links .site-link-main__item a:hover {
                 color: #33b0cc; }
                 @media (max-width: 78.12em) {
@@ -933,6 +956,14 @@ p {
         background-color: #3052b9;
         opacity: 0;
         z-index: -100; } }
+    @media (max-width: 56.25em) {
+      .nav .menu-panel {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #3052b9; } }
 
 .menu {
   width: 100vw;
@@ -1130,7 +1161,8 @@ p {
     background-image: linear-gradient(to right, #112c7e, #33b0cc);
     -webkit-background-clip: text;
     color: transparent;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    width: 100%; }
     @media (max-width: 56.25em) {
       .section-news h1 {
         width: 100%;
@@ -1647,6 +1679,10 @@ p {
     height: 50rem;
     margin: 0 auto;
     border-bottom: 4px solid #1389a3; }
+    @media (max-width: 56.25em) {
+      .inside-page__topband {
+        width: 100%;
+        height: 30rem; } }
     .inside-page__topband .inside-page-top-band__header {
       width: 120rem;
       height: 100%;
@@ -1655,6 +1691,10 @@ p {
         .inside-page__topband .inside-page-top-band__header {
           width: 90%;
           min-width: 90rem; } }
+      @media (max-width: 56.25em) {
+        .inside-page__topband .inside-page-top-band__header {
+          width: 90%;
+          min-width: 50rem; } }
       .inside-page__topband .inside-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -1671,6 +1711,10 @@ p {
           line-height: 5rem;
           color: #fff;
           color: #fff; }
+          @media (max-width: 56.25em) {
+            .inside-page__topband .inside-page-top-band__header--title h1 {
+              font-size: 3.2rem;
+              line-height: 4rem; } }
       .inside-page__topband .inside-page-top-band__header--image {
         display: block;
         position: relative;
@@ -1684,6 +1728,9 @@ p {
         @media (max-width: 78.12em) {
           .inside-page__topband .inside-page-top-band__header--image {
             height: 35rem; } }
+        @media (max-width: 56.25em) {
+          .inside-page__topband .inside-page-top-band__header--image {
+            height: 25rem; } }
         .inside-page__topband .inside-page-top-band__header--image img {
           width: 100%;
           position: absolute;
@@ -1702,6 +1749,9 @@ p {
   margin: 15rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .inside-page-content {
+      margin: 10rem auto 5rem; } }
   @media (max-width: 78.12em) {
     .inside-page-content {
       width: 90%; } }
@@ -1713,6 +1763,9 @@ p {
     @media (max-width: 78.12em) {
       .inside-page-content__main {
         width: 65%; } }
+    @media (max-width: 56.25em) {
+      .inside-page-content__main {
+        width: 100%; } }
     .inside-page-content__main h2 {
       font-weight: 300;
       font-size: 3rem;
@@ -1790,6 +1843,9 @@ p {
     @media (max-width: 78.12em) {
       .inside-page-content__sidebar {
         width: 30%; } }
+    @media (max-width: 56.25em) {
+      .inside-page-content__sidebar {
+        display: none; } }
     .inside-page-content__sidebar h3 {
       display: block;
       padding: 1.5rem 2.5rem;
@@ -1827,6 +1883,10 @@ p {
     @media (max-width: 78.12em) {
       .committee-page__topband {
         height: 30rem; } }
+    @media (max-width: 56.25em) {
+      .committee-page__topband {
+        width: 100%;
+        height: 30rem; } }
     .committee-page__topband .committee-page-top-band__header {
       width: 120rem;
       height: 100%;
@@ -1835,6 +1895,10 @@ p {
         .committee-page__topband .committee-page-top-band__header {
           width: 90%;
           min-width: 90rem; } }
+      @media (max-width: 56.25em) {
+        .committee-page__topband .committee-page-top-band__header {
+          width: 90%;
+          min-width: 50rem; } }
       .committee-page__topband .committee-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -1850,6 +1914,10 @@ p {
           font-size: 4.5rem;
           line-height: 5rem;
           color: #fff; }
+          @media (max-width: 56.25em) {
+            .committee-page__topband .committee-page-top-band__header--title h1 {
+              font-size: 3.2rem;
+              line-height: 4rem; } }
       .committee-page__topband .committee-page-top-band__header--image {
         display: block;
         position: relative;
@@ -1874,6 +1942,10 @@ p {
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .committee-page-content {
+      margin: 4rem auto 5rem;
+      min-height: auto; } }
   @media (max-width: 78.12em) {
     .committee-page-content {
       width: 90%; } }
@@ -1885,6 +1957,9 @@ p {
     @media (max-width: 78.12em) {
       .committee-page-content__main {
         width: 65%; } }
+    @media (max-width: 56.25em) {
+      .committee-page-content__main {
+        width: 100%; } }
     .committee-page-content__main--h3 {
       color: #33b0cc;
       font-weight: 300;
@@ -2034,6 +2109,10 @@ p {
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .committees-page-content {
+      margin: 4rem auto 5rem;
+      min-height: auto; } }
   @media (max-width: 78.12em) {
     .committees-page-content {
       width: 100%; } }
@@ -2198,6 +2277,10 @@ p {
     height: 50rem;
     margin: 0 auto;
     border-bottom: 4px solid #fab513; }
+    @media (max-width: 56.25em) {
+      .course-page__topband {
+        width: 100%;
+        height: 30rem; } }
     .course-page__topband .course-page-top-band__header {
       width: 120rem;
       height: 100%;
@@ -2206,6 +2289,10 @@ p {
         .course-page__topband .course-page-top-band__header {
           width: 90%;
           min-width: 90rem; } }
+      @media (max-width: 56.25em) {
+        .course-page__topband .course-page-top-band__header {
+          width: 90%;
+          min-width: 50rem; } }
       .course-page__topband .course-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -2221,6 +2308,10 @@ p {
           font-size: 4.5rem;
           line-height: 5rem;
           color: #112c7e; }
+          @media (max-width: 56.25em) {
+            .course-page__topband .course-page-top-band__header--title h1 {
+              font-size: 3.2rem;
+              line-height: 4rem; } }
       .course-page__topband .course-page-top-band__header--image {
         display: block;
         position: relative;
@@ -2235,6 +2326,9 @@ p {
         @media (max-width: 78.12em) {
           .course-page__topband .course-page-top-band__header--image {
             height: 35rem; } }
+        @media (max-width: 56.25em) {
+          .course-page__topband .course-page-top-band__header--image {
+            height: 25rem; } }
         .course-page__topband .course-page-top-band__header--image img {
           width: 100%;
           position: absolute;
@@ -2253,6 +2347,9 @@ p {
   margin: 15rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .course-page-content {
+      margin: 10rem auto 5rem; } }
   @media (max-width: 78.12em) {
     .course-page-content {
       width: 90%; } }
@@ -2264,6 +2361,9 @@ p {
     @media (max-width: 78.12em) {
       .course-page-content__main {
         width: 65%; } }
+    @media (max-width: 56.25em) {
+      .course-page-content__main {
+        width: 100%; } }
     .course-page-content__main--h2 {
       font-weight: 300;
       font-size: 3rem;
@@ -2467,6 +2567,9 @@ p {
     @media (max-width: 78.12em) {
       .course-page-content__sidebar {
         width: 30%; } }
+    @media (max-width: 56.25em) {
+      .course-page-content__sidebar {
+        display: none; } }
     .course-page-content__sidebar--links {
       background-color: #ffcc56;
       margin-bottom: 4rem; }
@@ -2528,6 +2631,9 @@ p {
     height: 40rem;
     margin: 0 auto;
     border-bottom: 4px solid #fab513; }
+    @media (max-width: 56.25em) {
+      .courses-page__topband {
+        height: 30rem; } }
     .courses-page__topband .courses-page-top-band__header {
       width: 120rem;
       height: 100%;
@@ -2536,6 +2642,10 @@ p {
         .courses-page__topband .courses-page-top-band__header {
           width: 90%;
           min-width: 90rem; } }
+      @media (max-width: 56.25em) {
+        .courses-page__topband .courses-page-top-band__header {
+          width: 90%;
+          min-width: 50rem; } }
       .courses-page__topband .courses-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -2549,8 +2659,18 @@ p {
           bottom: 2rem;
           color: #112c7e;
           font-weight: 300;
-          font-size: 6rem;
-          line-height: 6rem; }
+          line-height: 6rem;
+          display: block;
+          position: absolute;
+          bottom: 2rem;
+          font-weight: 300;
+          font-size: 4.5rem;
+          line-height: 5rem;
+          color: #112c7e; }
+          @media (max-width: 56.25em) {
+            .courses-page__topband .courses-page-top-band__header--title h1 {
+              font-size: 3.2rem;
+              line-height: 4rem; } }
 
 .courses-page-content {
   width: 120rem;
@@ -2568,6 +2688,9 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem; }
+    @media (max-width: 56.25em) {
+      .courses-page-content__main {
+        gap: 2rem; } }
     .courses-page-content__main .courses-card {
       width: calc((100% - 6rem) / 3);
       height: auto;
@@ -2576,6 +2699,9 @@ p {
       box-sizing: border-box;
       padding: 2rem;
       transition: all 0.3s; }
+      @media (max-width: 56.25em) {
+        .courses-page-content__main .courses-card {
+          width: calc((100% - 2rem) / 2); } }
       .courses-page-content__main .courses-card:hover {
         background-color: rgba(255, 204, 86, 0.1); }
       .courses-page-content__main .courses-card__image {
@@ -2653,6 +2779,9 @@ section {
     height: 30rem;
     background-color: #33b0cc;
     border-bottom: 4px solid #1389a3; }
+    @media (max-width: 56.25em) {
+      .message-page__topband {
+        height: 25rem; } }
     .message-page__topband .message-page-top-band__header {
       width: 120rem;
       height: 100%;
@@ -2661,6 +2790,10 @@ section {
         .message-page__topband .message-page-top-band__header {
           width: 90%;
           min-width: 90rem; } }
+      @media (max-width: 56.25em) {
+        .message-page__topband .message-page-top-band__header {
+          width: 90%;
+          min-width: 50rem; } }
       .message-page__topband .message-page-top-band__header > div {
         width: 50%;
         display: block;
@@ -2676,6 +2809,10 @@ section {
           font-size: 4.5rem;
           line-height: 5rem;
           color: #fff; }
+          @media (max-width: 56.25em) {
+            .message-page__topband .message-page-top-band__header--title h1 {
+              font-size: 3.2rem;
+              line-height: 4rem; } }
       .message-page__topband .message-page-top-band__header--image {
         display: block;
         position: relative;
@@ -2700,6 +2837,10 @@ section {
   margin: 10rem auto 5rem;
   display: block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .message-page-content {
+      margin: 4rem auto 5rem;
+      min-height: auto; } }
   @media (max-width: 78.12em) {
     .message-page-content {
       width: 90%; } }
@@ -2712,6 +2853,10 @@ section {
     margin-bottom: 10rem;
     padding: 5rem;
     box-sizing: border-box; }
+    @media (max-width: 56.25em) {
+      .message-page-content__person {
+        height: 20rem;
+        padding: 2rem; } }
     .message-page-content__person--image {
       width: 40rem;
       height: 40rem;
@@ -2724,6 +2869,10 @@ section {
       @media (max-width: 78.12em) {
         .message-page-content__person--image {
           width: 35%; } }
+      @media (max-width: 78.12em) {
+        .message-page-content__person--image {
+          width: 35%;
+          height: 25rem; } }
       .message-page-content__person--image img {
         width: 100%;
         position: absolute;
@@ -2744,9 +2893,16 @@ section {
       @media (max-width: 78.12em) {
         .message-page-content__person--designation {
           width: 65%; } }
+      @media (max-width: 56.25em) {
+        .message-page-content__person--designation {
+          padding-left: 2rem;
+          bottom: 2rem; } }
       .message-page-content__person--designation .person-name {
         font-weight: 400;
         padding-bottom: 0; }
+        @media (max-width: 56.25em) {
+          .message-page-content__person--designation .person-name {
+            font-size: 2.5rem; } }
       .message-page-content__person--designation .person-designation {
         text-align: left;
         font-weight: 500;
@@ -2754,6 +2910,9 @@ section {
         padding: 0;
         font-size: 2rem;
         color: #000000; }
+        @media (max-width: 56.25em) {
+          .message-page-content__person--designation .person-designation {
+            font-size: 1.8rem; } }
       .message-page-content__person--designation .person-qualification {
         text-align: left;
         margin: 0;
@@ -2762,6 +2921,10 @@ section {
         color: #000000;
         line-height: 2rem;
         display: block; }
+        @media (max-width: 56.25em) {
+          .message-page-content__person--designation .person-qualification {
+            width: 100%;
+            word-wrap: break-word; } }
   .message-page-content__main {
     width: 80rem;
     height: auto;
@@ -2770,6 +2933,9 @@ section {
     @media (max-width: 78.12em) {
       .message-page-content__main {
         width: 65%; } }
+    @media (max-width: 56.25em) {
+      .message-page-content__main {
+        width: 100%; } }
     .message-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
@@ -2787,6 +2953,9 @@ section {
     @media (max-width: 78.12em) {
       .message-page-content__sidebar {
         width: 30%; } }
+    @media (max-width: 56.25em) {
+      .message-page-content__sidebar {
+        display: none; } }
     .message-page-content__sidebar h3 {
       display: block;
       padding: 1.5rem 2.5rem;
