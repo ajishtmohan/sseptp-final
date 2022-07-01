@@ -55,6 +55,12 @@
     &--h3 {
       @include blue-gradient;
       @include zeroAround;
+
+      @include respond(tab-port) {
+        // @include montserrat;
+        font-size: 1.9rem;
+        // color: $color-primary-dark;
+      }
     }
   }
 

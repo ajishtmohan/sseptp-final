@@ -9,14 +9,22 @@
     @include containerWidth-M;
   }
 
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
   &__h1 {
     @include blue-gradient;
     transition: all 0.5s;
     position: relative;
+
+    @include respond(tab-port) {
+      font-size: $h2-font-size;
+    }
   }
 
   &__p {
-    @include containerWidth-S;
+    @include containerWidth-XS;
     font-size: $default-font-size;
     transition: all 0.5s;
     position: relative;

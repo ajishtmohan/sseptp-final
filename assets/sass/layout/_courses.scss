@@ -28,6 +28,10 @@
     color: $color-white;
     position: relative;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      @include containerWidth-XS;
+    }
   }
 }
 
@@ -35,6 +39,10 @@
   width: 100%;
   @include flexRow;
   gap: 3rem;
+
+  @include respond(tab-port) {
+    gap: 2rem;
+  }
 
   &__item {
     width: calc((100% - 6rem) / 3);
@@ -44,6 +52,10 @@
     box-sizing: border-box;
     position: relative;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      width: calc((100% - 2rem) / 2);
+    }
 
     &:hover {
       border: 1px solid $color-tertiary-dark;
@@ -58,6 +70,11 @@
         @include roboto;
         color: $color-white;
         margin-bottom: $margin-tiny;
+
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+          font-weight: 300;
+        }
       }
 
       a {

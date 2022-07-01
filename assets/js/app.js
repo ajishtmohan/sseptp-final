@@ -66,21 +66,33 @@ const window900to1250 = function () {
   const nav = document.querySelector('.nav');
 
   menuCheck.addEventListener('change', function () {
+    nav.style.padding = '0 5%';
+    quickMenu.style.opacity = '0';
+    siteMenu.style.opacity = '0';
+    menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+    quicklinks.style.display = 'none';
+    quickMenu.style.display = 'none';
+    siteMenu.style.display = 'none';
+
     if (menuCheck.checked) {
       menuPanel.style.cssText = 'visibility: visible; opacity: 1';
+      quickMenu.style.display = 'inline-block';
+      siteMenu.style.display = 'inline-block';
       setTimeout(function () {
         quicklinks.style.display = 'block';
-        quickMenu.style.display = 'inline-block';
-        siteMenu.style.display = 'inline-block';
-        nav.style.padding = '15rem 6rem';
+        quickMenu.style.opacity = '1';
+        siteMenu.style.opacity = '1';
+        nav.style.padding = '15rem 5%';
       }, 300);
     } else {
-      quicklinks.style.display = 'none';
-      quickMenu.style.display = 'none';
-      siteMenu.style.display = 'none';
-      nav.style.padding = '0 6rem';
+      nav.style.padding = '0 5%';
+      quickMenu.style.opacity = '0';
+      siteMenu.style.opacity = '0';
       setTimeout(function () {
         menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+        quicklinks.style.display = 'none';
+        quickMenu.style.display = 'none';
+        siteMenu.style.display = 'none';
       }, 300);
     }
   });
@@ -101,6 +113,35 @@ const window900to1250 = function () {
   */
 };
 
+const window600to900 = function () {
+  const menuCheck = document.getElementById('nav-toggle');
+  const menuPanel = document.querySelector('.menu-panel');
+  const quickMenu = document.querySelector('.quick-menu');
+  const quicklinks = document.querySelector('.quicklinks');
+  const siteMenu = document.querySelector('.site-menu');
+  const nav = document.querySelector('.nav');
+
+  menuCheck.addEventListener('change', function () {
+    if (menuCheck.checked) {
+      menuPanel.style.cssText = 'visibility: visible; opacity: 1';
+      setTimeout(function () {
+        quicklinks.style.display = 'block';
+        quickMenu.style.display = 'none';
+        siteMenu.style.display = 'inline-block';
+        nav.style.padding = '15rem 5%';
+      }, 300);
+    } else {
+      quicklinks.style.display = 'none';
+      quickMenu.style.display = 'none';
+      siteMenu.style.display = 'none';
+      nav.style.padding = '0 5%';
+      setTimeout(function () {
+        menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
+      }, 300);
+    }
+  });
+};
+
 // SCREENSIZE HANDLING
 window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
@@ -116,6 +157,9 @@ function resizeHandler() {
     console.log('window1250');
   } else if (screenSize < 1250 && screenSize >= 900) {
     window900to1250();
+    console.log(screenSize);
+  } else if (screenSize < 900 && screenSize >= 600) {
+    window600to900();
     console.log(screenSize);
   }
 }

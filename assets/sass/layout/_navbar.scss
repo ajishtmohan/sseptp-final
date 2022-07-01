@@ -21,7 +21,7 @@
     text-transform: capitalize;
     display: block;
     background-color: transparent;
-    padding: 0 6rem;
+    padding: 0 5%;
   }
 
   .quick-menu {
@@ -29,6 +29,7 @@
     background-color: $color-primary-light;
     height: 4rem;
     display: block;
+    transition: all 0.3s;
 
     @include respond(tab-land) {
       width: auto;
@@ -86,6 +87,10 @@
         @include zeroAround;
         float: left;
         display: none;
+
+        @include respond(tab-port) {
+          width: 15rem;
+        }
       }
 
       &__left {
@@ -94,6 +99,9 @@
 
           @include respond(tab-land) {
             @include zeroAround;
+          }
+
+          @include respond(tab-port) {
           }
         }
       }
@@ -114,6 +122,7 @@
     background-color: $color-primary-dark;
     height: 8rem;
     display: block;
+    transition: all 0.3s;
 
     @include respond(tab-land) {
       width: auto;
@@ -364,34 +373,61 @@
     }
 
     &__header {
-      width: 100%;
-      height: 8rem;
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
 
       .mobile-nav__logo {
         width: 14rem;
-        height: 7rem;
+        height: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         transition: all 0.3s;
 
-        @include respond(tab-land) {
-          display: block;
-          position: absolute;
-          width: 18rem;
-          top: 1.2rem;
-          left: 8rem;
+        a {
+          @include zeroAround;
+          display: inline-block;
+
+          img {
+            height: 5rem;
+            display: block;
+            transition: all 0.3s;
+            // text-align: left;
+
+            @include respond(tab-land) {
+              align-self: center;
+            }
+          }
         }
 
-        img {
-          height: 85%;
-          display: block;
-          transition: all 0.3s;
-          text-align: left;
+        @include respond(tab-land) {
+          width: 18rem;
+          height: 8rem;
 
-          @include respond(tab-land) {
-            align-self: center;
-          }
+          // top: 1.2rem;
+          // left: 8rem;
+        }
+      }
+
+      .icon-burger {
+        display: none;
+
+        @include respond(tab-land) {
+          display: block;
+          cursor: pointer;
+        }
+
+        &__line {
+          width: 3rem;
+          height: 2px;
+          background-color: $color-white;
+          margin: 0.8rem;
+          border-radius: 10px;
         }
       }
     }
@@ -411,25 +447,6 @@
     }
   }
 
-  .icon-burger {
-    position: absolute;
-    right: 10rem;
-    top: 2rem;
-    display: none;
-
-    @include respond(tab-land) {
-      display: block;
-      cursor: pointer;
-    }
-
-    &__line {
-      width: 3rem;
-      height: 2px;
-      background-color: $color-white;
-      margin: 0.8rem;
-      border-radius: 10px;
-    }
-  }
   .menu-panel {
     position: absolute;
     display: block;
