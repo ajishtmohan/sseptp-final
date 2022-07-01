@@ -250,6 +250,10 @@
                 box-shadow: none;
               }
 
+              @include respond(tab-port) {
+                width: auto;
+              }
+
               &__item {
                 width: 100%;
                 list-style-type: none;
@@ -273,7 +277,7 @@
                   text-decoration: none;
 
                   @include respond(tab-land) {
-                    padding: 1.25rem 1.5rem;
+                    padding: 0.8rem 1.5rem;
                   }
 
                   -webkit-transition: opacity 0.1s ease-in;
@@ -312,7 +316,12 @@
                     border-top: none;
                     top: 0;
                     // text-transform: capitalize;
-                    left: 21rem;
+                    left: 14.5rem;
+                  }
+
+                  @include respond(tab-port) {
+                    width: 30rem;
+                    left: 15rem;
                   }
 
                   &__item {

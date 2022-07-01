@@ -2,7 +2,8 @@
 
 let siteLinks = document.querySelector('.nav');
 // console.log(siteLinks);
-siteLinks.innerHTML = `<input type="checkbox" name="" id="nav-toggle" />
+siteLinks.innerHTML = `
+<input type="checkbox" name="" id="nav-toggle" />
 
 <div class="quick-menu">
   <!-- <p class="quick-title">Quick Links</p> -->
@@ -64,7 +65,7 @@ siteLinks.innerHTML = `<input type="checkbox" name="" id="nav-toggle" />
             </li>
             <li class="site-link-sub__item">
               <a href="recognition-affiliation.html"
-                >Affiliation&nbsp;&&nbsp;Recognition
+                >Affiliation&nbsp;& Recognition
               </a>
             </li>
             <li class="site-link-sub__item">
@@ -117,7 +118,7 @@ siteLinks.innerHTML = `<input type="checkbox" name="" id="nav-toggle" />
             </li>
             <li class="site-link-sub__item">
               <a href="value-added-courses.html"
-                >Value&nbsp;added&nbsp;Courses
+                >Value&nbsp;added Courses
               </a>
             </li>
             <li class="site-link-sub__item">
@@ -210,4 +211,5 @@ siteLinks.innerHTML = `<input type="checkbox" name="" id="nav-toggle" />
     </label>
   </div>
 </div>
-<div class="menu-panel"></div>`;
+<div class="menu-panel"></div>
+`;
