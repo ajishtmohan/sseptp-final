@@ -19,8 +19,13 @@
     transition: all 0.3s;
 
     @include respond(tab-land) {
-      width: 70%;
+      width: 75%;
       max-width: 75rem;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+      max-width: 100rem;
     }
 
     &__item {

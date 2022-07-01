@@ -61,6 +61,10 @@
       @include respond(tab-land) {
         font-size: 2rem;
       }
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
     }
 
     &:hover .clubs-item__frame {
