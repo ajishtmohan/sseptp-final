@@ -52,6 +52,9 @@ p {
   font-weight: 400;
   color: #525252;
   line-height: 3rem; }
+  @media (max-width: 37.5em) {
+    p {
+      font-size: 1.8rem; } }
 
 .container {
   width: 120rem;
@@ -794,12 +797,14 @@ p {
                   width: auto; } }
               @media (max-width: 37.5em) {
                 .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub {
-                  display: block;
-                  position: absolute;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  position: fixed;
                   width: 100%;
-                  height: calc(100% - 8rem);
+                  height: 100%;
                   left: 0;
-                  bottom: 0;
+                  top: 0;
                   background-color: #112c7e;
                   z-index: 100; } }
               .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item {
@@ -863,6 +868,9 @@ p {
                     .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item .site-link-sub-sec {
                       width: 30rem;
                       left: 15rem; } }
+                  @media (max-width: 37.5em) {
+                    .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item .site-link-sub-sec {
+                      z-index: 15; } }
                   .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item .site-link-sub-sec__item {
                     width: 100%;
                     display: block;
@@ -977,15 +985,6 @@ p {
         top: 0;
         left: 0;
         background-color: #3052b9; } }
-  .nav .sub-menu-panel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 9rem;
-    left: 0;
-    background-color: red;
-    display: block;
-    z-index: -10; }
 
 .menu {
   width: 100vw;
@@ -1800,6 +1799,12 @@ p {
     .inside-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
+      @media (max-width: 56.25em) {
+        .inside-page-content__main p {
+          font-size: 1.7rem; } }
+      @media (max-width: 37.5em) {
+        .inside-page-content__main p {
+          font-size: 1.8rem; } }
     .inside-page-content__main--ul {
       padding-left: 1.5rem; }
       .inside-page-content__main--ul li {
@@ -1989,6 +1994,12 @@ p {
     .committee-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
+      @media (max-width: 56.25em) {
+        .committee-page-content__main p {
+          font-size: 1.7rem; } }
+      @media (max-width: 37.5em) {
+        .committee-page-content__main p {
+          font-size: 1.8rem; } }
       .committee-page-content__main p .bold-name {
         font-weight: 600;
         font-size: 1.8rem; }
@@ -2153,6 +2164,12 @@ p {
     .committees-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
+      @media (max-width: 56.25em) {
+        .committees-page-content__main p {
+          font-size: 1.7rem; } }
+      @media (max-width: 37.5em) {
+        .committees-page-content__main p {
+          font-size: 1.8rem; } }
       .committees-page-content__main p .bold-name {
         font-weight: 600;
         font-size: 1.8rem; }
@@ -2425,6 +2442,12 @@ p {
     .course-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
+      @media (max-width: 56.25em) {
+        .course-page-content__main p {
+          font-size: 1.7rem; } }
+      @media (max-width: 37.5em) {
+        .course-page-content__main p {
+          font-size: 1.8rem; } }
     .course-page-content__main a {
       color: #525252;
       transition: all 0.2s; }
@@ -2961,6 +2984,12 @@ section {
     .message-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
+      @media (max-width: 56.25em) {
+        .message-page-content__main p {
+          font-size: 1.7rem; } }
+      @media (max-width: 37.5em) {
+        .message-page-content__main p {
+          font-size: 1.8rem; } }
       .message-page-content__main p .bold-name {
         font-weight: 600;
         font-size: 1.8rem; }

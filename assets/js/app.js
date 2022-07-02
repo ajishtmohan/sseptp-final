@@ -171,16 +171,6 @@ const window375to600 = function () {
       }, 300);
     }
   });
-
-  const sitelinks = document.querySelectorAll('.site-link-main__item');
-  const siteMainLinks = document.querySelectorAll('.site-link-main');
-  console.log(sitelinks);
-  for (let i = 0; i < sitelinks.length; i++) {
-    sitelinks[i].addEventListener('click', function () {
-      console.log(sitelinks[i]);
-      siteMainLinks.style.marginLeft = '-100%';
-    });
-  }
 };
 
 // SCREENSIZE HANDLING

@@ -202,6 +202,14 @@
 @mixin page-paragraph {
   width: 100%;
   margin: 0 0 1rem 0;
+
+  @include respond(tab-port) {
+    font-size: 1.7rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
 }
 
 @mixin page-bullet {
