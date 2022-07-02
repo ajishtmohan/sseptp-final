@@ -18,6 +18,10 @@
   @include respond(tab-port) {
     width: 100%;
   }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .secondary-card {

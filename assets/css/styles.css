@@ -736,11 +736,12 @@ p {
             @media (max-width: 56.25em) {
               .nav .site-menu .sitelinks__links .site-link-main__item {
                 display: block;
-                text-align: center;
                 margin: 0;
-                padding: 0; } }
+                padding: 0;
+                width: 15.5rem; } }
             @media (max-width: 37.5em) {
               .nav .site-menu .sitelinks__links .site-link-main__item {
+                text-align: center;
                 display: inline-block;
                 width: 100%;
                 text-transform: uppercase; } }
@@ -1444,6 +1445,9 @@ p {
   @media (max-width: 56.25em) {
     .secondary-links-container {
       width: 100%; } }
+  @media (max-width: 37.5em) {
+    .secondary-links-container {
+      display: none; } }
 
 .secondary-card {
   width: 25%;
