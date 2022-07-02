@@ -13,6 +13,10 @@
     width: 100%;
   }
 
+  @include respond(phone) {
+    width: 90%;
+  }
+
   &__h1 {
     @include blue-gradient;
     transition: all 0.5s;
@@ -21,6 +25,10 @@
     @include respond(tab-port) {
       font-size: $h2-font-size;
     }
+
+    @include respond(phone) {
+      font-size: $h3-font-size;
+    }
   }
 
   &__p {
@@ -28,5 +36,9 @@
     font-size: $default-font-size;
     transition: all 0.5s;
     position: relative;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }

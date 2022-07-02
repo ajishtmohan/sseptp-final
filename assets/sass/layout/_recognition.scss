@@ -27,6 +27,10 @@
     @include respond(tab-port) {
       @include containerWidth-XS;
     }
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   .recognition-block {

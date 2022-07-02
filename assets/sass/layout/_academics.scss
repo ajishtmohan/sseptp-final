@@ -9,6 +9,10 @@
     padding-bottom: 4rem;
     position: relative;
     transition: all 0.5s;
+
+    @include respond(phone) {
+      font-size: $h2-font-size;
+    }
   }
 
   .academic-block {

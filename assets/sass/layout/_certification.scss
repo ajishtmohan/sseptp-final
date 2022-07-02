@@ -8,6 +8,10 @@
     padding-bottom: 4rem;
     position: relative;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      font-size: $h2-font-size;
+    }
   }
 
   .certification-block {

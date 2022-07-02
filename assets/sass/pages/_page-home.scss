@@ -13,4 +13,8 @@ section {
   width: $full-width;
   height: auto;
   padding: 8rem 0;
+
+  @include respond(phone) {
+    padding: 4rem 0;
+  }
 }

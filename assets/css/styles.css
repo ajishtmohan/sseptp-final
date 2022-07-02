@@ -54,7 +54,7 @@ p {
   line-height: 3rem; }
   @media (max-width: 37.5em) {
     p {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 .container {
   width: 120rem;
@@ -85,6 +85,9 @@ p {
     padding-bottom: 4rem;
     position: relative;
     transition: all 0.5s; }
+    @media (max-width: 37.5em) {
+      .academics--h1 {
+        font-size: 3rem; } }
   .academics .academic-block {
     display: flex;
     flex-direction: row;
@@ -174,6 +177,10 @@ p {
         .apply-block__img img {
           width: 100%;
           height: auto; } }
+      @media (max-width: 37.5em) {
+        .apply-block__img img {
+          width: auto;
+          height: 100%; } }
   .apply-block__text {
     padding: 8rem;
     box-sizing: border-box; }
@@ -230,6 +237,9 @@ p {
     padding-bottom: 4rem;
     position: relative;
     transition: all 0.3s; }
+    @media (max-width: 37.5em) {
+      .certification h1 {
+        font-size: 3rem; } }
   .certification .certification-block {
     display: flex;
     flex-direction: row;
@@ -284,6 +294,11 @@ p {
   @media (max-width: 78.12em) {
     .clubs {
       width: 90%; } }
+  @media (max-width: 37.5em) {
+    .clubs {
+      width: 90%;
+      display: flex;
+      flex-direction: column; } }
   .clubs .clubs-item {
     width: calc(100% / 3);
     height: 16rem;
@@ -294,6 +309,10 @@ p {
     text-align: center;
     transition: all 0.3s;
     word-wrap: break-word; }
+    @media (max-width: 37.5em) {
+      .clubs .clubs-item {
+        width: 100%;
+        height: 10rem; } }
     .clubs .clubs-item__frame {
       width: 100%;
       height: 100%;
@@ -389,6 +408,10 @@ p {
       .course-container__p {
         width: 60rem;
         margin: 0 auto; } }
+    @media (max-width: 37.5em) {
+      .course-container__p {
+        width: 100%;
+        font-size: 1.6rem; } }
 
 .course-block {
   width: 100%;
@@ -420,6 +443,10 @@ p {
     @media (max-width: 56.25em) {
       .course-block__item {
         width: calc((100% - 2rem) / 2); } }
+    @media (max-width: 37.5em) {
+      .course-block__item {
+        width: calc((100% - 2rem) / 2);
+        height: 15rem; } }
     .course-block__item:hover {
       border: 1px solid #fab513;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
@@ -434,6 +461,10 @@ p {
         @media (max-width: 56.25em) {
           .course-block__item--text h3 {
             font-size: 1.8rem;
+            font-weight: 300; } }
+        @media (max-width: 37.5em) {
+          .course-block__item--text h3 {
+            font-size: 1.6rem;
             font-weight: 300; } }
       .course-block__item--text a {
         display: inline-block;
@@ -473,6 +504,12 @@ p {
   @media (max-width: 78.12em) {
     .container-content {
       width: 100%; } }
+  @media (max-width: 37.5em) {
+    .container-content div:nth-child(2) {
+      display: none; } }
+  @media (max-width: 37.5em) {
+    .container-content div:nth-child(3) {
+      display: none; } }
   .container-content .footer-item {
     width: 25%;
     color: #33b0cc;
@@ -481,6 +518,9 @@ p {
     transition: all 0.3s;
     padding: 3rem 2rem;
     font-size: 1.6rem; }
+    @media (max-width: 37.5em) {
+      .container-content .footer-item {
+        width: 50%; } }
     .container-content .footer-item:hover {
       background-color: #0f2771; }
     .container-content .footer-item h1 {
@@ -1335,6 +1375,9 @@ p {
       .section-recognition p {
         width: 60rem;
         margin: 0 auto; } }
+    @media (max-width: 37.5em) {
+      .section-recognition p {
+        width: 90%; } }
   .section-recognition .recognition-block {
     display: flex;
     flex-direction: row;
@@ -1395,6 +1438,10 @@ p {
           .section-rise .rise__img img {
             width: 100%;
             height: auto; } }
+        @media (max-width: 37.5em) {
+          .section-rise .rise__img img {
+            width: auto;
+            height: 100%; } }
     .section-rise .rise__text {
       width: 50%;
       height: 100%;
@@ -1433,6 +1480,9 @@ p {
   background-color: #eee;
   border-bottom: 1px solid #525252;
   overflow: hidden; }
+  @media (max-width: 37.5em) {
+    .secondary-links {
+      display: none; } }
 
 .secondary-links-container {
   width: 120rem;
@@ -1445,9 +1495,6 @@ p {
   @media (max-width: 56.25em) {
     .secondary-links-container {
       width: 100%; } }
-  @media (max-width: 37.5em) {
-    .secondary-links-container {
-      display: none; } }
 
 .secondary-card {
   width: 25%;
@@ -1552,6 +1599,9 @@ p {
         width: calc((100% - 3rem) / 2);
         min-width: 30rem;
         height: 22rem; } }
+    @media (max-width: 37.5em) {
+      .specialities__item {
+        width: 100%; } }
     .specialities__item--overlay {
       width: 100%;
       height: 100%;
@@ -1673,6 +1723,9 @@ p {
   @media (max-width: 56.25em) {
     .whysse {
       width: 100%; } }
+  @media (max-width: 37.5em) {
+    .whysse {
+      width: 90%; } }
   .whysse__h1 {
     display: inline-block;
     background-image: linear-gradient(to right, #112c7e, #33b0cc);
@@ -1683,12 +1736,18 @@ p {
     @media (max-width: 56.25em) {
       .whysse__h1 {
         font-size: 3rem; } }
+    @media (max-width: 37.5em) {
+      .whysse__h1 {
+        font-size: 2.5rem; } }
   .whysse__p {
     width: 60rem;
     margin: 0 auto;
     font-size: 1.6rem;
     transition: all 0.5s;
     position: relative; }
+    @media (max-width: 37.5em) {
+      .whysse__p {
+        width: 100%; } }
 
 .inside-page {
   position: relative;
@@ -2813,6 +2872,9 @@ section {
   width: 100%;
   height: auto;
   padding: 8rem 0; }
+  @media (max-width: 37.5em) {
+    section {
+      padding: 4rem 0; } }
 
 .message-page {
   position: relative;
