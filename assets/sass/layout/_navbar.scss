@@ -326,6 +326,10 @@
                     padding: 0.8rem 1.5rem;
                   }
 
+                  @include respond(tab-land) {
+                    padding: 1.2rem 1.5rem;
+                  }
+
                   -webkit-transition: opacity 0.1s ease-in;
                   -moz-transition: opacity 0.1s ease-in;
                   -o-transition: opacity 0.1s ease-in;
@@ -361,7 +365,7 @@
                     width: 40rem;
                     border-top: none;
                     top: 0;
-                    // text-transform: capitalize;
+                    text-transform: capitalize;
                     left: 14.5rem;
                   }
 

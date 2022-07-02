@@ -879,6 +879,9 @@ p {
                   @media (max-width: 78.12em) {
                     .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item a {
                       padding: 0.8rem 1.5rem; } }
+                  @media (max-width: 78.12em) {
+                    .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item a {
+                      padding: 1.2rem 1.5rem; } }
                   .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item a:hover {
                     background-color: #0e2468;
                     color: #ffcc56; }
@@ -904,6 +907,7 @@ p {
                       width: 40rem;
                       border-top: none;
                       top: 0;
+                      text-transform: capitalize;
                       left: 14.5rem; } }
                   @media (max-width: 56.25em) {
                     .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item .site-link-sub-sec {
@@ -1679,6 +1683,9 @@ p {
   background-color: #eee;
   padding: 2rem 0;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .section-subscribe {
+      height: 12rem; } }
   .section-subscribe label {
     font-size: 1.6rem;
     font-weight: 400;
@@ -1779,11 +1786,14 @@ p {
         .inside-page__topband .inside-page-top-band__header {
           width: 90%;
           min-width: 50rem; } }
+      @media (max-width: 37.5em) {
+        .inside-page__topband .inside-page-top-band__header {
+          width: 90%; } }
       .inside-page__topband .inside-page-top-band__header > div {
         width: 50%;
-        display: block;
         position: relative; }
       .inside-page__topband .inside-page-top-band__header--title {
+        display: block;
         float: left;
         height: 100%; }
         .inside-page__topband .inside-page-top-band__header--title h1 {
@@ -1815,6 +1825,9 @@ p {
         @media (max-width: 56.25em) {
           .inside-page__topband .inside-page-top-band__header--image {
             height: 25rem; } }
+        @media (max-width: 37.5em) {
+          .inside-page__topband .inside-page-top-band__header--image {
+            display: none; } }
         .inside-page__topband .inside-page-top-band__header--image img {
           width: 100%;
           position: absolute;
@@ -1875,6 +1888,12 @@ p {
         font-weight: 400;
         padding-left: 1rem;
         line-height: 3rem; }
+        @media (max-width: 56.25em) {
+          .inside-page-content__main--ul li {
+            font-size: 1.7rem; } }
+        @media (max-width: 37.5em) {
+          .inside-page-content__main--ul li {
+            font-size: 1.8rem; } }
         .inside-page-content__main--ul li:last-child {
           padding-bottom: 2rem; }
     .inside-page-content__main--description {
@@ -2078,6 +2097,12 @@ p {
         font-weight: 400;
         padding-left: 1rem;
         line-height: 3rem; }
+        @media (max-width: 56.25em) {
+          .committee-page-content__main--ul li {
+            font-size: 1.7rem; } }
+        @media (max-width: 37.5em) {
+          .committee-page-content__main--ul li {
+            font-size: 1.8rem; } }
         .committee-page-content__main--ul li:last-child {
           padding-bottom: 2rem; }
     .committee-page-content__main .committies-cards-container {
@@ -2248,6 +2273,12 @@ p {
         font-weight: 400;
         padding-left: 1rem;
         line-height: 3rem; }
+        @media (max-width: 56.25em) {
+          .committees-page-content__main--ul li {
+            font-size: 1.7rem; } }
+        @media (max-width: 37.5em) {
+          .committees-page-content__main--ul li {
+            font-size: 1.8rem; } }
         .committees-page-content__main--ul li:last-child {
           padding-bottom: 2rem; }
     .committees-page-content__main .committies-cards-container {
@@ -2493,6 +2524,12 @@ p {
         font-weight: 400;
         padding-left: 1rem;
         line-height: 3rem; }
+        @media (max-width: 56.25em) {
+          .course-page-content__main--ul li {
+            font-size: 1.7rem; } }
+        @media (max-width: 37.5em) {
+          .course-page-content__main--ul li {
+            font-size: 1.8rem; } }
         .course-page-content__main--ul li:last-child {
           padding-bottom: 2rem; }
     .course-page-content__main--module-ul li {

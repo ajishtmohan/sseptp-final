@@ -218,6 +218,14 @@
   padding-left: 1rem;
   line-height: 3rem;
 
+  @include respond(tab-port) {
+    font-size: 1.7rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
+
   &:last-child {
     padding-bottom: 2rem;
   }
