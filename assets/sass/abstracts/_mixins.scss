@@ -129,6 +129,10 @@
   @include respond(tab-port) {
     margin: 10rem auto 5rem;
   }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
+  }
 }
 
 @mixin course-content-specification {
@@ -155,6 +159,10 @@
   @include respond(tab-port) {
     margin: 4rem auto 5rem;
     min-height: auto;
+  }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
   }
 }
 

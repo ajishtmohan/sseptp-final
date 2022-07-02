@@ -32,8 +32,12 @@
         min-width: 50rem;
       }
 
+      @include respond(phone) {
+        width: 90%;
+        min-width: 37.5rem;
+      }
+
       > div {
-        width: 50%;
         display: block;
         position: relative;
       }
@@ -41,6 +45,12 @@
       &--title {
         float: left;
         height: 100%;
+        width: 50%;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
         h1 {
           @include page-title-white;
         }
@@ -91,6 +101,11 @@
       padding: 2rem;
     }
 
+    @include respond(phone) {
+      height: 15rem;
+      margin-bottom: 5rem;
+    }
+
     &--image {
       width: 40rem;
       height: 40rem;
@@ -110,6 +125,11 @@
         height: 25rem;
       }
 
+      @include respond(phone) {
+        width: 12rem;
+        height: 15rem;
+      }
+
       img {
         width: 100%;
         position: absolute;
@@ -117,6 +137,11 @@
 
         @include respond(tab-land) {
           object-fit: cover;
+          height: 100%;
+        }
+
+        @include respond(phone) {
+          // object-fit: cover;
           height: 100%;
         }
       }
@@ -148,6 +173,10 @@
         @include respond(tab-port) {
           font-size: $h3-font-size;
         }
+
+        @include respond(phone) {
+          font-size: $h4-font-size;
+        }
       }
 
       .person-designation {
@@ -160,6 +189,10 @@
         @include respond(tab-port) {
           font-size: 1.8rem;
         }
+
+        @include respond(phone) {
+          font-size: 1.4rem;
+        }
       }
 
       .person-qualification {
@@ -171,6 +204,18 @@
         display: block;
 
         @include respond(tab-port) {
+          width: 100%;
+          word-wrap: break-word;
+        }
+
+        @include respond(tab-port) {
+          width: 100%;
+          word-wrap: break-word;
+        }
+
+        @include respond(phone) {
+          font-size: 1rem;
+          line-height: 1.5rem;
           width: 100%;
           word-wrap: break-word;
         }

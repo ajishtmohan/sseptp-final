@@ -1777,7 +1777,8 @@ p {
     .inside-page__topband .inside-page-top-band__header {
       width: 120rem;
       height: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: block; }
       @media (max-width: 78.12em) {
         .inside-page__topband .inside-page-top-band__header {
           width: 90%;
@@ -1788,14 +1789,18 @@ p {
           min-width: 50rem; } }
       @media (max-width: 37.5em) {
         .inside-page__topband .inside-page-top-band__header {
-          width: 90%; } }
+          width: 90%;
+          min-width: 37.5rem; } }
       .inside-page__topband .inside-page-top-band__header > div {
-        width: 50%;
         position: relative; }
       .inside-page__topband .inside-page-top-band__header--title {
         display: block;
         float: left;
+        width: 50%;
         height: 100%; }
+        @media (max-width: 37.5em) {
+          .inside-page__topband .inside-page-top-band__header--title {
+            width: 100%; } }
         .inside-page__topband .inside-page-top-band__header--title h1 {
           display: block;
           position: absolute;
@@ -1849,6 +1854,9 @@ p {
   @media (max-width: 56.25em) {
     .inside-page-content {
       margin: 10rem auto 5rem; } }
+  @media (max-width: 37.5em) {
+    .inside-page-content {
+      margin: 3rem auto 5rem; } }
   @media (max-width: 78.12em) {
     .inside-page-content {
       width: 90%; } }
@@ -1920,6 +1928,10 @@ p {
         @media (max-width: 78.12em) {
           .inside-page-content__main .mentors__card {
             width: calc((100% - 4rem) / 3);
+            height: auto; } }
+        @media (max-width: 78.12em) {
+          .inside-page-content__main .mentors__card {
+            width: calc((100% - 2rem) / 2);
             height: auto; } }
         .inside-page-content__main .mentors__card--image {
           height: 18.5rem;
@@ -2055,6 +2067,9 @@ p {
     .committee-page-content {
       margin: 4rem auto 5rem;
       min-height: auto; } }
+  @media (max-width: 37.5em) {
+    .committee-page-content {
+      margin: 3rem auto 5rem; } }
   @media (max-width: 78.12em) {
     .committee-page-content {
       width: 90%; } }
@@ -2234,6 +2249,9 @@ p {
     .committees-page-content {
       margin: 4rem auto 5rem;
       min-height: auto; } }
+  @media (max-width: 37.5em) {
+    .committees-page-content {
+      margin: 3rem auto 5rem; } }
   @media (max-width: 78.12em) {
     .committees-page-content {
       width: 100%; } }
@@ -2942,13 +2960,20 @@ section {
         .message-page__topband .message-page-top-band__header {
           width: 90%;
           min-width: 50rem; } }
+      @media (max-width: 37.5em) {
+        .message-page__topband .message-page-top-band__header {
+          width: 90%;
+          min-width: 37.5rem; } }
       .message-page__topband .message-page-top-band__header > div {
-        width: 50%;
         display: block;
         position: relative; }
       .message-page__topband .message-page-top-band__header--title {
         float: left;
-        height: 100%; }
+        height: 100%;
+        width: 50%; }
+        @media (max-width: 37.5em) {
+          .message-page__topband .message-page-top-band__header--title {
+            width: 100%; } }
         .message-page__topband .message-page-top-band__header--title h1 {
           display: block;
           position: absolute;
@@ -2989,6 +3014,9 @@ section {
     .message-page-content {
       margin: 4rem auto 5rem;
       min-height: auto; } }
+  @media (max-width: 37.5em) {
+    .message-page-content {
+      margin: 3rem auto 5rem; } }
   @media (max-width: 78.12em) {
     .message-page-content {
       width: 90%; } }
@@ -3005,6 +3033,10 @@ section {
       .message-page-content__person {
         height: 20rem;
         padding: 2rem; } }
+    @media (max-width: 37.5em) {
+      .message-page-content__person {
+        height: 15rem;
+        margin-bottom: 5rem; } }
     .message-page-content__person--image {
       width: 40rem;
       height: 40rem;
@@ -3021,6 +3053,10 @@ section {
         .message-page-content__person--image {
           width: 35%;
           height: 25rem; } }
+      @media (max-width: 37.5em) {
+        .message-page-content__person--image {
+          width: 12rem;
+          height: 15rem; } }
       .message-page-content__person--image img {
         width: 100%;
         position: absolute;
@@ -3028,6 +3064,9 @@ section {
         @media (max-width: 78.12em) {
           .message-page-content__person--image img {
             object-fit: cover;
+            height: 100%; } }
+        @media (max-width: 37.5em) {
+          .message-page-content__person--image img {
             height: 100%; } }
     .message-page-content__person--designation {
       width: 70rem;
@@ -3051,6 +3090,9 @@ section {
         @media (max-width: 56.25em) {
           .message-page-content__person--designation .person-name {
             font-size: 2.5rem; } }
+        @media (max-width: 37.5em) {
+          .message-page-content__person--designation .person-name {
+            font-size: 2rem; } }
       .message-page-content__person--designation .person-designation {
         text-align: left;
         font-weight: 500;
@@ -3061,6 +3103,9 @@ section {
         @media (max-width: 56.25em) {
           .message-page-content__person--designation .person-designation {
             font-size: 1.8rem; } }
+        @media (max-width: 37.5em) {
+          .message-page-content__person--designation .person-designation {
+            font-size: 1.4rem; } }
       .message-page-content__person--designation .person-qualification {
         text-align: left;
         margin: 0;
@@ -3071,6 +3116,16 @@ section {
         display: block; }
         @media (max-width: 56.25em) {
           .message-page-content__person--designation .person-qualification {
+            width: 100%;
+            word-wrap: break-word; } }
+        @media (max-width: 56.25em) {
+          .message-page-content__person--designation .person-qualification {
+            width: 100%;
+            word-wrap: break-word; } }
+        @media (max-width: 37.5em) {
+          .message-page-content__person--designation .person-qualification {
+            font-size: 1rem;
+            line-height: 1.5rem;
             width: 100%;
             word-wrap: break-word; } }
   .message-page-content__main {
