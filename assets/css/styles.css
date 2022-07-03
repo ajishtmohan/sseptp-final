@@ -919,6 +919,9 @@ h3 {
                   @media (max-width: 78.12em) {
                     .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item a {
                       padding: 1.2rem 1.5rem; } }
+                  @media (max-width: 37.5em) {
+                    .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item a {
+                      padding: 1.5rem 1.5rem; } }
                   .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item a:hover {
                     background-color: #0e2468;
                     color: #ffcc56; }
@@ -983,6 +986,9 @@ h3 {
                       display: block;
                       margin: 0;
                       padding: 0.9rem 1.5rem; }
+                      @media (max-width: 37.5em) {
+                        .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item .site-link-sub-sec__item a:link {
+                          padding: 1.5rem 1.5rem; } }
                 .nav .site-menu .sitelinks__links .site-link-main__item .site-link-sub__item:hover .site-link-sub-sec {
                   visibility: visible;
                   opacity: 1; }
