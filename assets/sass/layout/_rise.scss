@@ -52,10 +52,7 @@
         }
 
         @include respond(phone) {
-          width: auto;
-          height: 100%;
-          // position: absolute;
-          // right: 0;
+          @include imageFill;
         }
       }
       transition: all 0.3s;
@@ -91,9 +88,15 @@
       }
 
       p {
+        @include page-paragraph;
         width: 100%;
         transition: all 0.5s;
         position: relative;
+        margin: 0 auto;
+
+        @include respond(tab-land) {
+          width: 100%;
+        }
       }
     }
   }

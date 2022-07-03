@@ -316,6 +316,16 @@
                   text-transform: capitalize;
                 }
 
+                @include respond(phone) {
+                  margin: 0 auto;
+                  width: 70%;
+                  border-top: 1px solid $color-secondary-dark;
+
+                  &:last-child {
+                    border-bottom: 1px solid $color-secondary-dark;
+                  }
+                }
+
                 a {
                   padding: 1rem 1rem;
                   display: block;
@@ -344,6 +354,11 @@
                     display: inline-block;
                     position: absolute;
                     right: 1rem;
+
+                    @include respond(phone) {
+                      position: relative;
+                      margin-left: 1rem;
+                    }
                   }
                 }
 
@@ -352,7 +367,7 @@
                   background-color: $color-primary-dark;
                   position: absolute;
                   top: -2px;
-                  left: 18rem;
+                  left: 12.5rem;
                   border-top: 2px solid $color-tertiary-dark;
                   box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
                   padding: 0;
@@ -372,10 +387,15 @@
                   @include respond(tab-port) {
                     width: 30rem;
                     left: 15rem;
+                    box-shadow: none;
                   }
 
                   @include respond(phone) {
+                    width: 100%;
+                    box-shadow: none;
+                    left: 0;
                     z-index: 15;
+                    border-top: none;
                   }
 
                   &__item {
@@ -383,9 +403,18 @@
                     display: block;
                     padding: 0;
                     margin: 0;
-                    border-bottom: 1px solid $color-secondary-dark;
+                    border-top: 1px solid $color-secondary-dark;
+
+                    &:last-child {
+                      border-bottom: 1px solid $color-secondary-dark;
+                    }
 
                     @include respond(tab-land) {
+                      border-bottom: none;
+                    }
+
+                    @include respond(phone) {
+                      width: 100%;
                       border-bottom: none;
                     }
 

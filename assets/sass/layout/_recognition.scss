@@ -18,6 +18,7 @@
 
   p {
     margin-bottom: $margin-tiny;
+    @include page-paragraph;
     @include containerWidth-M;
 
     @include respond(tab-land) {

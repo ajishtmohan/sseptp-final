@@ -16,6 +16,10 @@
       height: 30rem;
     }
 
+    @include respond(phone) {
+      height: 30rem;
+    }
+
     .courses-page-top-band__header {
       width: $site-width;
       height: 100%;
@@ -29,6 +33,11 @@
       @include respond(tab-port) {
         width: 90%;
         min-width: 50rem;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+        min-width: 20rem;
       }
 
       > div {
@@ -90,6 +99,10 @@
         width: calc((100% - 2rem) / 2);
       }
 
+      @include respond(phone) {
+        width: 100%;
+      }
+
       &:hover {
         background-color: rgba($color-tertiary-light, 0.1);
       }
@@ -118,6 +131,7 @@
         }
 
         &--p {
+          @include page-paragraph;
           line-height: 2.5rem;
         }
 

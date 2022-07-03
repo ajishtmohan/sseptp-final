@@ -38,6 +38,7 @@ siteLinks.innerHTML = `
         <li class="site-link-main__item">
           <a href="#">About Us ↓</a>
           <ul class="site-link-sub">
+            <div class="sub-menu-panel"></div>
             <li class="site-link-sub__item">
               <a href="our-heritage.html">Our&nbsp;Heritage </a>
             </li>
@@ -77,10 +78,13 @@ siteLinks.innerHTML = `
           <a href="#">Academics ↓</a>
           <ul class="site-link-sub">
             <li class="site-link-sub__item">
-              <a href="courses.html"
+              <a href="#"
                 >Courses <span class="right-arrow">&#8594;</span></a
               >
               <ul class="site-link-sub-sec">
+                <li class="site-link-sub-sec__item">
+                  <a href="courses.html">All Courses </a>
+                </li>
                 <li class="site-link-sub-sec__item">
                   <a href="computer-science.html"
                     >Computer Science & Engineering (SOSO)
@@ -211,5 +215,4 @@ siteLinks.innerHTML = `
     </label>
   </div>
 </div>
-<div class="menu-panel"></div>
-`;
+<div class="menu-panel"></div>`;

@@ -27,13 +27,10 @@ h3 {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: $color-grey-dark;
-  line-height: 3rem;
-
-  @include respond(phone) {
-    font-size: 2rem;
-  }
+  // @include page-paragraph;
+  // font-family: 'Montserrat', sans-serif;
+  // font-size: 1.6rem;
+  // font-weight: 400;
+  // color: $color-grey-dark;
+  // line-height: 3rem;
 }

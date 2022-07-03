@@ -22,6 +22,10 @@
     transition: all 0.5s;
     position: relative;
 
+    @include respond(tab-land) {
+      font-size: $h2-font-size;
+    }
+
     @include respond(tab-port) {
       font-size: $h2-font-size;
     }
@@ -32,10 +36,16 @@
   }
 
   &__p {
+    @include page-paragraph;
     @include containerWidth-XS;
+    margin: 0 auto;
     font-size: $default-font-size;
     transition: all 0.5s;
     position: relative;
+
+    @include respond(tab-port) {
+      @include containerWidth-S;
+    }
 
     @include respond(phone) {
       width: 100%;
