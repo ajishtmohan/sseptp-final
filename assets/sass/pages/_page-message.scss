@@ -99,11 +99,13 @@
     @include respond(tab-land) {
       height: 25rem;
       padding: 2rem;
+      margin-bottom: 5rem;
     }
 
     @include respond(tab-port) {
       height: 25rem;
       padding: 2rem;
+      margin-bottom: 5rem;
     }
 
     @include respond(phone) {

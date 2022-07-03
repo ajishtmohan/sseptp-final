@@ -64,11 +64,14 @@
       }
 
       img {
-        flex-shrink: 0;
+        @include imageFill;
 
         @include respond(tab-port) {
-          width: 100%;
-          height: auto;
+          @include imageFill;
+        }
+
+        @include respond(phone) {
+          @include imageFill;
         }
       }
     }

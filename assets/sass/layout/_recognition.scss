@@ -19,7 +19,7 @@
   p {
     margin-bottom: $margin-tiny;
     @include page-paragraph;
-    @include containerWidth-M;
+    @include containerWidth-S;
 
     @include respond(tab-land) {
       @include containerWidth-S;

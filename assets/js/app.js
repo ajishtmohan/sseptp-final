@@ -123,6 +123,7 @@ const window600to900 = function () {
 
   menuCheck.addEventListener('change', function () {
     if (menuCheck.checked) {
+      burgerButtonOpen();
       menuPanel.style.cssText = 'visibility: visible; opacity: 1';
       setTimeout(function () {
         quicklinks.style.display = 'block';
@@ -138,6 +139,7 @@ const window600to900 = function () {
       setTimeout(function () {
         menuPanel.style.cssText = 'visibility: hidden; opacity: 0';
       }, 300);
+      burgerButtonClose();
     }
   });
 };
@@ -171,6 +173,32 @@ const window375to600 = function () {
       }, 300);
     }
   });
+};
+
+// MENU BUTTON ANIMATION
+
+const burgerButtonOpen = function () {
+  const burgerLines = document.querySelectorAll('.icon-burger__line');
+  console.log(burgerLines);
+  for (let i = 0; i < burgerLines.length; i++) {
+    burgerLines[i].style.cssText =
+      'display: fixed; position: absolute; right: 5%; top: 50%;';
+    burgerLines[0].style.transform = 'rotate(45deg)';
+    burgerLines[1].style.display = 'none';
+    burgerLines[2].style.transform = 'rotate(-45deg)';
+  }
+};
+
+const burgerButtonClose = function () {
+  const burgerLines = document.querySelectorAll('.icon-burger__line');
+  console.log(burgerLines);
+  for (let i = 0; i < burgerLines.length; i++) {
+    burgerLines[i].style.cssText =
+      'width: 3rem; height: 2px; background-color: $color-white; margin: 3px; border-radius: 10px; opacity: 1; transition: all 0.3s;';
+    burgerLines[0].style.transform = 'rotate(0deg)';
+    burgerLines[1].style.display = 'block';
+    burgerLines[2].style.transform = 'rotate(-0deg)';
+  }
 };
 
 // SCREENSIZE HANDLING

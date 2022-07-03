@@ -13,6 +13,7 @@
   width: $site-width;
   margin: 0 auto;
   height: auto;
+  position: relative;
 
   @include respond(tab-land) {
     width: 90%;
@@ -44,7 +45,7 @@
 
 .text-box {
   display: block;
-  position: relative;
+  position: absolute;
   top: 10rem;
   width: 50rem;
   text-align: left;
@@ -53,16 +54,31 @@
   background-color: rgba($color-secondary-dark, 0.9);
   color: $color-white;
 
+  @include respond(phone) {
+    display: block;
+    position: relative;
+    bottom: 2rem;
+    padding: 2rem;
+    width: 60%;
+    height: auto;
+    background-color: none;
+    background-color: rgba($color-secondary-dark, 0.9);
+  }
+
   h2 {
     @include page-heading-white;
+    display: block;
+    position: relative;
   }
 
   p {
+    @include page-paragraph;
     text-align: left;
     width: 100%;
     color: $color-white;
     margin-bottom: 2rem;
     font-size: 1.5rem;
+    display: block;
   }
 }
 
@@ -76,9 +92,17 @@
     width: 90%;
   }
 
+  @include respond(phone) {
+    width: 90%;
+  }
+
   h2 {
     @include page-heading-secondary;
     text-align: center;
+
+    @include respond(phone) {
+      font-size: $h3-font-size;
+    }
   }
 
   .placement-partners-block {
@@ -87,8 +111,27 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @include respond(phone) {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
     &__item {
       width: calc((100% - 8rem) / 9);
+
+      @include respond(tab-land) {
+        width: calc((100%) / 6);
+      }
+
+      @include respond(tab-port) {
+        width: calc((100%) / 5);
+      }
+
+      @include respond(phone) {
+        width: calc((100%) / 4);
+      }
 
       img {
         width: 100%;

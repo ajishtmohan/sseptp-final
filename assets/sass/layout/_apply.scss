@@ -67,6 +67,9 @@
   &__text {
     padding: 4rem 8rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include respond(tab-land) {
       display: flex;

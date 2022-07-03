@@ -146,6 +146,10 @@
   @include respond(tab-port) {
     margin: 10rem auto 5rem;
   }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
+  }
 }
 
 @mixin message-content-specification {
@@ -211,10 +215,17 @@
   font-size: 1.6rem;
   margin: 0 0 1rem 0;
   font-weight: 400;
+  width: 100%;
+
+  @include respond(tab-land) {
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
 
   @include respond(tab-port) {
     font-size: 1.7rem;
-    width: 90%;
+    width: 100%;
     margin: 0 0 1rem 0;
   }
 
