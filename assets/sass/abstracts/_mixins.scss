@@ -339,6 +339,20 @@ Breakpoint Argument Choices
 // 1em = 16px
 
 @mixin respond($breakpoint) {
+  // 475px
+  @if $breakpoint == committee {
+    @media (max-width: 29.68em) {
+      @content;
+    }
+  }
+
+  // 450px
+  @if $breakpoint == phone-cards {
+    @media (max-width: 28.125em) {
+      @content;
+    }
+  }
+
   // 600px
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
