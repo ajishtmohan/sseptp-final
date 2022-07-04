@@ -49,6 +49,8 @@
       &--title {
         float: left;
         height: 100%;
+        width: 100%;
+
         h1 {
           @include page-title-white;
         }
