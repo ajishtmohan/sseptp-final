@@ -77,18 +77,22 @@ window.addEventListener(
 
 /////////// SPECIALITIES ANIMATION /////////
 
-let specialities = document.querySelector('.specialities');
-specialities.style.opacity = '0';
-specialities.style.transform = 'translateY(5rem)';
+let specialities = document.querySelectorAll('.specialities__item');
+for (let i = 0; i < specialities.length; i++) {
+  specialities[i].style.top = '5rem';
+  specialities[i].style.opacity = '0';
+}
 
 window.addEventListener(
   'scroll',
   function (event) {
-    if (isTopInView(specialities, 0.9)) {
-      setInterval(() => {
-        specialities.style.transform = 'translateY(0)';
-        specialities.style.opacity = '1';
-      }, 300);
+    for (let i = 0; i < specialities.length; i++) {
+      if (isTopInView(specialities[i], 0.9)) {
+        setInterval(() => {
+          specialities[i].style.top = '0';
+          specialities[i].style.opacity = '1';
+        }, 200);
+      }
     }
   },
   false
