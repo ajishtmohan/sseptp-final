@@ -26,10 +26,10 @@ siteLinks.innerHTML = `
 </div>
 <div class="site-menu">
   <div class="sitelinks">
-    <a href="index.html">
-      <div class="sitelinks__logo">
-        <img src="/assets/img/sse-logo.svg" alt="" /></div
-    ></a>
+    <div class="sitelinks__logo">
+      <img src="assets/img/sse-logo.svg" alt="" />
+    </div>
+
     <div class="sitelinks__links">
       <ul class="site-link-main">
         <li class="site-link-main__item">
@@ -205,7 +205,7 @@ siteLinks.innerHTML = `
   <div class="mobile-nav__header">
     <div class="mobile-nav__logo">
       <a href="index.html">
-        <img src="/assets/img/sse-logo.svg" alt=""
+        <img src="assets/img/sse-logo.svg" alt=""
       /></a>
     </div>
     <label for="nav-toggle" class="icon-burger">
