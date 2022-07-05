@@ -41,6 +41,7 @@ if (secondaryLinks !== null) {
       let card = document.querySelectorAll('.secondary-card');
 
       if (isInFullView(secondaryLinks)) {
+        console.log('yes yes');
         for (let i = 0; i < card.length; i++) {
           setInterval(() => {
             card[i].style.transform = 'rotateY(0deg)';
