@@ -470,7 +470,7 @@ let screenSize = window.innerWidth;
 
 function resizeHandler() {
   window.onresize = function () {
-    // location.reload();
+    location.reload();
   };
 
   if (screenSize > 1250) {
