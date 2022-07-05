@@ -808,7 +808,6 @@ p {
             top: 1.8rem;
             left: 8rem; } }
         .nav .site-menu .sitelinks__logo img {
-          height: 85%;
           display: block;
           transition: all 0.3s;
           text-align: left; }
