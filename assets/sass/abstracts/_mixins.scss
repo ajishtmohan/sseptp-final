@@ -170,6 +170,42 @@
   }
 }
 
+@mixin committees-content-specification {
+  width: $site-width;
+  height: auto;
+  min-height: 95rem;
+  margin: 5rem auto 5rem;
+  display: block;
+  position: relative;
+
+  @include respond(tab-port) {
+    margin: 4rem auto 5rem;
+    min-height: auto;
+  }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
+  }
+}
+
+@mixin committee-content-specification {
+  width: $site-width;
+  height: auto;
+  min-height: 95rem;
+  margin: 5rem auto 5rem;
+  display: block;
+  position: relative;
+
+  @include respond(tab-port) {
+    margin: 4rem auto 5rem;
+    min-height: auto;
+  }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
+  }
+}
+
 @mixin page-heading-primary {
   font-weight: 300;
   font-size: 3rem;

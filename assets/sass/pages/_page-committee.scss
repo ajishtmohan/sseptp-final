@@ -80,7 +80,7 @@
 }
 
 .committee-page-content {
-  @include message-content-specification;
+  @include committee-content-specification;
 
   @include respond(tab-land) {
     width: 90%;
@@ -273,7 +273,7 @@
 }
 
 .committees-page-content {
-  @include message-content-specification;
+  @include committees-content-specification;
 
   @include respond(tab-land) {
     width: 100%;
