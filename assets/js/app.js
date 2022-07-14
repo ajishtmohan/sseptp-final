@@ -402,7 +402,7 @@ const window600to900 = function () {
   });
 };
 
-const window375to600 = function () {
+const windowUpto600 = function () {
   const menuCheck = document.getElementById('nav-toggle');
   const menuPanel = document.querySelector('.menu-panel');
   const quickMenu = document.querySelector('.quick-menu');
@@ -470,18 +470,14 @@ window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
 
 function resizeHandler() {
-  window.onresize = function () {
-    location.reload();
-  };
-
   if (screenSize > 1250) {
     window1250px();
   } else if (screenSize < 1250 && screenSize >= 900) {
     window900to1250();
   } else if (screenSize < 900 && screenSize >= 600) {
     window600to900();
-  } else if (screenSize < 600 && screenSize >= 375) {
-    window375to600();
+  } else if (screenSize < 600) {
+    windowUpto600();
   }
 }
 

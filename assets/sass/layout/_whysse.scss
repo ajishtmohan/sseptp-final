@@ -10,7 +10,7 @@
   }
 
   @include respond(tab-port) {
-    width: 100%;
+    width: 90%;
   }
 
   @include respond(phone) {
@@ -43,12 +43,19 @@
     transition: all 0.5s;
     position: relative;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       @include containerWidth-S;
+      margin: 0 auto;
+    }
+
+    @include respond(tab-port) {
+      width: 80%;
+      margin: 0 auto;
     }
 
     @include respond(phone) {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
