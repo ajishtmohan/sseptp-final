@@ -14,6 +14,7 @@
   margin: 0 auto;
   height: auto;
   position: relative;
+  transition: all 0.5s;
 
   @include respond(tab-land) {
     width: 90%;
