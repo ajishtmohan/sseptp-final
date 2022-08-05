@@ -1,4 +1,4 @@
-.course-page {
+.faculty-page {
   position: relative;
   display: block;
   @include zeroAround;
@@ -17,7 +17,7 @@
       height: 30rem;
     }
 
-    .course-page-top-band__header {
+    .faculty-page-top-band__header {
       width: $site-width;
       height: 100%;
       margin: 0 auto;
@@ -105,7 +105,7 @@
   }
 }
 
-.course-page-content {
+.faculty-page-content {
   @include course-content-specification;
 
   @include respond(tab-land) {
@@ -144,6 +144,50 @@
 
     &--description {
       @include page-description;
+    }
+
+    .faculty-member {
+      width: 100%;
+      padding: 2rem 0;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid rgba($color-tertiary-light, 1);
+
+      &__photo {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        background-color: rgba($color-tertiary-light, 0.2);
+        margin-bottom: 3rem;
+        padding: 2rem;
+
+        &--photo {
+          width: 15rem;
+          height: 20rem;
+          background-color: black;
+          display: inline-block;
+          margin-right: 2rem;
+
+          img {
+            @include imageFill;
+          }
+        }
+
+        &--name {
+          display: inline-block;
+          @include zeroAround;
+
+          h3 {
+            font-size: $h3-font-size;
+            color: $color-primary-light;
+          }
+
+          h4 {
+            @include page-paragraph;
+            @include zeroAround;
+          }
+        }
+      }
     }
 
     &--ul {
@@ -192,172 +236,6 @@
       @include respond(tab-land) {
         width: 100%;
       }
-
-      .syllabus-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        width: calc((80rem - 2rem) / 2);
-        height: 15rem;
-        background-image: linear-gradient(
-          45deg,
-          $color-primary-light,
-          $color-secondary-light
-        );
-        border-radius: 3px;
-        transition: all 0.3s;
-        padding: 2rem;
-        box-sizing: border-box;
-        color: $color-white;
-        word-wrap: break-word;
-
-        @include respond(tab-land) {
-          width: calc((100% - 2rem) / 2);
-          height: 20rem;
-        }
-
-        @include respond(tab-port) {
-          width: calc((100% - 4rem) / 3);
-          height: 20rem;
-        }
-
-        @include respond(phone) {
-          width: calc((100% - 2rem) / 2);
-          height: 20rem;
-        }
-
-        @include respond(phone-cards) {
-          width: 100%;
-          height: 16rem;
-        }
-
-        &__name {
-          font-size: $h3-font-size;
-          color: $color-white;
-          @include zeroAround;
-          font-weight: 200;
-          transition: all 0.3s;
-          line-height: 3.5rem;
-          padding-bottom: 1.2rem;
-        }
-
-        &__link {
-          line-height: 2.5rem;
-          @include zeroAround;
-          display: block;
-          position: relative;
-          bottom: 0;
-
-          a {
-            @include primary-btn;
-          }
-        }
-      }
-    }
-
-    .fee-card-container {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 3rem;
-
-      .fee-card {
-        width: calc((100% - 3rem) / 2);
-        background-image: linear-gradient(
-          45deg,
-          $color-primary-light,
-          $color-secondary-light
-        );
-        padding: 2rem;
-        box-sizing: border-box;
-        color: $color-white;
-        border-radius: 3px;
-
-        @include respond(tab-land) {
-          width: calc((100% - 3rem) / 2);
-          height: auto;
-        }
-
-        @include respond(tab-port) {
-          width: calc((100% - 3rem) / 2);
-          height: auto;
-        }
-
-        @include respond(phone) {
-          width: 100%;
-        }
-
-        @include respond(phone-cards) {
-          width: 100%;
-        }
-
-        &__title {
-          width: 100%;
-          height: 8rem;
-          font-size: 2.3rem;
-        }
-
-        h4 {
-          font-size: 1.8rem;
-          color: $color-white;
-          font-weight: 400;
-        }
-
-        ul {
-          margin-bottom: 2rem;
-          height: 10rem;
-
-          @include respond(tab-land) {
-            height: 12rem;
-          }
-
-          @include respond(tab-port) {
-            height: 12rem;
-          }
-
-          @include respond(phone) {
-            height: 12rem;
-          }
-
-          @include respond(phone-cards) {
-            height: 12rem;
-          }
-
-          li {
-            @include page-paragraph;
-            margin-left: 2rem;
-            width: auto;
-
-            @include respond(tab-land) {
-              margin-left: 2rem;
-              width: auto;
-            }
-
-            @include respond(tab-port) {
-              margin-left: 2rem;
-              width: auto;
-            }
-
-            @include respond(phone) {
-              margin-left: 2rem;
-              width: auto;
-            }
-
-            @include respond(phone-cards) {
-              margin-left: 2rem;
-              width: auto;
-            }
-          }
-        }
-
-        p {
-          @include page-paragraph;
-          color: $color-white;
-        }
-      }
     }
   }
 
@@ -404,6 +282,7 @@
       );
       border-radius: 3px;
       transition: all 0.3s;
+      cursor: pointer;
 
       @include respond(tab-port) {
         display: block;
@@ -480,75 +359,6 @@
     }
   }
 
-  .humanities-science-cards-container {
-    @include flexRow;
-    padding-top: $margin-tiny;
-    margin-bottom: $margin-tiny;
-    gap: 3rem;
-
-    .humanities-science-card {
-      display: block;
-      position: relative;
-      width: calc((80rem - 3rem) / 2);
-      height: 16rem;
-      background-image: linear-gradient(
-        45deg,
-        $color-primary-light,
-        $color-secondary-light
-      );
-      border-radius: 3px;
-      transition: all 0.3s;
-      padding: 2rem;
-      box-sizing: border-box;
-
-      &:hover .humanities-science__overlay {
-        opacity: 1;
-      }
-
-      &:hover .humanities-science__text--h3 {
-        color: $color-black;
-      }
-
-      &__text {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        justify-content: space-between;
-        text-align: left;
-        z-index: 10;
-
-        &--h3 {
-          font-size: $h2-font-size;
-          color: $color-white;
-          @include zeroAround;
-          font-weight: 200;
-          transition: all 0.3s;
-          line-height: 3.5rem;
-          padding-bottom: 1.2rem;
-        }
-
-        &--p {
-          line-height: 2.5rem;
-        }
-
-        &--link {
-          line-height: 2.5rem;
-          @include zeroAround;
-          display: block;
-          position: relative;
-          bottom: 0;
-
-          a {
-            @include primary-btn;
-            // @include zeroAround;
-          }
-        }
-      }
-    }
-  }
-
   &__sidebar {
     width: 35rem;
     height: auto;
@@ -588,29 +398,6 @@
             }
           }
         }
-      }
-    }
-
-    &--contact {
-      background-color: $color-tertiary-light;
-      margin-bottom: 2rem;
-
-      h3 {
-        @include course-page-sidebar-title;
-      }
-
-      h4 {
-        @include course-page-sidebar-hod;
-      }
-
-      p {
-        padding: 0 2.5rem;
-        color: $color-black;
-        width: 100%;
-      }
-      .contact-timing {
-        font-weight: 600;
-        padding-bottom: 1rem;
       }
     }
   }
