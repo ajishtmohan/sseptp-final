@@ -78,6 +78,25 @@
       color: $color-white;
     }
 
+    &__sm {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+
+      a {
+        width: 20%;
+        height: auto;
+        overflow: hidden;
+
+        img {
+          width: 3.5rem;
+          height: auto;
+        }
+      }
+    }
+
     ul {
       width: 100%;
       height: auto;

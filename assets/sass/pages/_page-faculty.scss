@@ -146,6 +146,39 @@
       @include page-description;
     }
 
+    .lilink {
+      width: 17rem;
+      height: 2.5rem;
+      background-color: aliceblue;
+      display: inline-block;
+      transition: all 0.3s;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: rgb(215, 233, 249);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      &__logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-block;
+        float: left;
+        margin-right: 1rem;
+
+        img {
+          @include imageFill;
+        }
+
+        p {
+          display: inline-block;
+        }
+      }
+    }
+
     .faculty-member {
       width: 100%;
       padding: 2rem 0;

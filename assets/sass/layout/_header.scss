@@ -21,6 +21,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: center;
 
       @include respond(phone) {
         width: 90%;
@@ -28,9 +29,36 @@
       }
 
       h1 {
-        text-align: center;
         width: 100%;
+        color: $color-white;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+        width: auto;
         color: white;
+        margin-bottom: 2rem;
+        background-color: $color-quaternary-dark;
+        padding: 1rem 1.5rem;
+        transform: translateY(-50%);
+        box-shadow: 0 0 1rem rgba($color-black, 0.6);
+        border-radius: 2px;
+        display: inline-block;
+
+        .student-company {
+          font-weight: 500;
+        }
+      }
+
+      img {
+        width: 80%;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

@@ -609,6 +609,19 @@ p {
       margin-bottom: 2rem; }
     .container-content .footer-item__contact {
       color: #fff; }
+    .container-content .footer-item__sm {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: start; }
+      .container-content .footer-item__sm a {
+        width: 20%;
+        height: auto;
+        overflow: hidden; }
+        .container-content .footer-item__sm a img {
+          width: 3.5rem;
+          height: auto; }
     .container-content .footer-item ul {
       width: 100%;
       height: auto;
@@ -648,15 +661,37 @@ p {
       transform: translate(-50%, -50%);
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      text-align: center; }
       @media only screen and (max-width: 37.5em) {
         .header__slider--container {
           width: 90%;
           height: 90%; } }
       .header__slider--container h1 {
-        text-align: center;
         width: 100%;
-        color: white; }
+        color: #fff;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        font-size: 4rem; }
+      .header__slider--container p {
+        font-size: 2.5rem;
+        width: auto;
+        color: white;
+        margin-bottom: 2rem;
+        background-color: #ef7c00;
+        padding: 1rem 1.5rem;
+        transform: translateY(-50%);
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+        display: inline-block; }
+        .header__slider--container p .student-company {
+          font-weight: 500; }
+      .header__slider--container img {
+        width: 80%;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
   .header__background {
     width: 100%;
     height: 100vh;
@@ -4028,6 +4063,30 @@ p {
       font-size: 2rem;
       font-weight: 300;
       margin-bottom: 3rem; }
+    .faculty-page-content__main .lilink {
+      width: 17rem;
+      height: 2.5rem;
+      background-color: aliceblue;
+      display: inline-block;
+      transition: all 0.3s;
+      border-radius: 3px; }
+      .faculty-page-content__main .lilink:hover {
+        background-color: #d7e9f9; }
+      .faculty-page-content__main .lilink a {
+        text-decoration: none; }
+      .faculty-page-content__main .lilink__logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-block;
+        float: left;
+        margin-right: 1rem; }
+        .faculty-page-content__main .lilink__logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden; }
+        .faculty-page-content__main .lilink__logo p {
+          display: inline-block; }
     .faculty-page-content__main .faculty-member {
       width: 100%;
       padding: 2rem 0;
@@ -4550,6 +4609,36 @@ section {
       .message-page-content__main p .bold-name {
         font-weight: 600;
         font-size: 1.8rem; }
+      .message-page-content__main p a {
+        color: #33b0cc;
+        text-decoration: none;
+        transition: all 0.3s; }
+        .message-page-content__main p a:hover {
+          color: #fab513; }
+    .message-page-content__main .lilink {
+      width: 17rem;
+      height: 2.5rem;
+      background-color: aliceblue;
+      display: inline-block;
+      transition: all 0.3s;
+      border-radius: 3px; }
+      .message-page-content__main .lilink:hover {
+        background-color: #d7e9f9; }
+      .message-page-content__main .lilink a {
+        text-decoration: none; }
+      .message-page-content__main .lilink__logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-block;
+        float: left;
+        margin-right: 1rem; }
+        .message-page-content__main .lilink__logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden; }
+        .message-page-content__main .lilink__logo p {
+          display: inline-block; }
   .message-page-content__sidebar {
     width: 35rem;
     height: auto;
