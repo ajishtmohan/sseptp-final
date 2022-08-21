@@ -3272,6 +3272,56 @@ p {
               font-size: 1.8rem;
               width: 100%;
               margin: 0 0 1rem 0; } }
+    .course-page-content__main .mentors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+      .course-page-content__main .mentors__card {
+        width: calc((100% - 6rem) / 4);
+        height: 24rem;
+        text-align: center;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: rgba(51, 176, 204, 0.1); }
+        @media only screen and (max-width: 78.12em) {
+          .course-page-content__main .mentors__card {
+            width: calc((100% - 4rem) / 3);
+            height: auto; } }
+        @media only screen and (max-width: 56.25em) {
+          .course-page-content__main .mentors__card {
+            width: calc((100% - 4rem) / 3);
+            max-width: 20rem;
+            height: auto; } }
+        @media only screen and (max-width: 37.5em) {
+          .course-page-content__main .mentors__card {
+            width: calc((100% - 2rem) / 2);
+            height: auto; } }
+        .course-page-content__main .mentors__card--image {
+          height: 18.5rem;
+          overflow: hidden; }
+          @media only screen and (max-width: 78.12em) {
+            .course-page-content__main .mentors__card--image {
+              margin-bottom: 1rem; } }
+          .course-page-content__main .mentors__card--image img {
+            width: 100%; }
+        .course-page-content__main .mentors__card--name {
+          margin: 0;
+          padding: 0;
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.5rem; }
+        .course-page-content__main .mentors__card--description {
+          margin: 0;
+          padding: 0;
+          font-size: 1.1rem;
+          font-weight: 400;
+          line-height: 1.5rem; }
   .course-page-content .faculty-cards-container {
     display: flex;
     flex-direction: row;
