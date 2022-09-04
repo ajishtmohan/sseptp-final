@@ -2463,6 +2463,205 @@ p {
           .inside-page-content__sidebar ul li a:hover {
             background-color: #2e9eb8; }
 
+.blog-page {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .blog-page__topband {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 30rem;
+    background-color: #33b0cc;
+    border-bottom: 4px solid #1389a3; }
+    @media only screen and (max-width: 56.25em) {
+      .blog-page__topband {
+        height: 25rem; } }
+    .blog-page__topband .blog-page-top-band__header {
+      width: 120rem;
+      height: 100%;
+      margin: 0 auto; }
+      @media only screen and (max-width: 78.12em) {
+        .blog-page__topband .blog-page-top-band__header {
+          width: 90%;
+          min-width: 90rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .blog-page__topband .blog-page-top-band__header {
+          width: 90%;
+          min-width: 50rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .blog-page__topband .blog-page-top-band__header {
+          width: 90%;
+          min-width: 37.5rem; } }
+      .blog-page__topband .blog-page-top-band__header > div {
+        display: block;
+        position: relative; }
+      .blog-page__topband .blog-page-top-band__header--title {
+        float: left;
+        height: 100%;
+        width: 50%; }
+        @media only screen and (max-width: 37.5em) {
+          .blog-page__topband .blog-page-top-band__header--title {
+            width: 100%; } }
+        .blog-page__topband .blog-page-top-band__header--title h1 {
+          display: block;
+          position: absolute;
+          bottom: 2rem;
+          font-weight: 300;
+          font-size: 4.5rem;
+          line-height: 5rem;
+          color: #fff; }
+          @media only screen and (max-width: 56.25em) {
+            .blog-page__topband .blog-page-top-band__header--title h1 {
+              font-size: 3.2rem;
+              line-height: 4rem; } }
+      .blog-page__topband .blog-page-top-band__header--image {
+        display: block;
+        position: relative;
+        top: 40%;
+        width: 100%;
+        height: 40rem;
+        background-color: black;
+        overflow: hidden;
+        float: right;
+        border-bottom: 4px solid #1389a3;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+        .blog-page__topband .blog-page-top-band__header--image img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+
+.blog-page-content {
+  width: 120rem;
+  height: auto;
+  min-height: 95rem;
+  margin: 10rem auto 5rem;
+  display: block;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .blog-page-content {
+      margin: 4rem auto 5rem;
+      min-height: auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .blog-page-content {
+      margin: 3rem auto 5rem; } }
+  @media only screen and (max-width: 78.12em) {
+    .blog-page-content {
+      width: 90%; } }
+  .blog-page-content__main {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative; }
+    @media only screen and (max-width: 78.12em) {
+      .blog-page-content__main {
+        width: 65%; } }
+    @media only screen and (max-width: 56.25em) {
+      .blog-page-content__main {
+        width: 100%; } }
+    .blog-page-content__main .blog-item {
+      width: 50%;
+      height: 20rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      position: relative;
+      border: 1px solid #fff;
+      transition: all 0.3s;
+      background-color: rgba(51, 176, 204, 0.2); }
+      .blog-page-content__main .blog-item:hover {
+        border: 1px solid #33b0cc; }
+      .blog-page-content__main .blog-item__pic {
+        width: 50%;
+        height: 100%; }
+        .blog-page-content__main .blog-item__pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden; }
+      .blog-page-content__main .blog-item__text {
+        width: 50%;
+        height: 100%;
+        padding: 2rem 2rem 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .blog-page-content__main .blog-item__text h3 {
+          font-size: 2rem;
+          font-weight: 600;
+          color: #112c7e;
+          font-family: 'Montserrat', sans-serif; }
+    .blog-page-content__main p {
+      font-size: 1.6rem;
+      margin: 0 0 1rem 0;
+      font-weight: 400;
+      width: 100%; }
+      @media only screen and (max-width: 78.12em) {
+        .blog-page-content__main p {
+          font-size: 1.7rem;
+          width: 100%;
+          margin: 0 0 1rem 0; } }
+      @media only screen and (max-width: 56.25em) {
+        .blog-page-content__main p {
+          font-size: 1.7rem;
+          width: 100%;
+          margin: 0 0 1rem 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .blog-page-content__main p {
+          font-size: 1.8rem;
+          width: 100%;
+          margin: 0 0 1rem 0; } }
+      .blog-page-content__main p .bold-name {
+        font-weight: 600;
+        font-size: 1.8rem; }
+      .blog-page-content__main p a {
+        color: #33b0cc;
+        text-decoration: none;
+        transition: all 0.3s; }
+        .blog-page-content__main p a:hover {
+          color: #fab513; }
+  .blog-page-content__sidebar {
+    width: 35rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    background-color: #33b0cc;
+    float: right;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 78.12em) {
+      .blog-page-content__sidebar {
+        width: 30%; } }
+    @media only screen and (max-width: 56.25em) {
+      .blog-page-content__sidebar {
+        display: none; } }
+    .blog-page-content__sidebar h3 {
+      display: block;
+      padding: 1.5rem 2.5rem;
+      color: #fff;
+      font-weight: 400;
+      background-color: #1389a3; }
+    .blog-page-content__sidebar ul {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .blog-page-content__sidebar ul li {
+        list-style-type: none;
+        font-size: 1.6rem;
+        font-weight: 400; }
+        .blog-page-content__sidebar ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 0.75rem 2.5rem;
+          display: block;
+          transition: all 0.3s; }
+          .blog-page-content__sidebar ul li a:hover {
+            background-color: #1389a3; }
+
 .committee-page {
   position: relative;
   display: block;
