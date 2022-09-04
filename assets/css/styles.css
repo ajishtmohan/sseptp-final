@@ -276,6 +276,11 @@ p {
       .apply-block__text a:active {
         transform: translateY(-2px);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 37.5em) {
+        .apply-block__text a {
+          padding: 1rem 0.8rem;
+          font-size: 1.6rem;
+          width: auto; } }
 
 .certification {
   background-color: #eee;
@@ -548,6 +553,11 @@ p {
         .course-block__item--text a:active {
           transform: translateY(-2px);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+        @media only screen and (max-width: 37.5em) {
+          .course-block__item--text a {
+            padding: 1rem 0.8rem;
+            font-size: 1.6rem;
+            width: auto; } }
 
 .footer {
   width: 100%;
@@ -651,28 +661,40 @@ p {
     width: 100%;
     height: 100%;
     display: block;
-    position: absolute; }
+    position: absolute;
+    overflow: hidden; }
     .header__slider--container {
-      width: 60%;
-      height: 60%;
+      width: 65%;
+      height: calc(100% - 12rem);
+      margin-top: 12rem;
       position: absolute;
-      top: 50%;
+      padding: 10rem;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center; }
+      text-align: center;
+      overflow: hidden; }
+      @media only screen and (max-width: 78.12em) {
+        .header__slider--container {
+          width: 80%;
+          height: 90%; } }
       @media only screen and (max-width: 37.5em) {
         .header__slider--container {
-          width: 90%;
-          height: 90%; } }
+          width: 100%;
+          height: 90%;
+          padding: 1rem;
+          margin-top: 6rem; } }
       .header__slider--container h1 {
         width: 100%;
         color: #fff;
         font-weight: 300;
         padding-bottom: 1rem;
         font-size: 4rem; }
+        @media only screen and (max-width: 37.5em) {
+          .header__slider--container h1 {
+            font-size: 3rem; } }
       .header__slider--container p {
         font-size: 2.5rem;
         width: auto;
@@ -684,10 +706,13 @@ p {
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
         border-radius: 2px;
         display: inline-block; }
+        @media only screen and (max-width: 37.5em) {
+          .header__slider--container p {
+            font-size: 1.6rem; } }
         .header__slider--container p .student-company {
           font-weight: 500; }
       .header__slider--container img {
-        width: 80%;
+        width: 100%;
         display: block;
         position: relative;
         left: 50%;
@@ -1403,6 +1428,11 @@ p {
     .section-news a:active {
       transform: translateY(-2px);
       box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 37.5em) {
+      .section-news a {
+        padding: 1rem 0.8rem;
+        font-size: 1.6rem;
+        width: auto; } }
   .section-news .blogs-link {
     display: inline-block;
     text-transform: uppercase;
@@ -1421,6 +1451,11 @@ p {
     .section-news .blogs-link:active {
       transform: translateY(-2px);
       box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 37.5em) {
+      .section-news .blogs-link {
+        padding: 1rem 0.8rem;
+        font-size: 1.6rem;
+        width: auto; } }
 
 .news-block {
   width: 120rem;
@@ -1512,6 +1547,11 @@ p {
         .news-block .news-item__text a:active {
           transform: translateY(-2px);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+        @media only screen and (max-width: 37.5em) {
+          .news-block .news-item__text a {
+            padding: 1rem 0.8rem;
+            font-size: 1.6rem;
+            width: auto; } }
     .news-block .news-item:hover h3 {
       color: #ef7c00; }
 
@@ -1952,6 +1992,11 @@ p {
       .specialities__text--link:active {
         transform: translateY(-2px);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 37.5em) {
+        .specialities__text--link {
+          padding: 1rem 0.8rem;
+          font-size: 1.6rem;
+          width: auto; } }
 
 .section-subscribe {
   width: 100%;
@@ -2377,6 +2422,11 @@ p {
               .inside-page-content__main .inside-page-cards-container .inside-page-card__text--link a:active {
                 transform: translateY(-2px);
                 box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+              @media only screen and (max-width: 37.5em) {
+                .inside-page-content__main .inside-page-cards-container .inside-page-card__text--link a {
+                  padding: 1rem 0.8rem;
+                  font-size: 1.6rem;
+                  width: auto; } }
   .inside-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -2652,6 +2702,11 @@ p {
               .committee-page-content__main .committies-cards-container .committies-card__text--link a:active {
                 transform: translateY(-2px);
                 box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+              @media only screen and (max-width: 37.5em) {
+                .committee-page-content__main .committies-cards-container .committies-card__text--link a {
+                  padding: 1rem 0.8rem;
+                  font-size: 1.6rem;
+                  width: auto; } }
   .committee-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -2864,6 +2919,11 @@ p {
               .committees-page-content__main .committies-cards-container .committies-card__text--link a:active {
                 transform: translateY(-2px);
                 box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+              @media only screen and (max-width: 37.5em) {
+                .committees-page-content__main .committies-cards-container .committies-card__text--link a {
+                  padding: 1rem 0.8rem;
+                  font-size: 1.6rem;
+                  width: auto; } }
   .committees-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -3162,6 +3222,11 @@ p {
             .course-page-content__main .syllabus-cards-container .syllabus-card__link a:active {
               transform: translateY(-2px);
               box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+            @media only screen and (max-width: 37.5em) {
+              .course-page-content__main .syllabus-cards-container .syllabus-card__link a {
+                padding: 1rem 0.8rem;
+                font-size: 1.6rem;
+                width: auto; } }
     .course-page-content__main .fee-card-container {
       width: 100%;
       height: auto;
@@ -3431,6 +3496,11 @@ p {
             .course-page-content .faculty-cards-container .faculty-card__text--link a:active {
               transform: translateY(-2px);
               box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+            @media only screen and (max-width: 37.5em) {
+              .course-page-content .faculty-cards-container .faculty-card__text--link a {
+                padding: 1rem 0.8rem;
+                font-size: 1.6rem;
+                width: auto; } }
   .course-page-content .humanities-science-cards-container {
     display: flex;
     flex-direction: row;
@@ -3497,6 +3567,11 @@ p {
             .course-page-content .humanities-science-cards-container .humanities-science-card__text--link a:active {
               transform: translateY(-2px);
               box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+            @media only screen and (max-width: 37.5em) {
+              .course-page-content .humanities-science-cards-container .humanities-science-card__text--link a {
+                padding: 1rem 0.8rem;
+                font-size: 1.6rem;
+                width: auto; } }
   .course-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -3715,6 +3790,11 @@ p {
           .courses-page-content__main .courses-card__text--link a:active {
             transform: translateY(-2px);
             box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+          @media only screen and (max-width: 37.5em) {
+            .courses-page-content__main .courses-card__text--link a {
+              padding: 1rem 0.8rem;
+              font-size: 1.6rem;
+              width: auto; } }
     .courses-page-content__main p {
       width: 100%;
       margin: 0 0 1rem 0; }
@@ -4364,6 +4444,11 @@ p {
             .faculty-page-content .faculty-cards-container .faculty-card__text--link a:active {
               transform: translateY(-2px);
               box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+            @media only screen and (max-width: 37.5em) {
+              .faculty-page-content .faculty-cards-container .faculty-card__text--link a {
+                padding: 1rem 0.8rem;
+                font-size: 1.6rem;
+                width: auto; } }
   .faculty-page-content__sidebar {
     width: 35rem;
     height: auto;
@@ -4747,10 +4832,10 @@ section {
       width: 90%; } }
 
 .section-placement {
-  background-image: url("../img/students.jpg"); }
+  background-image: url("../img/placement-mission.jpg"); }
 
 .section-training {
-  background-image: url("../img/training.jpg"); }
+  background-image: url("../img/placement-modus.jpg"); }
 
 .section-records {
   background-image: url("../img/job.jpg"); }
@@ -4816,6 +4901,30 @@ section {
         font-size: 1.8rem;
         width: 100%;
         margin: 0 0 1rem 0; } }
+  .text-box a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ef7c00;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    transition: all 0.1s;
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
+    .text-box a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+    .text-box a:active {
+      transform: translateY(-2px);
+      box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 37.5em) {
+      .text-box a {
+        padding: 1rem 0.8rem;
+        font-size: 1.6rem;
+        width: auto; } }
 
 .placement-partners {
   display: block;
@@ -4839,20 +4948,19 @@ section {
         font-size: 2.5rem; } }
   .placement-partners .placement-partners-block {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 4rem;
-    flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .placement-partners .placement-partners-block {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         gap: 2rem; } }
     .placement-partners .placement-partners-block__item {
-      width: calc((100% - 8rem) / 9);
+      width: calc((100%) / 9);
       height: 8rem; }
       @media only screen and (max-width: 78.12em) {
         .placement-partners .placement-partners-block__item {
@@ -4862,7 +4970,7 @@ section {
           width: calc((100%) / 5); } }
       @media only screen and (max-width: 37.5em) {
         .placement-partners .placement-partners-block__item {
-          width: calc((100%) / 4); } }
+          width: calc((100%) / 3.5); } }
       .placement-partners .placement-partners-block__item img {
         width: 100%;
         height: 100%;
@@ -4870,14 +4978,79 @@ section {
         overflow: hidden;
         display: block; }
 
-.recruitments-details {
+.recruitments {
   background-color: rgba(19, 137, 163, 0.1); }
-  .recruitments-details__h2 {
-    font-weight: 300;
-    font-size: 3rem;
-    line-height: 4rem;
-    color: #33b0cc;
-    text-align: center; }
+  .recruitments .recruitments-details {
+    height: auto;
+    width: 120rem;
+    margin: 0 auto; }
+    @media only screen and (max-width: 37.5em) {
+      .recruitments .recruitments-details {
+        width: 100%; } }
+    .recruitments .recruitments-details__h2 {
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 4rem;
+      color: #33b0cc;
+      text-align: center;
+      margin-bottom: 2rem; }
+    .recruitments .recruitments-details .testimonial-block {
+      text-align: center;
+      display: block;
+      width: 80rem;
+      margin: 0 auto; }
+      @media only screen and (max-width: 37.5em) {
+        .recruitments .recruitments-details .testimonial-block {
+          width: 90%; } }
+      .recruitments .recruitments-details .testimonial-block__pic {
+        width: 12rem;
+        height: 12rem;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 0 auto 2rem auto; }
+        @media only screen and (max-width: 37.5em) {
+          .recruitments .recruitments-details .testimonial-block__pic {
+            width: 20rem;
+            height: 20rem; } }
+        .recruitments .recruitments-details .testimonial-block__pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden; }
+      .recruitments .recruitments-details .testimonial-block__text--name {
+        color: #3052b9;
+        font-size: 2.5rem;
+        font-weight: 500; }
+        @media only screen and (max-width: 37.5em) {
+          .recruitments .recruitments-details .testimonial-block__text--name {
+            font-size: 3rem;
+            width: 100%; } }
+      .recruitments .recruitments-details .testimonial-block__text--details {
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: block;
+        width: 40%; }
+        @media only screen and (max-width: 37.5em) {
+          .recruitments .recruitments-details .testimonial-block__text--details {
+            font-size: 2rem; } }
+      .recruitments .recruitments-details .testimonial-block__text--offers {
+        font-size: 1.3rem;
+        font-weight: 600;
+        width: 70%;
+        margin-bottom: 2rem;
+        line-height: normal; }
+        @media only screen and (max-width: 37.5em) {
+          .recruitments .recruitments-details .testimonial-block__text--offers {
+            font-size: 1.5rem; } }
+      .recruitments .recruitments-details .testimonial-block__text--quote {
+        font-size: 2rem;
+        font-style: italic;
+        color: #3052b9;
+        width: 100%; }
+        @media only screen and (max-width: 37.5em) {
+          .recruitments .recruitments-details .testimonial-block__text--quote {
+            font-size: 1.6rem;
+            line-height: 3rem; } }
 
 *,
 *::after,

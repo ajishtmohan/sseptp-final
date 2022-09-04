@@ -22,11 +22,11 @@
 }
 
 .section-placement {
-  background-image: url('../img/students.jpg');
+  background-image: url('../img/placement-mission.jpg');
 }
 
 .section-training {
-  background-image: url('../img/training.jpg');
+  background-image: url('../img/placement-modus.jpg');
 }
 
 .section-records {
@@ -81,6 +81,12 @@
     font-size: 1.5rem;
     display: block;
   }
+
+  a {
+    @include primary-btn;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .placement-partners {
@@ -107,20 +113,22 @@
   }
 
   .placement-partners-block {
-    @include flexRow;
-    margin-top: 4rem;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
 
     @include respond(phone) {
       width: 100%;
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
       gap: 2rem;
     }
 
     &__item {
-      width: calc((100% - 8rem) / 9);
+      width: calc((100%) / 9);
       height: 8rem;
 
       @include respond(tab-land) {
@@ -132,7 +140,7 @@
       }
 
       @include respond(phone) {
-        width: calc((100%) / 4);
+        width: calc((100%) / 3.5);
       }
 
       img {
@@ -143,11 +151,97 @@
   }
 }
 
-.recruitments-details {
+.recruitments {
   background-color: rgba($color-secondary-dark, 0.1);
+  .recruitments-details {
+    height: auto;
+    width: $site-width;
+    margin: 0 auto;
 
-  &__h2 {
-    @include page-heading-secondary;
-    text-align: center;
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &__h2 {
+      @include page-heading-secondary;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-block {
+      text-align: center;
+      display: block;
+      width: 80rem;
+      margin: 0 auto;
+
+      @include respond(phone) {
+        width: 90%;
+      }
+
+      &__pic {
+        width: 12rem;
+        height: 12rem;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 0 auto 2rem auto;
+
+        @include respond(phone) {
+          width: 20rem;
+          height: 20rem;
+        }
+
+        img {
+          @include imageFill;
+        }
+      }
+
+      &__text {
+        &--name {
+          color: $color-primary-light;
+          font-size: 2.5rem;
+          font-weight: 500;
+
+          @include respond(phone) {
+            font-size: 3rem;
+            width: 100%;
+          }
+        }
+
+        &--details {
+          font-size: 1.2rem;
+          font-weight: 500;
+          display: block;
+          width: 40%;
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+
+        &--offers {
+          font-size: 1.3rem;
+          font-weight: 600;
+          width: 70%;
+          margin-bottom: 2rem;
+          line-height: normal;
+
+          @include respond(phone) {
+            font-size: 1.5rem;
+          }
+        }
+
+        &--quote {
+          font-size: 2rem;
+          font-style: italic;
+          color: $color-primary-light;
+          width: 100%;
+
+          @include respond(phone) {
+            font-size: $default-font-size;
+            line-height: 3rem;
+          }
+        }
+      }
+    }
   }
 }

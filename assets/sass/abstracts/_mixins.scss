@@ -85,6 +85,12 @@
     transform: translateY(-2px);
     box-shadow: 0 0.2rem 0.2rem rgba($color-black, 0.1);
   }
+
+  @include respond(phone) {
+    padding: 1rem 0.8rem;
+    font-size: $default-font-size;
+    width: auto;
+  }
 }
 
 // PAGE DEFAULT
