@@ -79,6 +79,36 @@
         transform: translateX(-50%);
       }
     }
+
+    .slide-toggle {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      #show-hide-slides {
+        position: absolute;
+        margin-top: -20rem;
+      }
+
+      .slide-label {
+        display: block;
+        position: absolute;
+        bottom: 5rem;
+        background-color: white;
+        font-size: 1.6rem;
+        padding: 0.4rem 1.2rem;
+        transition: all 0.2s;
+        cursor: pointer;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover {
+          transform: translate(-50%, -5px);
+          box-shadow: 0 0 0.5rem rgba($color-black, 0.8);
+        }
+      }
+    }
   }
 
   &__background {

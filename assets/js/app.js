@@ -465,6 +465,25 @@ const burgerButtonClose = function () {
   }
 };
 
+// show/hide slideshow
+const slideshow = function () {
+  let slideCheck = document.querySelector('#show-hide-slides');
+  console.log(slideCheck);
+  let slides = document.querySelector('.header__slider--container');
+  slides.style.display = 'none';
+  let label = document.querySelector('.slide-label');
+
+  slideCheck.addEventListener('change', function () {
+    if (slideCheck.checked) {
+      slides.style.display = 'block';
+      label.innerHTML = 'Hide Slides';
+    } else {
+      slides.style.display = 'none';
+      label.innerHTML = 'Show Slides';
+    }
+  });
+};
+slideshow();
 // SCREENSIZE HANDLING
 window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
