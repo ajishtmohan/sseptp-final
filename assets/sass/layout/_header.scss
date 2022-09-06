@@ -15,69 +15,83 @@
     &--container {
       width: 65%;
       height: calc(100% - 12rem);
-      margin: 12rem auto 0 auto;
+      margin-top: 12rem;
       position: absolute;
-      padding: 10rem;
+      padding: 8rem 10rem;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      align-items: end;
       text-align: center;
       overflow: hidden;
 
-      @include respond(tab-land) {
-        width: 80%;
-        height: 90%;
-      }
-
-      @include respond(phone) {
-        width: 100%;
-        height: 90%;
-        padding: 1rem;
-        margin-top: 6rem;
-      }
-
-      h1 {
-        width: 100%;
-        color: $color-white;
-        font-weight: 300;
-        padding-bottom: 1rem;
-        font-size: 4rem;
-
-        @include respond(phone) {
-          font-size: 3rem;
-        }
-      }
-
-      p {
-        font-size: 2.5rem;
-        width: auto;
-        color: white;
-        margin-bottom: 2rem;
-        background-color: $color-quaternary-dark;
-        padding: 1rem 1.5rem;
-        transform: translateY(-50%);
-        box-shadow: 0 0 1rem rgba($color-black, 0.6);
-        border-radius: 2px;
-        display: inline-block;
-
-        @include respond(phone) {
-          font-size: $default-font-size;
-        }
-
-        .student-company {
-          font-weight: 500;
-        }
-      }
-
-      img {
+      .slides {
         width: 100%;
         display: block;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        transform: scale(0.2);
+        transform-origin: bottom center;
+        opacity: 0.2;
+        transition: all 0.3s;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        h1 {
+          width: 100%;
+          color: $color-white;
+          font-weight: 300;
+          padding-bottom: 1rem;
+          font-size: 4rem;
+
+          @include respond(phone) {
+            font-size: 3rem;
+          }
+        }
+
+        p {
+          font-size: 2.5rem;
+          width: auto;
+          color: white;
+          margin-bottom: 2rem;
+          background-color: $color-quaternary-dark;
+          padding: 1rem 1.5rem;
+          transform: translateY(-50%);
+          box-shadow: 0 0 1rem rgba($color-black, 0.6);
+          border-radius: 2px;
+          display: inline-block;
+
+          @include respond(phone) {
+            font-size: $default-font-size;
+          }
+
+          .student-company {
+            font-weight: 500;
+          }
+        }
+
+        img {
+          width: 100%;
+          display: block;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
+    }
+
+    @include respond(tab-land) {
+      width: 80%;
+      height: 90%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      height: 90%;
+      padding: 1rem;
+      margin-top: 6rem;
     }
 
     .slide-toggle {

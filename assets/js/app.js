@@ -469,21 +469,24 @@ const burgerButtonClose = function () {
 const slideshow = function () {
   let slideCheck = document.querySelector('#show-hide-slides');
   console.log(slideCheck);
-  let slides = document.querySelector('.header__slider--container');
-  slides.style.display = 'none';
+  let slides = document.querySelector('.slides');
+
   let label = document.querySelector('.slide-label');
 
   slideCheck.addEventListener('change', function () {
     if (slideCheck.checked) {
-      slides.style.display = 'block';
+      slides.style.opacity = '1';
       label.innerHTML = 'Hide Slides';
+      slides.style.transform = 'scale(1)';
     } else {
-      slides.style.display = 'none';
+      slides.style.opacity = '0.1';
       label.innerHTML = 'Show Slides';
+      slides.style.transform = 'scale(0.2)';
     }
   });
 };
 slideshow();
+
 // SCREENSIZE HANDLING
 window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
