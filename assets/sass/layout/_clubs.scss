@@ -81,6 +81,10 @@
     p {
       width: 100%;
       color: $color-white;
+
+      a {
+        @include primary-btn;
+      }
     }
   }
 }
