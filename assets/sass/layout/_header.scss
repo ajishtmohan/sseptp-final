@@ -26,6 +26,16 @@
       text-align: center;
       overflow: hidden;
 
+      @include respond(phone) {
+        width: 90%;
+        height: calc(100vh - 30rem);
+        margin-top: 10rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+
       .slides {
         width: 100%;
         display: block;
@@ -34,6 +44,14 @@
         transform-origin: bottom center;
         opacity: 0.2;
         transition: all 0.3s;
+
+        @include respond(phone) {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          transform: scale(0.2);
+          transform-origin: bottom center;
+        }
 
         &:hover {
           opacity: 1;

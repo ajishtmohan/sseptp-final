@@ -470,8 +470,9 @@ const slideshow = function () {
   let slideCheck = document.querySelector('#show-hide-slides');
   console.log(slideCheck);
   let slides = document.querySelector('.slides');
-
   let label = document.querySelector('.slide-label');
+  let screenSize = window.innerWidth;
+  slides.style.transform = screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
 
   slideCheck.addEventListener('change', function () {
     if (slideCheck.checked) {
@@ -481,7 +482,7 @@ const slideshow = function () {
     } else {
       slides.style.opacity = '0.1';
       label.innerHTML = 'Show Slides';
-      slides.style.transform = 'scale(0.2)';
+      slides.style.transform = screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
     }
   });
 };
