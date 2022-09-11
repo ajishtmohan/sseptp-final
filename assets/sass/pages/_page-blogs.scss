@@ -105,7 +105,7 @@
     }
 
     .blog-item {
-      width: 50%;
+      width: calc((100% - 2rem) / 2);
       height: 20rem;
       display: flex;
       flex-direction: row;

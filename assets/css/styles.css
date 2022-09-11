@@ -2649,7 +2649,7 @@ p {
       .blog-page-content__main {
         width: 100%; } }
     .blog-page-content__main .blog-item {
-      width: 50%;
+      width: calc((100% - 2rem) / 2);
       height: 20rem;
       display: flex;
       flex-direction: row;
