@@ -1,0 +1,171 @@
+.blog-page-individual {
+  position: relative;
+  display: block;
+  width: $full-width;
+  @include zeroAround;
+
+  &__topband {
+    position: relative;
+    display: block;
+    width: $full-width;
+    margin: 0 auto;
+    height: 30rem;
+    background-color: $color-secondary-light;
+    border-bottom: 4px solid $color-secondary-dark;
+
+    @include respond(tab-port) {
+      height: 25rem;
+    }
+
+    .blog-page-top-band__header {
+      width: $site-width;
+      height: 100%;
+      margin: 0 auto;
+
+      @include respond(tab-land) {
+        width: 90%;
+        min-width: 90rem;
+      }
+
+      @include respond(tab-port) {
+        width: 90%;
+        min-width: 50rem;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+        min-width: 37.5rem;
+      }
+
+      > div {
+        display: block;
+        position: relative;
+      }
+
+      &--title {
+        float: left;
+        height: 100%;
+        width: 50%;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        h1 {
+          @include page-title-white;
+        }
+      }
+
+      &--image {
+        display: block;
+        position: relative;
+        top: 40%;
+        width: 100%;
+        height: 40rem;
+        background-color: black;
+        overflow: hidden;
+        float: right;
+        border-bottom: 4px solid $color-secondary-dark;
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.blog-page-individual-content {
+  @include blog-page-individual-content-specification;
+
+  @include respond(tab-land) {
+    width: 90%;
+  }
+
+  &__main {
+    width: 80rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    h2 {
+      @include page-heading-secondary;
+    }
+
+    h3 {
+      @include page-h3-secondary;
+    }
+
+    p {
+      @include page-paragraph;
+      width: 100%;
+    }
+
+    &--ul {
+      padding-left: 1.5rem;
+
+      li {
+        @include page-bullet;
+      }
+    }
+
+    &--description {
+      @include page-description;
+    }
+  }
+
+  &__sidebar {
+    width: 35rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    background-color: $color-secondary-light;
+    float: right;
+    box-sizing: border-box;
+
+    @include respond(tab-land) {
+      width: 30%;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    h3 {
+      @include blog-page-sidebar-title;
+      background-color: darken($color-secondary-light, 5%);
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        @include page-sidebar-list;
+
+        a {
+          @include page-sidebar-list-link-white;
+
+          &:hover {
+            background-color: darken($color-secondary-light, 5%);
+          }
+        }
+      }
+    }
+  }
+}

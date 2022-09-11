@@ -212,6 +212,23 @@
   }
 }
 
+@mixin blog-page-individual-content-specification {
+  width: $site-width;
+  height: auto;
+  min-height: 45rem;
+  margin: 5rem auto 5rem;
+  display: block;
+  position: relative;
+
+  @include respond(tab-port) {
+    margin: 10rem auto 5rem;
+  }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
+  }
+}
+
 @mixin page-heading-primary {
   font-weight: 300;
   font-size: 3rem;
@@ -330,6 +347,15 @@
   color: $color-black;
   font-size: $h4-font-size;
   font-weight: 500;
+}
+
+@mixin blog-page-sidebar-title {
+  display: block;
+  padding: 1.5rem 2.5rem;
+  color: $color-white;
+  font-weight: 400;
+  background-color: $color-secondary-dark;
+  @include montserrat;
 }
 
 @mixin page-sidebar-list {
