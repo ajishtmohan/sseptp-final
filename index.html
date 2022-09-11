@@ -768,9 +768,28 @@
     </section>
 
     <section class="section-subscribe">
-      <label for="sub-email">Subscribe to Sanskrithi Newsletter</label>
+      <!-- <label for="sub-email">Subscribe to Sanskrithi Newsletter</label>
       <input type="email" id="sub-email" placeholder="Email Address" />
-      <input type="submit" />
+      <input type="submit" /> -->
+      <form method="post" action="http://210.18.180.227/?na=s">
+        <input type="hidden" name="nl[]" value="1" />
+        <input type="hidden" name="nr" value="page" /><input
+          type="hidden"
+          name="nlang"
+          value=""
+        />
+
+        <label for="tnp-1">Subscribe to Sanskrithi Newsletter</label>
+        <input
+          class="tnp-email"
+          type="email"
+          name="ne"
+          id="tnp-1"
+          value=""
+          required=""
+        />
+        <input class="tnp-submit" type="submit" value="Subscribe" />
+      </form>
     </section>
 
     <footer class="footer">
