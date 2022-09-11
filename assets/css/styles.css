@@ -2640,6 +2640,7 @@ p {
     position: relative;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 2rem; }
     @media only screen and (max-width: 78.12em) {
       .blog-page-content__main {

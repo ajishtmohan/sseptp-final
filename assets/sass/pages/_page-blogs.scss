@@ -93,6 +93,7 @@
     position: relative;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 2rem;
 
     @include respond(tab-land) {
