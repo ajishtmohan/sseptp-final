@@ -2506,6 +2506,8 @@ p {
                   padding: 1rem 0.8rem;
                   font-size: 1.6rem;
                   width: auto; } }
+    .inside-page-content__main .alumni-reg-form {
+      background-color: red; }
   .inside-page-content__sidebar {
     width: 35rem;
     height: auto;
