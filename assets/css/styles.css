@@ -2681,6 +2681,15 @@ p {
           font-weight: 600;
           color: #112c7e;
           font-family: 'Montserrat', sans-serif; }
+          .blog-page-content__main .blog-item__text h3 a:link {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #112c7e;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            transition: all 0.3s; }
+            .blog-page-content__main .blog-item__text h3 a:link:hover {
+              color: #3052b9; }
     .blog-page-content__main p {
       font-size: 1.6rem;
       margin: 0 0 1rem 0;
