@@ -2719,6 +2719,8 @@ p {
         transition: all 0.3s; }
         .blog-page-content__main p a:hover {
           color: #fab513; }
+        .blog-page-content__main p a:visited {
+          color: #33b0cc; }
   .blog-page-content__sidebar {
     width: 35rem;
     height: auto;

@@ -176,6 +176,10 @@
         &:hover {
           color: $color-tertiary-dark;
         }
+
+        &:visited {
+          color: $color-secondary-light;
+        }
       }
     }
   }
