@@ -2634,8 +2634,10 @@ p {
   .blog-page-content__main {
     width: 100%;
     height: auto;
-    display: inline-block;
-    position: relative; }
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 2rem; }
     @media only screen and (max-width: 78.12em) {
       .blog-page-content__main {
         width: 65%; } }

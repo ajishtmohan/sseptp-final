@@ -89,8 +89,10 @@
   &__main {
     width: 100%;
     height: auto;
-    display: inline-block;
+    display: flex;
     position: relative;
+    flex-direction: row;
+    gap: 2rem;
 
     @include respond(tab-land) {
       width: 65%;
