@@ -2639,6 +2639,7 @@ p {
     display: flex;
     position: relative;
     flex-direction: row;
+    justify-content: space-around;
     gap: 2rem; }
     @media only screen and (max-width: 78.12em) {
       .blog-page-content__main {
