@@ -2828,7 +2828,7 @@ p {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2rem; }
     @media only screen and (max-width: 78.12em) {
