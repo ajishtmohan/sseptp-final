@@ -2848,6 +2848,9 @@ p {
       border: 1px solid #fff;
       transition: all 0.3s;
       background-color: rgba(51, 176, 204, 0.2); }
+      @media only screen and (max-width: 56.25em) {
+        .blog-page-content__main .blog-item {
+          width: 100%; } }
       @media only screen and (max-width: 37.5em) {
         .blog-page-content__main .blog-item {
           width: 100%; } }

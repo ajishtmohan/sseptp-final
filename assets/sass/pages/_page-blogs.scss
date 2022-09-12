@@ -116,6 +116,10 @@
       transition: all 0.3s;
       background-color: rgba($color-secondary-light, 0.2);
 
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
       @include respond(phone) {
         width: 100%;
       }
