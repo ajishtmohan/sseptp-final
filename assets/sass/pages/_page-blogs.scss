@@ -112,10 +112,13 @@
       justify-content: space-between;
       gap: 2rem;
       position: relative;
-
       border: 1px solid $color-white;
       transition: all 0.3s;
       background-color: rgba($color-secondary-light, 0.2);
+
+      @include respond(phone) {
+        width: 100%;
+      }
 
       &:hover {
         border: 1px solid $color-secondary-light;
