@@ -44,6 +44,15 @@
       <div class="blog-page-individual-content__sidebar">
         <h3>Recent Posts</h3>
         <ul>
+          <?php
+            while(have_posts()) {
+              the_post(); ?>
+          <li>
+            <a href="#"><?php the_title(); ?></a>
+          </li>
+          <?php }
+
+          ?>
           <li><a href="#">Our&nbsp;Heritage </a></li>
           <li><a href="#">Vision&nbsp;&&nbsp;Mission</a></li>
           <li><a href="#">Chairman&nbsp;Message</a></li>
