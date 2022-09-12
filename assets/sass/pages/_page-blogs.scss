@@ -97,7 +97,11 @@
     gap: 2rem;
 
     @include respond(tab-land) {
-      width: 65%;
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
 
     @include respond(tab-port) {
@@ -117,7 +121,11 @@
       background-color: rgba($color-secondary-light, 0.2);
 
       @include respond(tab-port) {
-        width: 100%;
+        width: calc((100% - 2rem) / 2);
+      }
+
+      @include respond(tab-land) {
+        width: calc((100% - 2rem) / 2);
       }
 
       @include respond(phone) {
