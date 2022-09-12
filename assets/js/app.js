@@ -472,19 +472,22 @@ const slideshow = function () {
   let slides = document.querySelector('.slides');
   let label = document.querySelector('.slide-label');
   let screenSize = window.innerWidth;
-  slides.style.transform = screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
 
-  slideCheck.addEventListener('change', function () {
-    if (slideCheck.checked) {
-      slides.style.opacity = '1';
-      label.innerHTML = 'Hide Slides';
-      slides.style.transform = 'scale(1)';
-    } else {
-      slides.style.opacity = '0.1';
-      label.innerHTML = 'Show Slides';
-      slides.style.transform = screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
-    }
-  });
+  if (slideCheck !== null) {
+    slides.style.transform = screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
+    slideCheck.addEventListener('change', function () {
+      if (slideCheck.checked) {
+        slides.style.opacity = '1';
+        label.innerHTML = 'Hide Slides';
+        slides.style.transform = 'scale(1)';
+      } else {
+        slides.style.opacity = '0.1';
+        label.innerHTML = 'Show Slides';
+        slides.style.transform =
+          screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
+      }
+    });
+  }
 };
 slideshow();
 
