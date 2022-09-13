@@ -1784,7 +1784,8 @@ p {
         width: 100%;
         transition: all 0.5s;
         position: relative;
-        margin: 0 auto; }
+        margin: 0 auto;
+        margin-bottom: 2rem; }
         @media only screen and (max-width: 78.12em) {
           .section-rise .rise__text p {
             font-size: 1.7rem;
@@ -1803,6 +1804,28 @@ p {
         @media only screen and (max-width: 78.12em) {
           .section-rise .rise__text p {
             width: 100%; } }
+        .section-rise .rise__text p a {
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: #fff;
+          background-color: #ef7c00;
+          padding: 0.4rem 0.8rem;
+          box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+          transition: all 0.1s; }
+          .section-rise .rise__text p a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+          .section-rise .rise__text p a:active {
+            transform: translateY(-2px);
+            box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1); }
+          @media only screen and (max-width: 37.5em) {
+            .section-rise .rise__text p a {
+              padding: 1rem 0.8rem;
+              font-size: 1.6rem;
+              width: auto; } }
 
 .secondary-links {
   width: 100%;

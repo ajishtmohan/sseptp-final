@@ -140,9 +140,16 @@ let sectionRise = document.querySelector('.rise');
 let sectionPic = document.querySelector('.rise__img');
 let sectionH2 = document.querySelector('.rise__text--h2');
 let sectionP = document.querySelector('.rise__text--p');
+let sectionLink = document.querySelector('.rise__text--link');
 
 if (sectionRise !== null) {
-  let sectionRiseEl = [sectionRise, sectionPic, sectionH2, sectionP];
+  let sectionRiseEl = [
+    sectionRise,
+    sectionPic,
+    sectionH2,
+    sectionP,
+    sectionLink,
+  ];
   for (let i = 0; i < sectionRiseEl.length; i++) {
     if (i < 2) {
       sectionRiseEl[i].style.opacity = '0';
