@@ -489,7 +489,7 @@ const slideshow = function () {
         slides.style.transform = 'scale(1)';
       } else {
         slides.style.opacity = '0.1';
-        label.innerHTML = 'Show Slides';
+        label.innerHTML = 'SALIENT FEATURES';
         slides.style.transform =
           screenSize <= 600 ? 'scale(0.5)' : 'scale(0.2)';
       }
