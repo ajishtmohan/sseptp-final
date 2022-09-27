@@ -96,6 +96,10 @@
         font-size: $h5-font-size;
         display: block;
       }
+      @include respond(phone) {
+        font-size: $h4-font-size;
+        display: block;
+      }
     }
 
     &--p {
@@ -105,10 +109,13 @@
       font-size: $default-font-size;
       margin-bottom: 1rem;
       line-height: 2rem;
+      display: block;
+      position: relative;
     }
 
     &--link {
       @include primary-btn;
+      width: 100%;
     }
   }
 }

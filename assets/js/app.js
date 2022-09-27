@@ -20,7 +20,6 @@ function isInFullView(element) {
 }
 
 function isTopInView(element, pos = 0.8) {
-  // console.log(pos);
   let bounding = element.getBoundingClientRect();
 
   if (bounding.top <= window.innerHeight * pos) {
@@ -41,11 +40,10 @@ if (secondaryLinks !== null) {
       let card = document.querySelectorAll('.secondary-card');
 
       if (isInFullView(secondaryLinks)) {
-        console.log('yes yes');
         for (let i = 0; i < card.length; i++) {
           setInterval(() => {
             card[i].style.transform = 'rotateY(0deg)';
-          }, 200 * i + 200);
+          }, 300 * i + 300);
         }
       }
     },
@@ -74,7 +72,7 @@ if (whysse !== null) {
           setInterval(() => {
             whySseEl[i].style.opacity = '1';
             whySseEl[i].style.top = '0';
-          }, 200 * i + 200);
+          }, 300 * i + 300);
         }
       }
     },
@@ -100,7 +98,7 @@ if (specialities !== null) {
           setInterval(() => {
             specialities[i].style.top = '0';
             specialities[i].style.opacity = '1';
-          }, 200);
+          }, 300);
         }
       }
     },
@@ -254,12 +252,12 @@ if (clubs !== null) {
   }
 
   window.addEventListener('scroll', function (event) {
-    if (isInFullView(clubs)) {
-      for (let i = 0; i < clubsItem.length; i++) {
+    for (let i = 0; i < clubsItem.length; i++) {
+      if (isTopInView(clubsItem[i], 0.9)) {
         setInterval(function () {
           clubsItem[i].style.top = '0';
           clubsItem[i].style.opacity = '1';
-        }, 100 * i + 100);
+        }, 300 * i + 300);
       }
     }
   });
@@ -475,7 +473,6 @@ const burgerButtonClose = function () {
 // show/hide slideshow
 const slideshow = function () {
   let slideCheck = document.querySelector('#show-hide-slides');
-  console.log(slideCheck);
   let slides = document.querySelector('.slides');
   let label = document.querySelector('.slide-label');
   let screenSize = window.innerWidth;
