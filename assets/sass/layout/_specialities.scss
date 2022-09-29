@@ -109,13 +109,17 @@
       font-size: $default-font-size;
       margin-bottom: 1rem;
       line-height: 2rem;
-      display: block;
+      display: inline-block;
       position: relative;
     }
 
     &--link {
-      @include primary-btn;
-      width: 100%;
+      display: inline-block;
+      width: auto;
+
+      a {
+        @include primary-btn;
+      }
     }
   }
 }
