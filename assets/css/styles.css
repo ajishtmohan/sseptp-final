@@ -724,9 +724,7 @@ p {
         width: 100%;
         display: block;
         position: relative;
-        transform: scale(0.2);
         transform-origin: bottom center;
-        opacity: 0.2;
         transition: all 0.3s; }
         @media only screen and (max-width: 37.5em) {
           .header__slider--container .slides {
@@ -735,8 +733,6 @@ p {
             bottom: 0;
             transform: scale(0.2);
             transform-origin: bottom center; } }
-        .header__slider--container .slides:hover {
-          opacity: 1; }
         .header__slider--container .slides h1 {
           width: 100%;
           color: #fff;
@@ -5651,7 +5647,7 @@ section {
   background-image: url("../img/placement-modus.jpg"); }
 
 .section-records {
-  background-image: url("../img/job.jpg"); }
+  background-image: url("../img/cgi.jpg"); }
 
 .section-partners {
   width: 100%;

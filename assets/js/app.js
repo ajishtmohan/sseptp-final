@@ -471,6 +471,7 @@ const burgerButtonClose = function () {
 };
 
 // show/hide slideshow
+/*
 const slideshow = function () {
   let slideCheck = document.querySelector('#show-hide-slides');
   let slides = document.querySelector('.slides');
@@ -494,6 +495,7 @@ const slideshow = function () {
   }
 };
 slideshow();
+*/
 
 // SCREENSIZE HANDLING
 window.addEventListener('resize', resizeHandler);

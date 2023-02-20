@@ -40,9 +40,7 @@
         width: 100%;
         display: block;
         position: relative;
-        transform: scale(0.2);
         transform-origin: bottom center;
-        opacity: 0.2;
         transition: all 0.3s;
 
         @include respond(phone) {
@@ -51,10 +49,6 @@
           bottom: 0;
           transform: scale(0.2);
           transform-origin: bottom center;
-        }
-
-        &:hover {
-          opacity: 1;
         }
 
         h1 {
