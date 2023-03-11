@@ -1,0 +1,83 @@
+.section-social {
+  @include fullSiteWidth;
+  text-align: center;
+  background-image: linear-gradient($color-grey-light-2, $color-white);
+  background-color: $color-grey-light-2;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  h1 {
+    @include containerWidth-L;
+    @include blue-gradient;
+    margin-bottom: $margin-small;
+    width: 100%;
+
+    @include respond(tab-port) {
+      width: 100%;
+      font-size: $h2-font-size;
+    }
+  }
+
+  .blogs-link {
+    @include primary-btn;
+    margin: 5rem;
+  }
+
+  .social-block {
+    @include containerWidth-L;
+    @include flexRow;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: $margin-small;
+    flex-wrap: wrap;
+    // height: 40rem;
+
+    @include respond(tab-land) {
+      width: 90%;
+      height: auto;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+      height: auto;
+    }
+
+    @include respond(phone-tab) {
+      width: 90%;
+      height: auto;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      height: auto;
+    }
+
+    &__item {
+      width: calc((100% - 6rem) / 3);
+      height: 30rem;
+      background-color: $color-white;
+      box-shadow: 0px 5px 15px $color-grey-light-2;
+      padding: 2rem;
+      overflow-y: scroll;
+      font-size: $default-font-size;
+      display: block;
+
+      @include respond(tab-land) {
+        width: calc((100% - 3rem) / 2);
+        height: 50rem;
+      }
+
+      @include respond(phone-tab) {
+        width: 100%;
+        height: 50rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        height: 50rem;
+      }
+    }
+  }
+}

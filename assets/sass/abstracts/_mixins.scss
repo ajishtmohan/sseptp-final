@@ -429,6 +429,13 @@ Breakpoint Argument Choices
     }
   }
 
+  // 750px
+  @if $breakpoint == phone-tab {
+    @media only screen and (max-width: 46.8em) {
+      @content;
+    }
+  }
+
   // 900px
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {
