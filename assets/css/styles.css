@@ -1370,6 +1370,26 @@ p {
         top: 0;
         left: 0;
         background-color: #3052b9; } }
+  .nav__scroll {
+    width: 100%;
+    height: 3rem;
+    background-color: #3052b9;
+    display: block;
+    position: relative;
+    z-index: -1; }
+    .nav__scroll--container {
+      width: 120rem;
+      height: 3rem;
+      padding: 0.8rem;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+      .nav__scroll--container p {
+        color: #fff;
+        font-size: 2rem; }
+        .nav__scroll--container p .company {
+          font-weight: 800; }
 
 .menu {
   width: 100vw;
