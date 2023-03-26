@@ -1,0 +1,527 @@
+.placement-page {
+  position: relative;
+  display: block;
+  @include zeroAround;
+
+  &__topband {
+    position: relative;
+    display: block;
+    background-color: $color-tertiary-light;
+    width: $full-width;
+    height: 50rem;
+    margin: 0 auto;
+    border-bottom: 4px solid $color-tertiary-dark;
+
+    @include respond(tab-port) {
+      width: 100%;
+      height: 30rem;
+    }
+
+    .placement-page-top-band__header {
+      width: $site-width;
+      height: 100%;
+      margin: 0 auto;
+
+      @include respond(tab-land) {
+        width: 90%;
+        min-width: 90rem;
+      }
+
+      @include respond(tab-port) {
+        width: 90%;
+        min-width: 50rem;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+        min-width: 20rem;
+      }
+
+      > div {
+        position: relative;
+      }
+
+      &--title {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 100%;
+
+        @include respond(tab-port) {
+          width: 45%;
+          word-wrap: break-word;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+          min-width: 37.5rem;
+        }
+
+        h1 {
+          @include page-title-primary;
+          @include respond(phone) {
+            width: 100%;
+          }
+        }
+      }
+
+      &--image {
+        display: block;
+        position: relative;
+        top: 40%;
+        width: 50%;
+        height: 40rem;
+        overflow: hidden;
+        float: right;
+        border-bottom: 4px solid $color-tertiary-dark;
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+
+        @include respond(tab-land) {
+          height: 35rem;
+        }
+
+        @include respond(tab-port) {
+          height: 25rem;
+        }
+
+        @include respond(phone) {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+
+          @include respond(tab-land) {
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.placement-page-content {
+  @include placement-content-specification;
+
+  @include respond(tab-land) {
+    width: 90%;
+  }
+
+  &__main {
+    width: 80rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    &--h2 {
+      @include page-heading-primary;
+    }
+
+    &--h3 {
+      color: $color-primary-dark;
+      font-weight: 300;
+      font-size: $h3-font-size;
+    }
+
+    &--h4 {
+      color: $color-primary-light;
+      font-weight: 300;
+      font-size: $h4-font-size;
+      font-weight: 500;
+    }
+
+    &--description {
+      @include page-description;
+    }
+
+    &--ul {
+      padding-left: 1.5rem;
+
+      li {
+        @include page-bullet;
+
+        ul {
+          margin-left: 0;
+          padding: 0;
+          li {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+
+            &:before {
+              content: '→';
+            }
+          }
+        }
+      }
+    }
+
+    .placement-cell {
+      @include flexRow;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      &__card {
+        width: calc((100% - 6rem) / 4);
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: rgba($color-secondary-light, 0.1);
+
+        @include respond(tab-land) {
+          width: calc((100% - 4rem) / 3);
+          height: auto;
+        }
+
+        @include respond(tab-port) {
+          width: calc((100% - 4rem) / 3);
+          max-width: 20rem;
+          height: auto;
+        }
+
+        @include respond(phone) {
+          width: calc((100% - 2rem) / 2);
+          height: auto;
+        }
+
+        &--image {
+          height: 20rem;
+          overflow: hidden;
+          margin-bottom: 1rem;
+
+          @include respond(tab-land) {
+            margin-bottom: 0.5rem;
+          }
+
+          img {
+            @include imageFill;
+          }
+        }
+
+        &--name {
+          @include zeroAround;
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.5rem;
+        }
+
+        &--description {
+          @include zeroAround;
+          font-size: 1.1rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    p {
+      @include page-paragraph;
+    }
+
+    a {
+      color: $color-grey-dark;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-tertiary-dark;
+      }
+    }
+
+    .page-p-bold {
+      font-weight: 600;
+    }
+    .page-p-module {
+      @include zeroAround;
+      font-weight: 600;
+    }
+
+    .mentors {
+      @include flexRow;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      &__card {
+        width: calc((100% - 6rem) / 4);
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: rgba($color-secondary-light, 0.1);
+
+        @include respond(tab-land) {
+          width: calc((100% - 4rem) / 3);
+          height: auto;
+        }
+
+        @include respond(tab-port) {
+          width: calc((100% - 4rem) / 3);
+          max-width: 20rem;
+          height: auto;
+        }
+
+        @include respond(phone) {
+          width: calc((100% - 2rem) / 2);
+          height: auto;
+        }
+
+        &--image {
+          height: 18.5rem;
+          overflow: hidden;
+          margin-bottom: 1rem;
+
+          @include respond(tab-land) {
+            margin-bottom: 0.5rem;
+          }
+
+          img {
+            @include imageFill;
+          }
+        }
+
+        &--name {
+          @include zeroAround;
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.5rem;
+        }
+
+        &--description {
+          @include zeroAround;
+          font-size: 1.1rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .statistics-container {
+    @include flexRow;
+    margin: $margin-tiny 0;
+    gap: 2rem;
+    justify-content: flex-start;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .statistics-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      width: calc((80rem - 6rem) / 4);
+      height: auto;
+      background-image: linear-gradient(
+        45deg,
+        $color-primary-light,
+        $color-secondary-light
+      );
+      border-radius: 3px;
+      transition: all 0.3s;
+      padding: 1rem;
+      box-sizing: border-box;
+      color: $color-white;
+      word-wrap: break-word;
+
+      @include respond(tab-land) {
+        width: calc((100% - 6rem) / 4);
+      }
+
+      @include respond(tab-port) {
+        width: calc((100% - 6rem) / 4);
+      }
+
+      @include respond(phone) {
+        width: calc((100% - 3rem) / 2);
+      }
+
+      &__image {
+        img {
+          @include imageFill;
+          padding-bottom: 1rem;
+        }
+      }
+
+      &__title {
+        text-align: center;
+
+        h3 {
+          text-align: center;
+          color: $color-white;
+          padding-bottom: 1rem;
+          font-size: $default-font-size;
+
+          @include respond(phone) {
+            font-size: 2.5rem;
+          }
+        }
+
+        p {
+          a {
+            @include primary-btn;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  .recruiters {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0;
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+
+    &__heading {
+      @include page-heading-secondary;
+      text-align: center;
+
+      @include respond(phone) {
+        font-size: $h3-font-size;
+      }
+    }
+
+    .recruiters-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 4rem;
+
+      @include respond(phone) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+      }
+
+      &__item {
+        width: calc((100%) / 5);
+        height: 8rem;
+
+        @include respond(tab-land) {
+          width: calc((100%) / 6);
+        }
+
+        @include respond(tab-port) {
+          width: calc((100%) / 5);
+        }
+
+        @include respond(phone) {
+          width: calc((100%) / 3.5);
+        }
+
+        img {
+          @include imageFill;
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__sidebar {
+    width: 35rem;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+
+    @include respond(tab-land) {
+      width: 30%;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &--links {
+      background-color: $color-tertiary-light;
+      margin-bottom: 4rem;
+
+      h3 {
+        @include course-page-sidebar-title;
+      }
+
+      ul {
+        width: 100%;
+        @include zeroAround;
+
+        li {
+          @include page-sidebar-list;
+
+          a {
+            @include page-sidebar-list-link-black;
+
+            &:hover {
+              background-color: $color-tertiary-dark;
+            }
+          }
+        }
+      }
+    }
+
+    &--contact {
+      background-color: $color-tertiary-light;
+      margin-bottom: 2rem;
+
+      h3 {
+        @include course-page-sidebar-title;
+      }
+
+      h4 {
+        @include course-page-sidebar-hod;
+      }
+
+      p {
+        padding: 0 2.5rem;
+        color: $color-black;
+        width: 100%;
+      }
+      .contact-timing {
+        font-weight: 600;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

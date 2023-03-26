@@ -79,5 +79,24 @@
         height: 50rem;
       }
     }
+
+    &__item::-webkit-scrollbar {
+      width: 0.5rem;
+      display: block;
+      display: block;
+      position: relative;
+    }
+
+    &__item::-webkit-scrollbar-track {
+      // background-color: rgba($color-primary-light, 0.2);
+    }
+
+    &__item::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(
+        $color-primary-dark,
+        $color-primary-light
+      );
+      border-radius: 0.35rem;
+    }
   }
 }

@@ -388,6 +388,22 @@
   overflow: hidden;
 }
 
+@mixin placement-content-specification {
+  width: $site-width;
+  height: auto;
+  min-height: 75rem;
+  margin: 15rem auto 5rem;
+  display: block;
+  position: relative;
+
+  @include respond(tab-port) {
+    margin: 10rem auto 5rem;
+  }
+
+  @include respond(phone) {
+    margin: 3rem auto 5rem;
+  }
+}
 // MEDIA QUERY MANAGER
 
 /*
